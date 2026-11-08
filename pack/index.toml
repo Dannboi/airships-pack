@@ -4978,8 +4978,8 @@ hash = "d935e4ce118d15c88b10809df85e801f0e9577855f870f3c28e5a0bd5e7fecf6"
 metafile = true
 
 [[files]]
-file = "mods/polytone-1.21-3.6.7-neoforge.pw.toml"
-hash = "b8af9f14772c323bc77b1d2898a139dbcd85369ea225aed9a6217620472f1085"
+file = "mods/polytone-1.21-5.3.6-neoforge.pw.toml"
+hash = "1a75009bce909b8b2de33f8a527d3634b3e10c4c648728ef5d1b5aa4546eef35"
 metafile = true
 
 [[files]]
