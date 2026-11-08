@@ -49,8 +49,8 @@ def collect(src: Path):
         if not root.is_dir():
             continue
         for p in sorted(root.rglob("*")):
-            if not p.is_file():
-                continue
+            if not p.is_file() or p.stat().st_size == 0:
+                continue  # empty files 501 through packwiz's HTTP client; mods recreate them anyway
             rel = p.relative_to(src).as_posix()
             if SKIP_RE.search(p.name) or rel.lower() in excluded or p.name in (".gitignore", ".gitattributes"):
                 continue

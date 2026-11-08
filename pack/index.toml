@@ -841,10 +841,6 @@ file = "config/catalogue.properties"
 hash = "9355d649d8f41a9b3151cc721aae1def21ce6683dac181166ea230288f463d57"
 
 [[files]]
-file = "config/catalogue_favourites.txt"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
 file = "config/ccl.cfg"
 hash = "7ea96c71ef15522cdcaec7bafdc73fc7cfaa2d6398342d8f447b94906f14e97d"
 
@@ -2189,10 +2185,6 @@ file = "config/jade/sort-order.json"
 hash = "7bcbb1756cf9de35d670a5e4159a339a8533520f56174ec77c96cf03468a91fb"
 
 [[files]]
-file = "config/jamlib/known_suspicious_jars.txt"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
 file = "config/jauml/config.json"
 hash = "c8234e55538333e1641fd44ed1474e09b43538cff0458d0749aed9de76a8601a"
 
@@ -2631,34 +2623,6 @@ hash = "702e454a2e6ecd1dad92a907b58fd00b23d7c59d3c7deca94c6beeef45bc757e"
 [[files]]
 file = "config/petiteinventory-server.toml"
 hash = "3e5d239c1d0f9987e492e04f7bef5bbc8993889bbeb68f528396b1f76878b920"
-
-[[files]]
-file = "config/physicsmod/physics_animations_client_config.json"
-hash = "d8a629b25da461374926b02b6649ed90154cb1bb6ab7e5208f519b5bcf29b08b"
-
-[[files]]
-file = "config/physicsmod/physics_blocks_client_config.json"
-hash = "fbbda877be31d1652d6045cc29926e4dad69c9958584db3fa58ebade988bad69"
-
-[[files]]
-file = "config/physicsmod/physics_client_config.json"
-hash = "1e9794facb35c77b8bc6cea1b406a40e5d791c207b33cdee1cc7bf686523d7ac"
-
-[[files]]
-file = "config/physicsmod/physics_cloth_config.json"
-hash = "c004242898b912a2ad1a836a4e017d921c1e8660180565ce56dc4cadc027e939"
-
-[[files]]
-file = "config/physicsmod/physics_mobs_client_config.json"
-hash = "752775debf65550a6a11ae2cc27c6f5c649cb8ac833a496e5c222d484bc63c14"
-
-[[files]]
-file = "config/physicsmod/physics_server_config.json"
-hash = "e6c1234596884339e56c93f3e52ae9b646c70bd245ca301775de4317a8f8928a"
-
-[[files]]
-file = "config/physicsmod/physics_vines_client_config.json"
-hash = "769c4aef1fa9d160f26a16d13c9ca2d08a561bfdf08c53633a00f60330636a99"
 
 [[files]]
 file = "config/places_client.toml"
@@ -3272,10 +3236,6 @@ hash = "d01b6cff9caa7bc82d013e779cac8c58c37623d68c658f1e2c36e3c72fbc71a6"
 [[files]]
 file = "config/villagernames.json5"
 hash = "c6a90f762893e4b57c5ef6bd5fcc6a29180e8cb69c6fce3959bacb2ecf9041ea"
-
-[[files]]
-file = "config/villagernames/customnames.txt"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "config/vista-client.toml"

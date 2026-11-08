@@ -17,7 +17,9 @@ namespace AirshipsInstaller
     {
         public const string PackName = "Airships: Conquer the Mines";
         public const string ShortName = "Airships";
-        public const string PackTomlUrl = "https://raw.githubusercontent.com/Dannboi/airships-pack/main/pack/pack.toml";
+        public const string GitHubRepo = "Dannboi/airships-pack";
+        public const string Branch = "main";
+        public const string PackTomlUrl = "https://raw.githubusercontent.com/" + GitHubRepo + "/" + Branch + "/pack/pack.toml";
         public const string PrismVersion = "11.1.1";
         public const string PrismUrl = "https://github.com/PrismLauncher/PrismLauncher/releases/download/" + PrismVersion +
                                        "/PrismLauncher-Windows-MinGW-w64-Portable-" + PrismVersion + ".zip";
@@ -69,9 +71,30 @@ namespace AirshipsInstaller
             }
         }
 
-        public static (string mc, string neoforge) FetchPackVersions()
+        /// pack.toml URL pinned to the newest commit (immutable -> never a stale/mixed CDN cache right after a
+        /// publish). Falls back to the branch URL if the GitHub API is unreachable or rate-limited.
+        public static string ResolvePackUrl()
         {
-            var toml = HttpGetString(Config.PackTomlUrl);
+            try
+            {
+                var req = (HttpWebRequest)WebRequest.Create("https://api.github.com/repos/" + Config.GitHubRepo + "/commits/" + Config.Branch);
+                req.UserAgent = "AirshipsInstaller/1.0"; req.Accept = "application/vnd.github.sha";
+                req.Timeout = 10000; req.ReadWriteTimeout = 10000;
+                using (var resp = req.GetResponse())
+                using (var r = new StreamReader(resp.GetResponseStream()))
+                {
+                    string sha = r.ReadToEnd().Trim();
+                    if (Regex.IsMatch(sha, "^[0-9a-f]{40}$"))
+                        return "https://raw.githubusercontent.com/" + Config.GitHubRepo + "/" + sha + "/pack/pack.toml";
+                }
+            }
+            catch (Exception e) { Console.WriteLine("[Airships] GitHub API unavailable (" + e.Message + "), using branch URL"); }
+            return Config.PackTomlUrl;
+        }
+
+        public static (string mc, string neoforge) FetchPackVersions(string url = null)
+        {
+            var toml = HttpGetString(url ?? Config.PackTomlUrl);
             string Get(string key) { var m = Regex.Match(toml, "^\\s*" + key + "\\s*=\\s*\"([^\"]+)\"", RegexOptions.Multiline); return m.Success ? m.Groups[1].Value : null; }
             return (Get("minecraft"), Get("neoforge"));
         }
@@ -173,7 +196,7 @@ namespace AirshipsInstaller
             File.WriteAllBytes(Path.Combine(mc, "packwiz-installer.jar"), Resource("packwiz-installer.jar"));
 
             string neo = Config.FallbackNeoForge, mcVer = Config.Minecraft;
-            try { var v = FetchPackVersions(); neo = v.neoforge ?? neo; mcVer = v.mc ?? mcVer; } catch { }
+            try { var v = FetchPackVersions(ResolvePackUrl()); neo = v.neoforge ?? neo; mcVer = v.mc ?? mcVer; } catch { }
             string mmcPack = Path.Combine(inst, "mmc-pack.json");
             if (File.Exists(mmcPack)) SetLoaderVersion(mmcPack, neo);
             else File.WriteAllText(mmcPack, MmcPackJson(mcVer, neo), new UTF8Encoding(false));
@@ -277,10 +300,12 @@ namespace AirshipsInstaller
             string inst = Path.Combine(mc, "packwiz-installer.jar");
             if (!File.Exists(inst)) File.WriteAllBytes(inst, Resource("packwiz-installer.jar"));
 
+            string packUrl = ResolvePackUrl();
+            Console.WriteLine("[Airships] pack: " + packUrl);
             // keep the NeoForge version in step with the pack
             try
             {
-                var v = FetchPackVersions();
+                var v = FetchPackVersions(packUrl);
                 if (v.neoforge != null && SetLoaderVersion(Path.Combine(instDir, "mmc-pack.json"), v.neoforge))
                 {
                     Console.WriteLine("[Airships] pack now uses NeoForge " + v.neoforge + " - updated the instance; launch again.");
@@ -300,7 +325,7 @@ namespace AirshipsInstaller
                 if (alt != null && File.Exists(alt)) java = alt;
             }
             // packwiz-installer shows its own progress window while it downloads
-            var psi = new ProcessStartInfo(java, "-jar \"" + boot + "\" \"" + Config.PackTomlUrl + "\"")
+            var psi = new ProcessStartInfo(java, "-jar \"" + boot + "\" \"" + packUrl + "\"")
             { UseShellExecute = false, WorkingDirectory = mc };
             using (var p = Process.Start(psi)) { p.WaitForExit(); Console.WriteLine("[Airships] pack sync exit code " + p.ExitCode); return p.ExitCode; }
         }
