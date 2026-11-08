@@ -1,0 +1,15 @@
+{
+  "pack_name": "Airships: Conquer the Mines",
+  "author": "Harvy",
+  "minecraft": "1.21.1",
+  "github_repo": "Dannboi/airships-pack",
+  "asset_release_tag": "files",
+  "technic_pack_dir": "%APPDATA%\\.technic\\modpacks\\airships-conquer-the-mines",
+  "asset_staging_dir": "C:\\Tools\\airships-build\\assets",
+  "include_dirs": ["mods", "config", "defaultconfigs", "kubejs", "datapacks", "global_packs",
+                   "resourcepacks", "shaderpacks", "stylepacks", "blueprints"],
+  "preserve_files": ["servers.dat"],
+  "exclude_prefixes": ["kubejs/exported/", "kubejs/probe/", "kubejs/.cache/"],
+  "exclude_files": ["mods/physics-mod-pro-v172n-neoforge-mc-1.21.1.jar"],
+  "_exclude_files_why": "physics-mod-pro is a paid Patreon mod - not redistributed on public GitHub"
+}

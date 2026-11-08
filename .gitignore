@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+installer/bin/
+installer/obj/
+dist/
