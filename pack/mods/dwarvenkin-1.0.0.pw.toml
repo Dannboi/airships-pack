@@ -1,0 +1,8 @@
+name = "dwarvenkin-1.0.0"
+filename = "dwarvenkin-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/db4a43ac4a-dwarvenkin-1.0.0.jar"
+hash-format = "sha512"
+hash = "9159958c1c1b2df3b7aaf8e4bb6adfa3d0919f9bc68e5009b74b7a0a0270d16f164654ed3ebd9ba582a43a2ca638f45deb03f3a14bd7a33119e53f192ab8974b"

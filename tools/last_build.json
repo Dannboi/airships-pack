@@ -1,6 +1,6 @@
 {
- "version": "2026.11.07-1",
- "index_hash": "c6904b904ec72b7d1325cdae64b6f081ac8b806d06e8b466ef208ae69b0a79e2",
+ "version": "2026.11.07-2",
+ "index_hash": "22050528007674d8f484f0d44ee13b0c592608a485c4d2afc09502a17d8e1e66",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -109,6 +109,7 @@
   "d945a0ee15-chestcavitybeyond_neoforge_1.21.1-1.10.3.jar",
   "dafb1bee9c-zeldaswordskills-1.0.0.jar",
   "db445eeca1-tf_dnv-2.0.3.jar",
+  "db4a43ac4a-dwarvenkin-1.0.0.jar",
   "db9b652d8c-imb-1.0.1.jar",
   "e157ec5c20-towed-1.4.0-harvy.1.jar",
   "e1f6d1c400-molten_vents-1.21.1-2.1.1.jar",

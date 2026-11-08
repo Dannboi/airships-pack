@@ -561,10 +561,6 @@ file = "config/alexsmobs/warped_toad_spawns.json"
 hash = "72126b26d7f3ae03b80df97dd103e0cec87d10829e86ac8b08da23abc7b318d8"
 
 [[files]]
-file = "config/almostunified/.gitignore"
-hash = "abfe79685d4d74888072befedc60b4d19c641c8cf32b48f1b332f11d0aba9a6e"
-
-[[files]]
 file = "config/almostunified/debug.json"
 hash = "435ad46870d033c8652097d64c6ec592907e5ab6f1877240532a6a1743d4fca5"
 
@@ -4504,6 +4500,11 @@ metafile = true
 [[files]]
 file = "mods/dwarfs_tyranny-1.0.8-neoforge-1.21.1.pw.toml"
 hash = "b0b86fe2c25d194c5f9544d76b810147f572e66a62dec02603396cf4a5882755"
+metafile = true
+
+[[files]]
+file = "mods/dwarvenkin-1.0.0.pw.toml"
+hash = "3a46a673f2161953a8c2e0f53d7c0add95e13728fbdc419d28a51f250a4d871e"
 metafile = true
 
 [[files]]

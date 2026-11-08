@@ -5,7 +5,7 @@ file that isn't uploaded yet.
 
 Run:  python tools/publish.py [-m "changelog message"] [--dry-run]
 """
-import argparse, json, subprocess, sys
+import argparse, json, subprocess, sys, tomllib
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -59,6 +59,14 @@ def main():
         print(f"[dry-run] would commit '{msg}' and push")
         return
     run("git", "add", "-A")
+    # every non-metafile in the index must actually be in git, or players get a 404
+    tracked = set(subprocess.run(["git", "-c", "core.quotepath=off", "ls-files", "-z", "pack"], cwd=REPO,
+                                 capture_output=True).stdout.decode("utf-8").split("\0"))
+    with open(REPO / "pack" / "index.toml", "rb") as f:
+        files = [e["file"] for e in tomllib.load(f)["files"]]
+    lost = [f for f in files if "pack/" + f not in tracked]
+    if lost:
+        sys.exit(f"refusing to publish: {len(lost)} indexed files are not tracked by git (gitignored?): {lost[:5]}")
     if run("git", "diff", "--cached", "--quiet", check=False).returncode == 0:
         print("nothing changed in the repo")
         return

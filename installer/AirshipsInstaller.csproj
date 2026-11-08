@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- .NET Framework 4.7.2: preinstalled on every Windows 10/11 PC, so the exe is a single small file. -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>AirshipsInstaller</AssemblyName>
+    <RootNamespace>AirshipsInstaller</RootNamespace>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>1.0.0</Version>
+    <Product>Airships: Conquer the Mines Installer</Product>
+    <Company>Harvy</Company>
+    <Copyright>Copyright (c) 2026 Harvy</Copyright>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="Microsoft.CSharp" />
+    <EmbeddedResource Include="Resources\packwiz-installer-bootstrap.jar" LogicalName="packwiz-installer-bootstrap.jar" />
+    <EmbeddedResource Include="Resources\packwiz-installer.jar" LogicalName="packwiz-installer.jar" />
+    <EmbeddedResource Include="Resources\icon.png" LogicalName="icon.png" />
+    <EmbeddedResource Include="Resources\logo.png" LogicalName="logo.png" />
+    <EmbeddedResource Include="Resources\app.ico" LogicalName="app.ico" />
+  </ItemGroup>
+</Project>

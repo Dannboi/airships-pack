@@ -52,7 +52,7 @@ def collect(src: Path):
             if not p.is_file():
                 continue
             rel = p.relative_to(src).as_posix()
-            if SKIP_RE.search(p.name) or rel.lower() in excluded:
+            if SKIP_RE.search(p.name) or rel.lower() in excluded or p.name in (".gitignore", ".gitattributes"):
                 continue
             if any(rel.startswith(x) for x in CFG["exclude_prefixes"]):
                 continue
