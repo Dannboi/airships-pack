@@ -1,0 +1,50 @@
+#Master switch for rummaging. false = fully vanilla: containers open with their contents
+#visible and takeable, no timers, no hopper/pipe locks. Searched-state data is kept, so
+#turning it back on restores progress. The grid inventory has its own switch in
+#petiteinventory-server.toml.
+Enabled = true
+#Anti-cheat: never send the contents of an unsearched slot to the client. Off (the
+#upstream behaviour) the client receives the real items and merely draws a mask over
+#them, so a modified client or an inventory-viewer mod can see loot before searching;
+#on, unsearched slots arrive empty and the real item is sent the moment the slot is
+#searched. Side effect: the mask no longer outlines a big item's footprint before it
+#is searched (each unsearched cell gets a plain single mask).
+"Hide Unsearched Contents" = false
+#Time required to rummage for an item.
+#The speed multiplier for each player can be individually adjusted via the /rummage command.
+# Default: 0.8
+# Range: 0.0 ~ 5000.0
+"Rummage Time (Sec)" = 0.8
+#The default sound played when an item is rummaged successfully.
+"Rummage Sound" = "rummage:normal_deltaforce"
+#Whether to enable chain rummaging for all players.
+#If set to false, chain rummaging can only be enabled for specific players via the /rummage command or by modifying the entity attribute.
+"Chain Rummaging" = true
+#The probability of each item being destroyed if the container is broken before rummaging is complete.
+#The probability multiplier for each player can be individually adjusted via the /rummage command.
+# Default: 0.05
+# Range: 0.0 ~ 1.0
+"Destroy Chance" = 0.05
+#Whether players in Creative Mode need to rummage for items.
+"Creative Rummage" = true
+#If true, rummaging items will grant the Exposure effect.
+#If Petite Inventory is also installed, larger items will grant a higher level of Exposure.
+#If this is set to true, you can still allow specific players to rummage silently (bypassing the effect) via the /rummage command.
+"Sona Exposure" = true
+#If true, players will need to rummage their own corpses.
+"Rummage Own Corpse" = false
+#A list of container block/entity IDs that should bypass the rummaging mechanic.
+#Format: 'modid:container_id' (e.g., 'minecraft:chest').
+"Rummage Blacklist" = ["minecraft:ender_chest"]
+
+["Compat - Item Rarity"]
+	#Rummage durations for different item rarities when Item Rarity is installed.
+	#Format: 'rarity_id, duration' (e.g., 'epic, 4.0' means epic items take 4 seconds to rummage).
+	#You can specify a minimum rarity threshold for each player via the /rummage command, below which items do not need to be rummaged.
+	"Rarity-Based Rummage Times" = ["uncommon, 1.2", "rare, 1.8", "epic, 2.5", "legendary, 4.0", "artifact, 5.0"]
+	#Sound effects played upon completing a rummage for different item rarities when Item Rarity is installed.
+	#Format: 'rarity_id, sound_location' (e.g., 'epic, minecraft:example_sound' means epic items play that sound when found).
+	"Rarity-Based Rummage Sound" = ["uncommon, rummage:uncommon_deltaforce", "rare, rummage:rare_deltaforce", "epic, rummage:epic_deltaforce", "legendary, rummage:legendary_deltaforce", "artifact, rummage:artifact_deltaforce"]
+	#Destruction probabilities for different item rarities when Item Rarity is installed.
+	#Format: 'rarity_id, chance' (e.g., 'epic, 0.2' means epic items have a 20% chance to be destroyed).
+	"Rarity-Based Destroy Chance" = ["uncommon, 0.1", "rare, 0.25", "epic, 0.5", "legendary, 0.7", "artifact, 0.8"]

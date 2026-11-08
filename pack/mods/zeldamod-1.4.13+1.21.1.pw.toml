@@ -1,0 +1,8 @@
+name = "zeldamod-1.4.13+1.21.1"
+filename = "zeldamod-1.4.13+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/f2e95d0ab0-zeldamod-1.4.13+1.21.1.jar"
+hash-format = "sha512"
+hash = "100a1976ab5ef83d72a13a899b71a52c42e9b6d8d6fcf74bf4b731b0660f2ea74a3d1e178260555e1af7ec5a7ea608009f9c9200b1199e5992dabce6bd8fd7c0"

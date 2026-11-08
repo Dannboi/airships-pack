@@ -1,0 +1,16 @@
+#Alex's Preserves (Twilight) — controls which mobs may naturally spawn inside Twilight Forest biomes.
+[general]
+	#Entity IDs that are allowed to spawn in protected Twilight Forest biomes.
+	#Format: "modid:entity_name"  (e.g. "minecraft:bat")
+	#Mobs from Twilight Forest are always allowed; this list adds exceptions.
+	allowedEntities = []
+	#Whole mod namespaces that are allowed to spawn in protected Twilight Forest biomes.
+	#Default includes "minecraft" because Twilight Forest biomes reuse many vanilla mobs.
+	#Remove it if you want a stricter preserve.
+	allowedNamespaces = ["minecraft"]
+	#Specific biome IDs to protect in addition to the namespace match below.
+	#Format: "modid:biome_name"
+	protectedBiomes = []
+	#Biome namespaces to protect. Defaults to "twilightforest".
+	#Any biome whose namespace matches becomes a preserve.
+	protectedNamespaces = ["twilightforest"]

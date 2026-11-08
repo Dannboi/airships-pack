@@ -1,0 +1,8 @@
+name = "feedback-1.0.0-neoforge-1.21.1"
+filename = "feedback-1.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/5121083b5b-feedback-1.0.0-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "019d9048a640fb6476eb29e21e32f4142deaa4c19e08a26a8cc705138d49a027ffe5e38729921f1f5719a27a33a2a6eb090999e2dda601b0f9a87cb8b1305b78"

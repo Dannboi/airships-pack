@@ -1,0 +1,41 @@
+[general]
+	#Enable or disable the lag spike debugger
+	enabled = true
+	#Your Anthropic API key (required for Claude analysis)
+	apiKey = ""
+	#Claude model to use for analysis
+	model = "claude-sonnet-4-20250514"
+
+[detection]
+	#Tick duration in milliseconds that triggers a lag spike capture (default: 500ms = 10x normal)
+	# Default: 500
+	# Range: 50 ~ 60000
+	spikeThresholdMs = 500
+	#Minimum seconds between Claude API reports to avoid spamming (default: 120)
+	# Default: 120
+	# Range: 10 ~ 3600
+	cooldownSeconds = 120
+	#How many seconds of TPS history to retain for analysis (default: 60)
+	# Default: 60
+	# Range: 10 ~ 300
+	tpsHistorySeconds = 60
+
+[itemCleanup]
+	#Whether item cleanup is active. Persists across restarts. Toggle via /debugger itemcleanup toggle.
+	enabled = false
+	#Number of dropped items that triggers automatic cleanup (default: 200)
+	# Default: 200
+	# Range: 50 ~ 5000
+	itemThreshold = 200
+	#Seconds to warn players before clearing items (default: 10)
+	# Default: 10
+	# Range: 3 ~ 30
+	warnSeconds = 10
+	#A single tick exceeding this duration (ms) counts as a recent lag spike and arms the cleanup check. Catches brief spikes that a TPS average would hide. (default: 200ms = 4x normal)
+	# Default: 200
+	# Range: 50 ~ 10000
+	spikeTriggerMs = 200
+	#How many recent ticks to scan for a spike (default: 200 ticks = last ~10s of game time)
+	# Default: 200
+	# Range: 20 ~ 2400
+	spikeLookbackTicks = 200

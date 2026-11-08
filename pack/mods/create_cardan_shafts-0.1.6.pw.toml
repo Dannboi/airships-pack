@@ -1,0 +1,13 @@
+name = "Create Cardan Shafts"
+filename = "create_cardan_shafts-0.1.6.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5zf6e26A/versions/gN7NRzux/create_cardan_shafts-0.1.6.jar"
+hash-format = "sha512"
+hash = "722bb2331ad081950c1a4b6def2964f73bc757bfa14be5c3a9028f758e079cc51ba4810bb198813d05b5fd4fb6fb4acde42f9c098fb7a89e853eeb92587f9743"
+
+[update]
+[update.modrinth]
+mod-id = "5zf6e26A"
+version = "gN7NRzux"

@@ -1,0 +1,7 @@
+[display]
+	#Append the style name to the item name, e.g. "Diamond Sword (Royal)".
+	#The style is always shown as a tooltip line regardless of this setting.
+	appendStyleToName = false
+	#On unstyled items that have at least one style available, show a small
+	#"Styleable" tooltip line so players know the item can go in a Style Bench.
+	showStyleableHint = true

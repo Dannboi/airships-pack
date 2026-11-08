@@ -1,0 +1,10 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"youkaisfeasts:copper_tank"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:blaze_burner"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:bone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"quark:spruce_ladder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:stick"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"spartan_weaponry_unofficial:iron_spear","components":{"minecraft:damage":155,"smithingreborn:grade":"smithingreborn:mid","grindstoner:sharpen_state":{"sharpened":true,"uses_remaining":20,"max_uses":20}}},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

@@ -1,0 +1,8 @@
+name = "SereneSeasons-neoforge-1.21.1-10.1.0.3"
+filename = "SereneSeasons-neoforge-1.21.1-10.1.0.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/8b9034d4c4-SereneSeasons-neoforge-1.21.1-10.1.0.3.jar"
+hash-format = "sha512"
+hash = "9df9c5bebe0a97ac026676ac49c27e5f5412ffdf1ff9370fc9194e014e8fab8d029fb8cda214932a71a1154e6bf1f211e657ff4b353018b974a85f72fb4a005c"

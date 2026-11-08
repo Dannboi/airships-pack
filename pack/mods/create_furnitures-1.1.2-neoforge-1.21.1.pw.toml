@@ -1,0 +1,8 @@
+name = "create_furnitures-1.1.2-neoforge-1.21.1"
+filename = "create_furnitures-1.1.2-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/0c10c3a0aa-create_furnitures-1.1.2-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "bd9b6e1d02e280bd9798d85844fcac8cd913d8ba66a36209cb34420b1b087e9367f82b89cd7cc4472c58a3a88bccf839f9e25e312090bcaa5b38882efc34a9ea"

@@ -1,0 +1,1 @@
+{ "parent": "minecraft:item/generated", "textures": { "layer0": "faded:item/faded/minecraft/leather_chestplate", "layer1": "faded:item/faded/minecraft/leather_chestplate_overlay" } }

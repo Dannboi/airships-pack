@@ -1,0 +1,44 @@
+#Allowed Values: NONE, LADDER, SCAFFOLD, HYBRID
+frame_climb_mode = "HYBRID"
+
+#Craft Output Control
+[crafting]
+	# Default: 4
+	# Range: 1 ~ 16
+	compressed_multiplier = 4
+	# Default: 4
+	# Range: 1 ~ 16
+	base_output_flat = 4
+	# Default: 2
+	# Range: 1 ~ 16
+	base_output_floor = 2
+	# Default: 2
+	# Range: 1 ~ 16
+	base_output_incline = 2
+	# Default: 2
+	# Range: 1 ~ 16
+	base_output_roof = 2
+	# Default: 2
+	# Range: 1 ~ 16
+	base_output_frame = 2
+	# Default: 4
+	# Range: 1 ~ 16
+	base_output_railing = 4
+
+#Dust Covering Accumulation/Removal Options
+[covering]
+	can_manually_add = true
+	is_environment_reactive = true
+	is_entity_reactive = true
+	# Default: 4
+	# Range: 0 ~ 1000
+	chance_sand = 4
+	# Default: 3
+	# Range: 0 ~ 1000
+	chance_sandstorm = 3
+	# Default: 3
+	# Range: 0 ~ 1000
+	chance_snowstorm = 3
+	# Default: 3
+	# Range: 0 ~ 1000
+	chance_rain_wash = 3

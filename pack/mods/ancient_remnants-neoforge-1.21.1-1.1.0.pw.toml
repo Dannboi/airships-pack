@@ -1,0 +1,8 @@
+name = "ancient_remnants-neoforge-1.21.1-1.1.0"
+filename = "ancient_remnants-neoforge-1.21.1-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/d1f446f539-ancient_remnants-neoforge-1.21.1-1.1.0.jar"
+hash-format = "sha512"
+hash = "4193f40b6fdd738d73a6d899268450b96b79b79ed28521eafbbbb9cc34303c95433c5e3b0de02a18a82486b18f6e656209c97055fde1953a717236a191d7f377"

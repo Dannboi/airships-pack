@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/stone_pickaxe__m_item_stone_pickaxe_1__t_item_stone_pickaxe_1"
+    }
+}

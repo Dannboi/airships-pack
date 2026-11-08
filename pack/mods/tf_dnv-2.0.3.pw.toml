@@ -1,0 +1,8 @@
+name = "tf_dnv-2.0.3"
+filename = "tf_dnv-2.0.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/db445eeca1-tf_dnv-2.0.3.jar"
+hash-format = "sha512"
+hash = "b526e5f7dcc950e0292501ca605160551d7303dbb8b3af70abc13f0cde3d4ef0db7c93e75cedb1b9cd38d537894e94f9805434222bb0e8a1595ecbc9798b9bc6"

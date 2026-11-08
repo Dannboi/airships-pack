@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aeronautics:aviators_goggles",
+      "required": false
+    },
+    "aether:gravitite_helmet",
+    "aether:valkyrie_helmet",
+    "aether:neptune_helmet",
+    "aether:zanite_helmet",
+    "aether:phoenix_helmet"
+  ]
+}

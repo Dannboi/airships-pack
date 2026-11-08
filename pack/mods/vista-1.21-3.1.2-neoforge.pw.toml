@@ -1,0 +1,8 @@
+name = "vista-1.21-3.1.2-neoforge"
+filename = "vista-1.21-3.1.2-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/68ab16bef1-vista-1.21-3.1.2-neoforge.jar"
+hash-format = "sha512"
+hash = "3819fc3e08030ee84f225fc79b26a7e9efb12173f1c22b77253cbdfad99dff4ee9680ddd806ebce555ba318c1c41f6bf09c7a91289d75d356e83f4098c0537fd"

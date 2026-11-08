@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"thick_air:air_bladder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"thick_aeronautics:air_pump"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

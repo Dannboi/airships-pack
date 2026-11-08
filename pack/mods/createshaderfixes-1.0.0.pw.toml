@@ -1,0 +1,8 @@
+name = "createshaderfixes-1.0.0"
+filename = "createshaderfixes-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/d6669855df-createshaderfixes-1.0.0.jar"
+hash-format = "sha512"
+hash = "c48e732b8b4bb4940773755337d5ec920f4794527888d46df83bd05508cb6842c06b72e2795e8df682e5b4201d208621e077b2f5cda45249afa3674145684930"

@@ -1,0 +1,8 @@
+name = "more_critters-1.6.0"
+filename = "more_critters-1.6.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/9230b20d78-more_critters-1.6.0.jar"
+hash-format = "sha512"
+hash = "a5a5ac992d1ce0fce929125b9fddccbc9aabdb92a1247098ddb6a646e841852cee199cb162069aeb679fab4970a809007b04f4331402e7b16387699facb6d5a9"

@@ -1,0 +1,8 @@
+name = "mighty_mail-neoforge-1.21.1-1.1.4"
+filename = "mighty_mail-neoforge-1.21.1-1.1.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/0647bf0f2d-mighty_mail-neoforge-1.21.1-1.1.4.jar"
+hash-format = "sha512"
+hash = "84975b6eab0f3567b66aaf3804f4d1d1727b21887c952f38b7e6bdb08386bb66a0865cf4e13b0dab89373182e59c3afa0e6597a557ddc389e4d62ad736f6208a"

@@ -1,0 +1,8 @@
+name = "precursory-1.1.0"
+filename = "precursory-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/f30e8dd3bb-precursory-1.1.0.jar"
+hash-format = "sha512"
+hash = "ace44b7c23e6440c10c3c86392faa53f816981a81b63cadfc87ab6d60282cdf253e6b0998c9fab348cfd4ea1b623b119c0aacadf821aaaf6448175a3a8a8c2b2"

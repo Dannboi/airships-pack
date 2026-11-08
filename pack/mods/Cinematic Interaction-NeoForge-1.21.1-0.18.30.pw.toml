@@ -1,0 +1,8 @@
+name = "Cinematic Interaction-NeoForge-1.21.1-0.18.30"
+filename = "Cinematic Interaction-NeoForge-1.21.1-0.18.30.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/6ce24a0d4e-Cinematic_Interaction-NeoForge-1.21.1-0.18.30.jar"
+hash-format = "sha512"
+hash = "c7704dc1d16b14c115cc0aa8491874e816b8746f368be991069b5d41ecea7200a134ad11486c1ca027866f41edc0a820149a71730e6bb86f5ca7cbc84621ce87"

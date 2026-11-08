@@ -1,0 +1,8 @@
+name = "submarine_hull"
+filename = "submarine_hull.json"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/a8a5aa7d9e-submarine_hull.json"
+hash-format = "sha512"
+hash = "32fd85c610b934248bb83e9a842b96157202c49257b09281ca9e9e4251a6993dcaad30148d4fefce63beea304026fe8d930d397a201f558b9e2893c70ea4a042"

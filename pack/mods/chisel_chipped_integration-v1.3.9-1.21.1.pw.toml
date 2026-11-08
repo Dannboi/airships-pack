@@ -1,0 +1,8 @@
+name = "chisel_chipped_integration-v1.3.9-1.21.1"
+filename = "chisel_chipped_integration-v1.3.9-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/8a7b23797c-chisel_chipped_integration-v1.3.9-1.21.1.jar"
+hash-format = "sha512"
+hash = "24bd8551ea4140c71e48fc604c58a35100f39ef0ffa0843c2f0cfb452bf5856c45edd99c8c0f31e53b2d638c2e187095af8bb404b2d179e5bbb0ae14e9021d0f"

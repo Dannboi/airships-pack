@@ -1,0 +1,13 @@
+name = "Awesome 3D Mace"
+filename = "mace3d-neoforge-1.21.X-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/HFk2Vqdv/versions/SF0P1NtE/mace3d-neoforge-1.21.X-1.1.0.jar"
+hash-format = "sha512"
+hash = "0e064df5f53cb3838b722670683b2c2bac7b486bd23e7588a91a087406f0c5ea9514a2a2c13feecb918a1abd89421b51e4196ee254b4152f3c9f3189e6cddabf"
+
+[update]
+[update.modrinth]
+mod-id = "HFk2Vqdv"
+version = "SF0P1NtE"

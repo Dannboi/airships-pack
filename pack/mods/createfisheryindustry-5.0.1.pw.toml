@@ -1,0 +1,8 @@
+name = "createfisheryindustry-5.0.1"
+filename = "createfisheryindustry-5.0.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/2a46fa91a0-createfisheryindustry-5.0.1.jar"
+hash-format = "sha512"
+hash = "f054f91820af787b1bf437f440ee571cf8a25d6d88d45b1800ae71a08aaff12c44363a039719fe0dbef8c0c644cb081a9d14afb1b7f3d09ed7142f1d42fd285e"

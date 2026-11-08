@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "militia:item/militia/minecraft/crossbow__m_item_crossbow_pulling_0",
+	"textures": {
+		"layer0": "militia:item/militia/minecraft/crossbow__m_item_crossbow_pulling_2__t_item_crossbow_pulling_2"
+	}
+}

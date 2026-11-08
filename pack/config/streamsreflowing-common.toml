@@ -1,0 +1,132 @@
+#Master switch for river WORLD GENERATION.
+#  true  = carve streams into newly generated chunks (normal mod behaviour).
+#  false = generate NO rivers and pay ZERO terrain-sampling cost. The water and boat
+#          tweaks under [preference] still apply to existing water, so you can keep just
+#          those without altering terrain at all.
+#Only affects chunks generated while enabled; already-generated chunks are left as-is.
+generateRivers = true
+
+#How FAST vs. how GOOD river generation is. These cost CPU at world-gen time only.
+#Each region's network is built once and saved to disk forever, so the cost is paid once
+#per area, not on every visit. If hitches bother you, pre-generate with a mod like Chunky.
+[performance]
+	#One dial that sets the four [advanced] knobs together. Higher = finer, more accurate
+	#rivers but a longer one-time build per region; lower = coarser rivers, near-instant.
+	#Choose by CPU strength and whether you pre-generate.
+	#
+	#  preset   | grid | plate | tSample | snap |  ~build / region (heavy Tectonic)
+	#  ---------+------+-------+---------+------+----------------------------------
+	#  POTATO   |  24  |  512  |   48    |  0   |  ~4s    smoothest while flying
+	#  LOW      |  20  |  768  |   40    |  8   |  ~12s   smooth while flying
+	#  MEDIUM   |  16  |  768  |   32    |  8   |  ~19s   default; brief hitch into new land
+	#  HIGH     |  12  | 1024  |   24    |  8   |  ~1min  pre-gen (Chunky) suggested
+	#  EXTREME  |   8  | 1536  |    0    |  4   |  ~20min pre-gen needed
+	#  MAX      |   6  | 2048  |    0    |  2   |  ~1hr   pre-gen mandatory; finest
+	#
+	#grid = sampling resolution (lower = finer), plate = region build size, tSample = host-
+	#height sample spacing (0 = full detail), snap = valley-snap radius. Times are rough,
+	#one-time per region, on heavy Tectonic terrain (vanilla is far cheaper) and are reduced
+	#by multi-core sampling + background prefetch.
+	#Allowed: POTATO, LOW, MEDIUM, HIGH, EXTREME, MAX.
+	#Allowed Values: POTATO, LOW, MEDIUM, HIGH, EXTREME, MAX
+	qualityPreset = "MEDIUM"
+	#EXPERIMENTAL second pass (default OFF). After the normal network is built, join a stream that
+	#peters out close to ANOTHER stream -- including one in a neighbouring region -- into it, so
+	#cross-region streams that just miss each other link up. Only ever routes DOWNHILL and forward
+	#(never toward higher water).
+	#MODERATE PERFORMANCE COST: to see across a border a region must also build its neighbours, so
+	#world-gen does noticeably more work near region edges. Streams reaching the SEA or a LAKE
+	#already connect without this (handled when the network is built), so leave it off unless you
+	#specifically want cross-region stream-to-stream joins.
+	#  true = on. false = off (default). Reloads live for newly generated chunks.
+	connectNearbyWater = false
+	#How far (blocks) a dead-end looks for another stream to join, when connectNearbyWater is on.
+	#  HIGHER = bridges bigger gaps (can look less natural / cut through small rises) and costs
+	#           more. LOWER = only joins streams that very nearly meet. -1 = auto (24).
+	# Default: -1
+	# Range: -1 ~ 96
+	connectRadius = -1
+
+	#Fine-grained overrides for the preset above. Leave every value at -1 (auto) to follow
+	#the chosen preset. Set any one to a real number to override JUST that knob; the rest keep
+	#following the preset.
+	[performance.advanced]
+		#Spacing (blocks) of the routing/sampling grid -- the master QUALITY dial.
+		#  LOWER  = finer grid: more detailed, more accurate river paths, but cost rises steeply
+		#           (~1/spacing^2, so 12 costs roughly 4x what 24 does).
+		#  HIGHER = coarser, blockier rivers but much faster.
+		#-1 = auto (follow preset).
+		# Default: -1
+		# Range: -1 ~ 64
+		gridSpacing = -1
+		#Size (blocks) of one region built in a single pass. This is build GRANULARITY, not
+		#quality -- total cost to cover the world is the same at any value.
+		#  LOWER  = smaller, more frequent builds (shorter individual hitches) BUT more region
+		#           borders, which can leave rare seam artifacts such as water perched above ground.
+		#  HIGHER = fewer borders = cleaner, larger continuous networks, at the cost of a bigger
+		#           one-time build when you first enter a new region.
+		#1024 is the proven artifact-free floor; go higher for the cleanest results.
+		#-1 = auto.
+		# Default: -1
+		# Range: -1 ~ 4096
+		plateScale = -1
+		#Sample the (expensive) host terrain height every N blocks, then interpolate onto the
+		#finer routing grid -- trades a little river accuracy for a big speedup. Only takes effect
+		#when set ABOVE gridSpacing; 0 = sample at full grid detail.
+		#  HIGHER = far fewer terrain lookups = much faster, slightly smoother/less precise valleys.
+		#  LOWER (toward 0) = maximum fidelity, slowest.
+		#-1 = auto.
+		# Default: -1
+		# Range: -1 ~ 256
+		terrainSampleSpacing = -1
+		#After coarse routing, nudge each river point sideways onto the true lowest terrain within
+		#N blocks, so rivers sit in the real valley floor even on a coarse grid -- recovers much of
+		#a fine grid's look cheaply.
+		#  HIGHER = stronger pull into valleys (cleaner beds), slight extra cost; too large can
+		#           over-straighten. 0 = off.
+		#-1 = auto.
+		# Default: -1
+		# Range: -1 ~ 64
+		valleySnapRadius = -1
+
+#Looks & feel. These shape how rivers and water behave; they do not meaningfully affect
+#generation speed.
+[preference]
+	#How MANY streams spawn.
+	#  HIGHER = more, smaller streams packed closer together.
+	#  LOWER  = fewer, larger rivers with bigger gaps between them.
+	#1.0 is the tuned default. Affects newly generated chunks.
+	# Default: 1.0
+	# Range: 0.05 ~ 20.0
+	streamFrequency = 1.0
+	#How WIDE rivers get for a given drainage area (half-width added per 2500 block^2 of
+	#upstream area).
+	#  HIGHER = broader rivers.
+	#  LOWER  = narrower, creek-like channels.
+	#The engine's max half-width still caps the main stem. Grid-independent (a given river is
+	#the same width at any preset). Affects newly generated chunks.
+	# Default: 1.0
+	# Range: 0.0 ~ 50.0
+	widthScale = 1.0
+	#Let water spread across SOURCE-water surfaces so streams flow continuously over their own
+	#pools instead of stalling at them -- smoother, more natural-looking flow.
+	#  true  = on (default).
+	#  false = fully vanilla water spreading.
+	#NOTE: affects ALL water in the world, not just this mod's streams. Reloads live.
+	spillOverWater = true
+	#When two or more flowing streams pour into the same spot (meeting at a right angle or
+	#wider, up to head-on) on the same level, fuse it into a source block, so converging water
+	#backs up and fills basins/low spots naturally instead of leaving a flickering wet mess.
+	#Self-limiting: ordinary flow has a single upstream inflow and a lone stream spreading out
+	#has none flowing back, so neither converts -- only a real collision does. It will NOT flood
+	#flat ground.
+	#EXPERIMENTAL (default OFF): tick-based, affects ALL flowing water (not just this mod's),
+	#and may add some lag in very wet areas. true = on. false = off (default). Reloads live.
+	convergeSpills = false
+	#Let boats float on flowing stream water instead of sinking when spilled water tops them;
+	#the current still pushes you downstream, so you can ride and paddle against it. SOURCE
+	#water can still sink a boat (genuine submersion).
+	#  true  = on (default).
+	#  false = vanilla boat behaviour.
+	#NOTE: affects all flowing water, not just this mod's streams. Reloads live.
+	boatsFloatOnFlowingWater = true

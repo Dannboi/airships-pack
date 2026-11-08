@@ -1,0 +1,8 @@
+name = "smithingreborn-0.7.0"
+filename = "smithingreborn-0.7.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/af88a4cf12-smithingreborn-0.7.0.jar"
+hash-format = "sha512"
+hash = "63940c32751c0bfcd1b453045c7f38e758050551f549680a266268fbf96be3e3e521bca32bad22d488b25e51bcd528c0d0317b6d5efee555e611973056f0ff90"

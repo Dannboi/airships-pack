@@ -1,0 +1,8 @@
+name = "towntalk-1.2.0"
+filename = "towntalk-1.2.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/6866d89893-towntalk-1.2.0.jar"
+hash-format = "sha512"
+hash = "2414089d190045fea8ee80779a33f569827195ebbba41df712fa2feb7226f9d23b3b9be79d74515dd4207d8ac8d6549ccb22c2f9ea6ac6780da79cf7c4eb741d"

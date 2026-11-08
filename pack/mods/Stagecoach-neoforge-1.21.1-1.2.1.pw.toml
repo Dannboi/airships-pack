@@ -1,0 +1,8 @@
+name = "Stagecoach-neoforge-1.21.1-1.2.1"
+filename = "Stagecoach-neoforge-1.21.1-1.2.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/8ba1d9f218-Stagecoach-neoforge-1.21.1-1.2.1.jar"
+hash-format = "sha512"
+hash = "0636512f2a7b28828a9df39cf925c8204d14623dd3cd53a23ba6df50e3c34d7e33f4905dfb90888d0fdbcf60999c47daed6e9116a74f87f6b623dd428c482fd8"

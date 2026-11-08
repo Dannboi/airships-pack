@@ -1,0 +1,5 @@
+# If rivers which have been tunnelled through mountains, by other mods, flow.
+# This is for the rivers of 'Tectonic' (where they are enabled, in the config of it), and of 'Underground Rivers'.
+# Any other still water in the same places, that is near to sea level, such as a flooded cave, also flows.
+# Changes take effect as chunks are next loaded.
+undergroundRivers = true

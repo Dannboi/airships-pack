@@ -1,0 +1,8 @@
+name = "coroutil-neoforge-1.21.0-1.3.9"
+filename = "coroutil-neoforge-1.21.0-1.3.9.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/0f5a6309ce-coroutil-neoforge-1.21.0-1.3.9.jar"
+hash-format = "sha512"
+hash = "302ef8483df9af7547613be9f0b82606b7d2a42ea8b94c18dc1ed8ca040ba91f761ca0b195d2db8ac0972de30dbe2294508c47efc0d1a8f1805dd36402b5bb38"

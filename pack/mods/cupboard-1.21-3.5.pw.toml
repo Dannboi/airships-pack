@@ -1,0 +1,8 @@
+name = "cupboard-1.21-3.5"
+filename = "cupboard-1.21-3.5.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/e5f55c8f9d-cupboard-1.21-3.5.jar"
+hash-format = "sha512"
+hash = "63a7a4caa08a12163a029dea05617169b32fb3ffff2be72cffe3f1c669a444525d117cd91763036285e560bd26c4fd277cb0c1dfc6f66c9235086c4c4c548bc5"

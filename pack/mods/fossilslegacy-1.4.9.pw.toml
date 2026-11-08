@@ -1,0 +1,13 @@
+name = "Fossils and Archaeology: Legacy"
+filename = "fossilslegacy-1.4.9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9xKH7jxP/versions/jcRmPslt/fossilslegacy-1.4.9.jar"
+hash-format = "sha512"
+hash = "4f1ca4849d654e5b8e49d6865a549994bfc1796bf3346a61db5a0f621d40d2e5970d5c0495f4e54031aa4c90f2da3769fd14131059a091f1433485cd1e5441ed"
+
+[update]
+[update.modrinth]
+mod-id = "9xKH7jxP"
+version = "jcRmPslt"

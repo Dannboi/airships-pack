@@ -1,0 +1,61 @@
+[position]
+	#Horizontal offset for the linear lever UI.
+	# Default: 0
+	# Range: -400 ~ 400
+	linear_offset_x = 0
+	#Vertical offset for the linear lever UI.
+	# Default: 0
+	# Range: -400 ~ 400
+	linear_offset_y = 0
+	#Horizontal offset for the circular crank UI.
+	# Default: 0
+	# Range: -400 ~ 400
+	circular_offset_x = 0
+	#Vertical offset for the circular crank UI.
+	# Default: 0
+	# Range: -400 ~ 400
+	circular_offset_y = 0
+	#Scale for the drag interface overlay. 0.85 is the original size.
+	# Default: 0.85
+	# Range: 0.1 ~ 10.0
+	interface_scale = 0.85
+	#Scale for the circular crank interface overlay. 0.85 is the normal size.
+	# Default: 0.85
+	# Range: 0.1 ~ 10.0
+	circular_interface_scale = 0.85
+
+[interface]
+	#If enabled, wall-mounted linear levers use inverted vertical UI: signal 0 at top and 15 at bottom. Disable to keep one direction everywhere.
+	orientation_aware_linear_ui = true
+	#If enabled, using a Create wrench to invert a lever also flips the linear drag interface. Wall-mounted inversion remains a separate setting.
+	wrench_inverts_interface = true
+	#If enabled, Create and DnDecor linear levers use the texture-packable throttle-style overlay instead of the classic ALD slider.
+	throttle_style_linear_ui = false
+	#UI smoothing for the linear/throttle interface. 0.15 matches the quick Aeronautics-style catch-up; 0.00 snaps instantly; higher values are slower.
+	# Default: 0.15
+	# Range: 0.0 ~ 0.8
+	ui_smoothing = 0.15
+	#Deprecated/internal compatibility flag. Wrench inversion now always preserves the in-world handle position for Create and DnDecor levers; this value is ignored by gameplay code.
+	wrench_preserves_handle_position = true
+	#If enabled, the drag interface overlay is shown. Disable to keep drag control active but hide all drag HUD/interface visuals.
+	show_interface = true
+	#If enabled, click a supported lever once to open the drag interface and click Use again to close it. Disable for the classic hold-to-drag behavior.
+	toggle_interaction = false
+	#If enabled, the outer rectangular overlay panel is drawn around the lever UI. Disable to show only the lever element itself.
+	show_interface_panel = true
+	#If enabled, discrete step markers are drawn on the linear lever UI.
+	show_step_markers = true
+
+[controls]
+	#If enabled, the drag interface changes signal with the mouse wheel instead of mouse movement while Use is held.
+	use_mouse_wheel_control = false
+
+[sensitivity]
+	#Sensitivity for Create and DnDecor linear levers.
+	# Default: 0.65
+	# Range: 0.01 ~ 10.0
+	linear_sensitivity = 0.65
+	#Sensitivity for the Supplementaries circular crank.
+	# Default: 0.6
+	# Range: 0.01 ~ 10.0
+	circular_sensitivity = 0.6

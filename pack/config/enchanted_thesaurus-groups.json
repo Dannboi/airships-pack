@@ -1,0 +1,71 @@
+{
+  "_comment": "Two group kinds exist. MERGE: one canonical enchantment absorbs the removed members — it\u0027s broadened to their item types, level-capped per item, and inherits their vanilla conflicts. SUPPRESS: multiple keepers coexist, each on its own item types; removed members on an item get rewritten to whichever keeper accepts it (or stripped if none do). Optional \u0027description\u0027 text shows in item tooltips; use \u0027keeperDescriptions\u0027 to override per-keeper for SUPPRESS groups. Keys starting with _ are examples for reference and are ignored by the loader.",
+  "_example_merge": {
+    "kind": "merge",
+    "canonical": "minecraft:fortune",
+    "removed": [
+      "minecraft:looting",
+      "minecraft:luck_of_the_sea"
+    ],
+    "description": "Extended: also applies to swords (looting) and fishing rods (luck)."
+  },
+  "_example_suppress": {
+    "kind": "suppress",
+    "keepers": [
+      "examplemod:sword_poison",
+      "examplemod:bow_poison"
+    ],
+    "removed": [
+      "othermod:deadly_venom",
+      "othermod:toxic_edge"
+    ],
+    "keeperDescriptions": {
+      "examplemod:sword_poison": "Poisons melee targets on hit.",
+      "examplemod:bow_poison": "Poisons targets struck by arrows."
+    }
+  },
+  "groups": [
+    {
+      "kind": "merge",
+      "canonical": "minecraft:fortune",
+      "removed": [
+        "minecraft:looting",
+        "minecraft:luck_of_the_sea"
+      ],
+      "description": "Applies as Looting on swords and Luck of the Sea on fishing rods."
+    },
+    {
+      "kind": "merge",
+      "canonical": "minecraft:flame",
+      "removed": [
+        "minecraft:fire_aspect"
+      ],
+      "description": "Applies as Fire Aspect on melee weapons — attacks set targets on fire."
+    },
+    {
+      "kind": "merge",
+      "canonical": "minecraft:knockback",
+      "removed": [
+        "minecraft:punch"
+      ],
+      "description": "Applies as Punch on bows — arrows knock targets back farther."
+    },
+    {
+      "kind": "merge",
+      "canonical": "minecraft:power",
+      "removed": [
+        "minecraft:sharpness",
+        "minecraft:impaling"
+      ],
+      "description": "Applies as Sharpness on melee weapons and Impaling on tridents."
+    },
+    {
+      "kind": "merge",
+      "canonical": "minecraft:efficiency",
+      "removed": [
+        "minecraft:lure"
+      ],
+      "description": "Applies as Lure on fishing rods — shortens wait time between bites."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/shears__t_item_shears"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.85
+            },
+            "model": "grim:item/base/minecraft/shears__m_item_shears_1"
+        }
+    ]
+}

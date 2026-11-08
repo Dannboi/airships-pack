@@ -1,0 +1,1 @@
+{ "parent": "minecraft:item/generated", "textures": { "layer0": "militia:item/militia/minecraft/leather_helmet", "layer1": "militia:item/militia/minecraft/leather_helmet_overlay" } }

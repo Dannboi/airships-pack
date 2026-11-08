@@ -1,0 +1,67 @@
+[flyover]
+	#Maximum lifetime of a flyover in ticks before it despawns (20 ticks = 1 second)
+	# Default: 6000
+	# Range: > 1
+	maxLifetimeTicks = 6000
+	#Base cooldown between flyover spawns per macro chunk (20 ticks = 1 second)
+	# Default: 12000
+	# Range: > 1
+	baseCooldownTicks = 36000
+	#Length in blocks of each macro chunk.
+	# Default: 128
+	# Range: 16 ~ 512
+	macroChunkSize = 128
+	#Extra distance in blocks beyond render distance at which a flyover is force-despawned. Set to 0 to despawn exactly at render distance edge.
+	# Default: 64
+	# Range: 0 ~ 1024
+	maxUnloadDistance = 64
+	#When enabled, flyovers try to avoid spawning position where a block wall exists between the spawn point and the player. May introduce a minor performance overhead
+	obstacleCheck = false
+
+	[flyover.promotion]
+		#When enabled, if the player approaches a flyover fragment it will not despawn (NOTE: with large amounts of fragments this may cause a performance overhead).
+		enabled = false
+		#Range in blocks from the fragment at which promotion triggers.
+		# Default: 10.0
+		# Range: 1.0 ~ 128.0
+		range = 10.0
+
+[impact]
+	#Minimum impact velocity (m/s) along the contact normal to fire a SubLevelImpactEvent. Set to 0 to fire on every collision.
+	# Default: 5.0
+	# Range: 0.0 ~ 1000.0
+	strengthThreshold = 5.0
+
+	[impact.explosion]
+		#Whether explosive pins destroy blocks on detonation.
+		blocks = true
+		#Whether explosions can create fire
+		fire = false
+		#Explosion mode: OPTIMIZED (no raycasting) or VANILLA (more accurate, can be very slow on sublevels).
+		#Allowed Values: OPTIMIZED, VANILLA
+		strategy = "OPTIMIZED"
+
+[trader]
+	#How long the SoaringTrader stays angry (prices doubled) after a crash or being hit, in ticks (20 ticks = 1 second).
+	# Default: 12000
+	# Range: > 1
+	angerDurationTicks = 12000
+	#When enabled, the SoaringTrader will always offer a structure map as long as any structure type exists within search range. When disabled, it picks one random structure type and only offers a map if that specific type is found.
+	guaranteedMap = false
+	#Enable or disable map trades for specific structures.
+	#Entries are structure registry names (e.g. "minecraft:woodland_mansion").
+	#Add entries to enable, remove entries to disable.
+	#Add modded structures as new entries (e.g. "modid:structure_id").
+	structureMaps = ["minecraft:jungle_pyramid", "minecraft:desert_pyramid", "minecraft:trail_ruins", "minecraft:igloo", "minecraft:ancient_city", "minecraft:mineshaft", "minecraft:trial_chambers", "precursory:precursor_temple", "precursory:precursor_ruin", "precursory:precursor_screw", "precursory:sage_hut", "precursory:flut_flut_nest", "precursory:blue_eco_vent", "precursory:red_eco_vent", "precursory:green_eco_vent", "precursory:yellow_eco_vent", "precursory:dark_eco_vent", "walledcities:surface_city", "walledcities:cave_city"]
+
+[general]
+	#If enabled, all sublevels including the ones NOT created by this mod will be processed for internal physics detection.
+	# This makes event triggers such as 'External Force' pins work regardless of the sublevel internal data.  
+	# Useful while building using Pins.
+	processAll = false
+
+[bridge]
+	#When enabled, bridge planks orientation is always horizontal
+	levelPlanks = true
+	#When enabled, players can add planks to ropes by right-clicking on rope anchors with slabs
+	allowPlankPlacement = true

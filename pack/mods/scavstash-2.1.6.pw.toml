@@ -1,0 +1,8 @@
+name = "scavstash-2.1.6"
+filename = "scavstash-2.1.6.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/0937451c0d-scavstash-2.1.6.jar"
+hash-format = "sha512"
+hash = "364750b11e2f451c2ce471a04f4e5d9523d12bb845219c39cc13ab8a5f050398b2ed55af448eb8e871c73198d4f3fe7461598b1309440e6801fdbc7a95258a76"

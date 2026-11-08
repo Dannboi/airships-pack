@@ -1,0 +1,81 @@
+[Master]
+	#Master switch for the grid inventory. false = fully vanilla: every item is 1x1,
+	#no footprints, borders, rotation, hotbar bindings, container grids or overlap
+	#guard. Item data (shapes, orientation, bindings) is kept, so turning it back on
+	#restores everything. The rummaging feature has its own switch in rummage-server.toml.
+	gridInventory = true
+
+[Setting]
+	#Enabled menu.
+	whitelist = []
+	#Whether inventory will be effort.
+	enableInventory = true
+	#Let players re-pack a grid with the Tidy key/button (biggest items first, stacks
+	#merged). Set false to keep packing fully manual - the Tarkov purist option.
+	tidy = true
+
+["Hotbar Bindings"]
+	#Tarkov-style hotbar: the 9 hotbar keys become quick-draw BINDINGS that reference
+	#stacks living in the grid inventory. The physical hotbar row becomes ordinary grid
+	#storage (no more free 1x1 slots). Set false for fully vanilla hotbar behavior.
+	bindingsEnabled = true
+	#Apply hotbar bindings in creative mode too (default: creative stays vanilla).
+	bindingsInCreative = false
+	#Picking up any item type auto-assigns it to the first empty hotbar binding, unless
+	#that type is already bound. Fresh characters get their first tool on a key without
+	#opening the inventory. Exempt items with #petiteinventory:no_auto_bind (empty by
+	#default; editable in-game via /skogg tables).
+	autoBindOnPickup = true
+	#After a death, freed hotbar keys remember their item type for this long and take it
+	#back as it is recovered (never evicting a newer binding). Default 300 s = vanilla's
+	#item despawn timer. Raise it with a corpse mod, where drops do not despawn.
+	# Default: 300
+	# Range: 0 ~ 86400
+	deathBindingMemorySeconds = 300
+
+["Container Grids"]
+	#Whether chests, barrels and modded storage GUIs use multi-cell item footprints
+	#like the player inventory does.
+	#  AUTO - only containers whose slots form a plain rectangular lattice (a full
+	#         rectangle on a uniform 18px pitch, one backing container). That covers
+	#         chests/barrels/shulkers/dispensers and simple modded storage, while
+	#         leaving furnaces, anvils, brewing stands and machine GUIs vanilla.
+	#  ALL  - every container menu. Will misplace items in bespoke machine GUIs.
+	#  OFF  - containers stay vanilla; only the player inventory uses footprints.
+	#Storage with no GUI at all (Storage Drawers' block face, pipes, AE2/RS network
+	#transfers) never routes through a menu and is unaffected by this setting.
+	#Allowed Values: AUTO, ALL, OFF
+	containerGridMode = "AUTO"
+	#Menu class names always treated as a grid, overriding AUTO detection.
+	#Example: "com.example.mod.FootlockerMenu"
+	containerAllowlist = []
+	#Menu class names never treated as a grid. Checked before the allowlist.
+	#CrafterMenu is listed as a safety net for containerGridMode = ALL; under AUTO
+	#it is already rejected, because its result slot lives in a second container.
+	containerDenylist = ["net.minecraft.world.inventory.CrafterMenu"]
+
+[Safety]
+	#Overlap guard: continuously enforces that no two stacks ever occupy the same grid
+	#cells, whatever put them there (hoppers, loot generation, magnets, other mods,
+	#commands, shape rules changing size). Checks the player grid every tick it changed,
+	#refuses hopper/item-handler inserts that would not fit, re-packs loot chests when
+	#generated, and re-legalises containers on open. Displaced stacks are moved, else
+	#dropped at the player (never deleted). Kill switch only - leave on unless debugging.
+	gridGuard = true
+	#Log every guard repair (what moved where) at WARN level.
+	gridGuardLog = true
+
+[Appearance]
+	#Multi-cell items get a border in their own sprite's dominant colour (per item,
+	#sampled from the texture, follows resource packs). Explicit border themes
+	#assigned in edit mode still win. false = plain white borders as before.
+	spriteColoredBorders = true
+	#Add a "Footprint: 2x3" line to multi-cell items' tooltips.
+	footprintTooltips = true
+	#Send a short chat guide (rotation, hotbar bindings, searching) the first time a
+	#player joins. Players can replay it with /scavstash hints.
+	firstJoinHints = true
+	#Show the small "tidy" button above each grid (the Tidy key works either way).
+	tidyButton = true
+	#Show the free-cells readout ("14/36") above each grid.
+	cellCounter = true

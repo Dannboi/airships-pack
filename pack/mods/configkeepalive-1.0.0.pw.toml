@@ -1,0 +1,8 @@
+name = "configkeepalive-1.0.0"
+filename = "configkeepalive-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/ec1a6bca6a-configkeepalive-1.0.0.jar"
+hash-format = "sha512"
+hash = "4cd1b8ce29a2c923a39d52be6e2169090c7312c87234a9e7c06ce954df55bb7d8b637601ba6f3b1a109e39d3aab2ffbbe93032687ad60fce1daf886c72ecedca"

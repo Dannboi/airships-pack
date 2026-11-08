@@ -1,0 +1,13 @@
+name = "Create : Walking steel"
+filename = "create_walking_steel-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YDfSQUPe/versions/QcrDonC0/create_walking_steel-1.0.0.jar"
+hash-format = "sha512"
+hash = "1b702d926f51b4394cdcbe7a740bceee69b4f17a268f5b4b139049746d3dc0910fc2342857650dc9a32b67db2c8fdc32324047bc8261914e21eda469c740c6c2"
+
+[update]
+[update.modrinth]
+mod-id = "YDfSQUPe"
+version = "QcrDonC0"

@@ -1,0 +1,8 @@
+name = "kubejs-neoforge-2101.7.2-build.348"
+filename = "kubejs-neoforge-2101.7.2-build.348.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/75f96b2e41-kubejs-neoforge-2101.7.2-build.348.jar"
+hash-format = "sha512"
+hash = "792c8c97f9dc3d083ae24566c00c1d4f32bfcdc8474ef6cffffe8d307c800425baf63e6261d0c44b4fff64f7e5724c43d3360337f60525568af54c86412b8f4f"

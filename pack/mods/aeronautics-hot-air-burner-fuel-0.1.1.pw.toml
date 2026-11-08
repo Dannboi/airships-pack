@@ -1,0 +1,13 @@
+name = "Aeronautics Hot Air Burner Fuel"
+filename = "aeronautics-hot-air-burner-fuel-0.1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/hIa1n8SY/versions/30ZhrtMW/aeronautics-hot-air-burner-fuel-0.1.1.jar"
+hash-format = "sha512"
+hash = "c484031cd3e53c3277c17d61ddfaedf1e829732a5da305aa57b80fa7d806795190187cdf35f9cf0d6f905142cc78ef28ddda0ac9f3694da9c0d827f512f39902"
+
+[update]
+[update.modrinth]
+mod-id = "hIa1n8SY"
+version = "30ZhrtMW"

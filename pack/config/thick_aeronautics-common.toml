@@ -1,0 +1,30 @@
+#MANUAL FALLBACK (autoThresholds = false only): altitude-rated gear protects at or above this Y level.
+# Default: 128
+# Range: -64 ~ 512
+minAltitude = 200
+#Minimum rotation speed (RPM, absolute) for the Air Pump to produce breathable air.
+# Default: 16.0
+# Range: 0.0 ~ 256.0
+pumpMinSpeed = 16.0
+#Stress impact of the Air Pump (multiplied by RPM, like other Create machines).
+# Default: 4.0
+# Range: 0.0 ~ 256.0
+pumpStressImpact = 4.0
+#MANUAL FALLBACK (autoThresholds = false only): depth-rated gear protects at or below this Y level.
+# Default: 0
+# Range: -64 ~ 320
+depthMaxY = 0
+#Air per second a running Air Pump adds to copper backtanks worn by players inside its bubble.
+#0 disables backtank refilling. (A plain backtank holds 900 air.)
+# Default: 10
+# Range: 0 ~ 900
+backtankRefillPerSecond = 10
+#Radius (blocks) of the Air Pump's breathable-air bubble.
+#Pump-specific — independent of Thick Air's shared air-provider radii.
+# Default: 16.0
+# Range: 1.0 ~ 48.0
+pumpRadius = 16.0
+#Derive the altitude/depth gear thresholds from Thick Air's dimension band config
+#automatically (per dimension) — Thick Air stays the single source of truth.
+#When false, the manual minAltitude/depthMaxY values below are used instead.
+autoThresholds = true

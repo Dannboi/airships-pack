@@ -1,0 +1,8 @@
+name = "walledcities-5.1.0"
+filename = "walledcities-5.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/07fa6c71bb-walledcities-5.1.0.jar"
+hash-format = "sha512"
+hash = "1d2bd8199c66923df579cd1c708cb14f84e3eb834a0756c8e90ab0b9a51fb140985770653776d618a8a333cb6aeaedd31619cafb0bfdaac9fa2b0d36eae4f9b4"

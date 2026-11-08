@@ -1,0 +1,13 @@
+name = "World of Wonders Reforged"
+filename = "world_of_wonders_reforged NeoForge 1.21.1 -12.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/VsSknDgZ/versions/mzuMHgtm/world_of_wonders_reforged%20NeoForge%201.21.1%20-12.0.0.jar"
+hash-format = "sha512"
+hash = "ed817f21837cb1ea4ebe4cec5edca802898c894f51ac9aff7997950740073829741c4fd9f4d8d75c2abdf1faf27fa217c67e8a06fcfc8e651153ffc1b4c8a918"
+
+[update]
+[update.modrinth]
+mod-id = "VsSknDgZ"
+version = "mzuMHgtm"

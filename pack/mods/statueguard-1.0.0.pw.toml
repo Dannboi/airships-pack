@@ -1,0 +1,8 @@
+name = "statueguard-1.0.0"
+filename = "statueguard-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/7d02d438b7-statueguard-1.0.0.jar"
+hash-format = "sha512"
+hash = "063c87c04a8bb9d489c29f6c80549a7f3b901f6f5723f1439b46bd3d1895c6ff07ebc249877e18432203e7b3d610d480e6df5bdee94aeea948f76c391892ab3c"

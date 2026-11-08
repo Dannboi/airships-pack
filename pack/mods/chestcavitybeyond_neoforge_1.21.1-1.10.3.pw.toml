@@ -1,0 +1,8 @@
+name = "chestcavitybeyond_neoforge_1.21.1-1.10.3"
+filename = "chestcavitybeyond_neoforge_1.21.1-1.10.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/d945a0ee15-chestcavitybeyond_neoforge_1.21.1-1.10.3.jar"
+hash-format = "sha512"
+hash = "06f63b434d0f377e8705349a82e20464cd76e55e2c4fdd8f8520a08ced5a49e4588e1d24bb94a661f32bfa74a4e15f8b8db436a40506bd9bc8398bfbb1ab83ac"

@@ -1,0 +1,265 @@
+[worldgen]
+	#Rarity of floating-island clusters at Y 200-300.
+	#Internally, the world is partitioned into 24-chunk cells and
+	#each cell rolls a 1-in-(rarity/576) chance of hosting a cluster
+	#(1-3 islands grouped together). Cells without a cluster are
+	#empty space; the geometric guarantee is that any two clusters
+	#are at least ~20 chunks apart on at least one axis.
+	#
+	#Higher = rarer:
+	#  576   -> every cell has a cluster (~24 chunks between)
+	#  2000  -> ~1 in 4 cells (~48 chunks average)
+	#  4000  -> ~1 in 7 cells (~64 chunks average)
+	#  10000 -> ~1 in 17 cells (~100 chunks average)
+	#Set to 0 to disable floating islands entirely.
+	#Default: 10000
+	# Default: 10000
+	# Range: 0 ~ 100000
+	floatingIslandRarity = 10000
+	#Percent chance (0..100) that a generated floating-island
+	#cluster also spawns a Turtledove companion drifting above it.
+	#0 disables the per-cluster spawn entirely; turtledoves can
+	#still spawn via normal MobCategory.CREATURE biome spawns.
+	#Default: 25
+	# Default: 25
+	# Range: 0 ~ 100
+	turtledoveIslandSpawnChance = 25
+	#Rarity of Raw Suspendium Crystal cave pillars in mountain biomes.
+	#Each cluster attempt has a 1-in-N chance of proceeding. Higher = rarer.
+	#Set to 0 to disable crystal pillars entirely.
+	#Default: 4
+	# Default: 4
+	# Range: 0 ~ 100000
+	crystalPillarRarity = 4
+	#Minimum Y level at which crystal pillars may generate.
+	#Pillar attempts whose origin lands below this Y are skipped.
+	#Default: 80 (mountain elevations only). Lower to -56 to allow
+	#deep caves under mountain biomes, or raise further to restrict
+	#to only the highest alpine caves.
+	# Default: 80
+	# Range: -64 ~ 320
+	crystalPillarMinY = 80
+	#Percent chance (0..100) that a generated floating-island
+	#cluster also has a Turtledove Egg block placed atop the
+	#main island. Worldgen-placed eggs do NOT hatch on their
+	#own — the player must mine the egg, carry it to a high
+	#altitude (Y >= 200, sky access), and re-place it by hand
+	#before the hatch ticks start.
+	#0 disables eggs from generating entirely.
+	#Default: 8 (~1 in 12 clusters)
+	# Default: 8
+	# Range: 0 ~ 100
+	turtledoveEggIslandSpawnChance = 8
+	#When true, floating islands spawn as Sable physics SubLevels
+	#(independent rigid bodies that can drift, collide, and be
+	#shoved by airships) instead of being baked into vanilla
+	#terrain. Uses the same per-cell placement grid and rarity as
+	#the static islands, so worlds feel similar either way.
+	#When false, falls back to the original static FloatingIsland
+	#worldgen feature.
+	#Default: true
+	physicsIslandsEnabled = true
+	#Minimum Y level at which physics-based floating islands spawn.
+	#Acts as a floor: the actual spawn Y is
+	#  max(physicsIslandY, terrainTop + physicsIslandMinClearance)
+	#so islands stay above terrain even with mods that raise mountain
+	#heights past the vanilla build limit. Since islands are physics
+	#SubLevels (not real blocks), spawning above the build limit is
+	#fine — they exist in their own plot coordinate space.
+	#The island is then free to fall/rise under physics, so this
+	#is just the initial drop height. Only meaningful when
+	#physicsIslandsEnabled = true.
+	#Default: 240
+	# Default: 240
+	# Range: 0 ~ 2048
+	physicsIslandY = 240
+	#Minimum vertical clearance (blocks) between the local terrain
+	#top and a freshly-spawned physics island. Combined with
+	#physicsIslandY as a floor — see that option for the formula.
+	#Raise this if islands are spawning embedded in mountains from
+	#terrain-amplification mods.
+	#Default: 40
+	# Default: 40
+	# Range: 0 ~ 512
+	physicsIslandMinClearance = 40
+
+[lift]
+	#Lift strength of a Suspendium Balloon block in a Sable contraption.
+	#Higher = the balloon supports more weight per block. The value is
+	#applied to Sable's floating_material entry on datapack reload.
+	#Default: 5
+	# Default: 5
+	# Range: 0 ~ 100
+	balloonLiftStrength = 5
+	#Lift strength of a SkyShell block in a Sable contraption.
+	#SkyShell is primarily an armor plate so its lift defaults lower
+	#than the balloon — enough to keep a plated ship from sinking
+	#under its own weight but not to single-handedly fly it.
+	#Default: 3
+	# Default: 3
+	# Range: 0 ~ 100
+	skyShellLiftStrength = 3
+	#Per-block maintain-altitude lift for a Suspendium Island Core.
+	#Cores are now distributed (~10% of stone blocks per island,
+	#matching Awakened Islands' 12% Levitite density) rather than
+	#placed as a single center block, because a single lift point
+	#lets the island rotate under mass imbalance. Total lift is
+	#roughly N cores × this value, so the default is much lower
+	#than when one block did all the work.
+	#Raise if islands sag toward the ground; lower if they drift
+	#upward over time.
+	#Default: 30
+	# Default: 30
+	# Range: 0 ~ 100000
+	islandCoreLiftStrength = 30
+	#Maintain-altitude lift contributed by every Suspendium Ore
+	#(and its deepslate variant) within a Sable sublevel. Uses the
+	#same prevent_self_lift=true Levitite recipe as the Island
+	#Core, just at a lower per-block strength — there are ~15-20
+	#ore blocks scattered through every island, so this distributes
+	#the altitude-keeping work across them and makes islands feel
+	#less leaden for the single core block to hold alone.
+	#Set to 0 to make the ore physically inert (pure rock weight).
+	#Default: 3
+	# Default: 3
+	# Range: 0 ~ 1000
+	suspendiumOreLiftStrength = 3
+	#Lift strength of a Pressurized Suspendium Tank block in a Sable
+	#contraption — the tank's full, untrimmed value. Redstone trim
+	#scales this down: each signal level sheds 1/15th of the lift and
+	#a full-strength signal (15) makes the tank inert. Applied to
+	#Sable's floating_material entry on datapack reload.
+	#Default: 8
+	# Default: 8
+	# Range: 0 ~ 100
+	tankLiftStrength = 8
+	#Whether Create/CA sail blocks get the sailcloth floating
+	#material (a touch of lift plus cloth-like air friction) on
+	#Sable crafts. This is a passive physics property of the sail
+	#BLOCKS themselves — it is unrelated to sail-sifting dust,
+	#which never affects weight or lift. Because it changes the
+	#lift/drag balance of any craft that carries sails, it ships
+	#OFF; enable it if you want sails to behave like buoyant
+	#cloth instead of inert decoration. Applied on datapack
+	#reload (/reload or world re-entry).
+	#Default: false
+	sailclothBuoyancy = false
+
+[volatility]
+	#Whether Suspendium Balloons explode when ignited or caught in
+	#another explosion. When true, a balloon catching fire spawns a
+	#short-fuse primed-suspendium entity that detonates and chains
+	#to nearby balloons. When false, balloons still BURN (they're
+	#highly flammable regardless) but burn away cleanly without
+	#blast damage — recommended if you don't want your airships
+	#going up in a chain of fire and shrapnel.
+	#Default: true
+	balloonExplosive = true
+	#Whether rifle shots can break/place blocks in the world.
+	#Currently gates:
+	#  - Suspendium-Charged Rifle's impact explosion breaking
+	#    blocks at the hit point (still pops balloons / shatters
+	#    glass etc. for an anti-ship effect).
+	#  - Flame-enchanted rifles placing a fire block at the
+	#    impact location (and the suspendium explosion becoming
+	#    incendiary, spreading fires in its small blast radius).
+	#When false, every fire/destruction effect is suppressed; the
+	#shot still does its visual + entity damage. Set false on
+	#multiplayer servers where you don't want airship warfare to
+	#leave craters and forest fires.
+	#Default: true
+	rifleGriefing = true
+
+[weapons]
+	#Base damage of a Shipboard Rifle bullet, in half-hearts
+	#(10 = 5 hearts = a full unarmored player). Enchantments
+	#modify on top of this: Power adds +50% per level (Power I
+	#= 1.5×, Power V = 3.5×). Damage is read live, so editing
+	#this in-game and reloading the config takes effect on the
+	#next shot — no restart needed.
+	#Default: 15 (~7.5 hearts, two-shots an unarmored player)
+	# Default: 15
+	# Range: 0 ~ 200
+	shipboardRifleDamage = 15
+	#Base damage of a Suspendium-Charged Rifle hitscan ray.
+	#Same units and Power scaling as the Shipboard above. The
+	#Suspendium variant defaults to roughly 2× the Shipboard's
+	#damage as its premium tier and is hitscan (no projectile
+	#travel time).
+	#Default: 30 (one-shots unarmored, two-shots iron-armored)
+	# Default: 30
+	# Range: 0 ~ 200
+	suspendiumRifleDamage = 30
+
+[dragoon]
+	#Minimum Y level at which a worn Skysteel Dragoon Aeroplate
+	#passively recharges its suspendium buffer. Matches the
+	#turtledove-egg hatch altitude by default — the same thin
+	#air where suspendium motes drift free. Requires open sky
+	#above the wearer (intakes can't sip through a roof).
+	#Default: 200
+	# Default: 200
+	# Range: 0 ~ 2048
+	aeroplateRechargeAltitude = 200
+	#Seconds per 1 dust of passive Aeroplate recharge while above
+	#the recharge altitude with sky access. Deliberately slower
+	#than hover drain (1 dust/second), so flying still costs —
+	#loitering on a sky island or airship deck is what refills
+	#you. Set 0 to disable ambient recharge entirely.
+	#Default: 10
+	# Default: 10
+	# Range: 0 ~ 3600
+	aeroplateRechargeSeconds = 10
+
+[sifting]
+	#Minimum WORLD Y a Sable craft must reach for its Create
+	#sails to start catching drifting suspendium dust. Kept a
+	#full hundred blocks above the Y-200 mote band (Aeroplate
+	#recharge / turtledove hatching) so sail-sifting demands a
+	#genuine high-altitude expedition, not an easy farm.
+	#Default: 300
+	# Default: 300
+	# Range: 0 ~ 2048
+	sailSiftAltitude = 300
+	#Average seconds between one sail catching dust while a
+	#craft holds above sailSiftAltitude. Dusted sails keep
+	#their dust until brushed (harvest anywhere, later).
+	#Set 0 to disable sail-sifting entirely.
+	#Default: 45
+	# Default: 45
+	# Range: 0 ~ 3600
+	sailSiftMeanSeconds = 45
+	#Maximum simultaneously dusted sails per craft. Once at
+	#the cap, catching pauses until someone brushes a sail.
+	#Default: 6
+	# Default: 6
+	# Range: 1 ~ 64
+	sailSiftMaxDusted = 6
+
+[cbc]
+	#Seconds a Sable craft's lift stays suppressed after a
+	#Suspendium Shell bursts against it (Create: Big Cannons
+	#integration — the shell only exists when CBC is installed).
+	#The struck craft takes continuous downforce and settles out
+	#of the sky; it recovers when the effect expires. 0 disables
+	#the suppression payload (the shell still explodes).
+	#Default: 8
+	# Default: 8
+	# Range: 0 ~ 300
+	shellSuppressionSeconds = 8
+	#Downward velocity in blocks/SECOND (Rapier units) added to
+	#a suppressed craft every tick — effectively strength*20
+	#blocks/s^2 of continuous downward acceleration. Static lift
+	#cannot counter a velocity injection; the craft's drag sets
+	#the terminal sink rate. Default 0.06 ~= 1.2 blocks/s^2
+	#(about 11% of Sable gravity): a firm, survivable shove.
+	#Default: 0.06
+	# Default: 0.06
+	# Range: 0.0 ~ 10.0
+	shellSuppressionStrength = 0.06
+	#Radius (blocks) around a Suspendium Shell burst in which
+	#craft bodies are suppressed.
+	#Default: 6.0
+	# Default: 6.0
+	# Range: 1.0 ~ 64.0
+	shellSuppressionRadius = 6.0

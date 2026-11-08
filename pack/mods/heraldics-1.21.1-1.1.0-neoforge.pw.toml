@@ -1,0 +1,8 @@
+name = "heraldics-1.21.1-1.1.0-neoforge"
+filename = "heraldics-1.21.1-1.1.0-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/e412c6a8bc-heraldics-1.21.1-1.1.0-neoforge.jar"
+hash-format = "sha512"
+hash = "cfd3afe3cef05a2848b92d894f3e77a8b7de7356ec69cbb4f35f4fcbee9c71b27b39452a80990a9f62b8bd0f208c58fd2d86d6ebaf51103304bf96ac9cda85f5"

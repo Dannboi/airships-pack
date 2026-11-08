@@ -1,0 +1,8 @@
+name = "create-otbwg-compat-1.0"
+filename = "create-otbwg-compat-1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/39f257a8a0-create-otbwg-compat-1.0.jar"
+hash-format = "sha512"
+hash = "8c7733e48f424b96cf7ab0d3191f2aac64d011635f4be85d8a5e6daf42fcd079118a991353b7f2d0e2f7b190587b6b5289de31b613cdc0c00a4c8088f47758b5"

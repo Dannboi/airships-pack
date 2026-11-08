@@ -1,0 +1,8 @@
+name = "leaksentinel-1.0.0"
+filename = "leaksentinel-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/22c7842747-leaksentinel-1.0.0.jar"
+hash-format = "sha512"
+hash = "d85c46fd3740d9633e6f1fa292e96039b79bac3aada6e20a99f5b9b3aa72e1ef53f145ada6c88863e80935f76db5aaf0c8194f078908434806719bf89052bdf0"

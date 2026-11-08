@@ -1,0 +1,8 @@
+name = "iceandfire-2.1-beta.3"
+filename = "iceandfire-2.1-beta.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/217498b651-iceandfire-2.1-beta.3.jar"
+hash-format = "sha512"
+hash = "d50a7d0032bbb024e01c3c6028743cbc5fb2126ff3a7daa01ac0b27f8dad31cf7ebea70431ee009c6b26b3d94d1d36adb034cac3724a5a07f83c1bba224e8563"

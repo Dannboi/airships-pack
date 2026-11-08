@@ -1,0 +1,10 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+flagBlockMaxWidth = 0
+flagBlockMaxHeight = 0
+armorBannerMaxWidth = 1
+armorBannerMaxHeight = 2
+flagStandardMaxWidth = 4
+flagStandardMaxHeight = 2
+bannerStandardMaxWidth = 2
+bannerStandardMaxHeight = 3

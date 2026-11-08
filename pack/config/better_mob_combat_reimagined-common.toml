@@ -1,0 +1,48 @@
+#Master switch for Better Combat attacks on mobs.
+enabled = true
+#Add enhanced bow, crossbow, spear, and generic projectile-weapon animations to humanoid mobs.
+enableRangedAnimations = true
+#Apply Better Combat weapon idle poses to humanoid mobs, including two-handed bow and crossbow stances.
+enableWeaponIdlePoses = true
+#Animate vanilla melee attacks for empty-handed mobs and mobs holding items without Better Combat attributes.
+enableFallbackMeleeAnimations = true
+#Require line of sight for every target caught in an attack arc.
+requireLineOfSight = true
+#Allow a mob's attack arc to hit entities allied to that mob.
+allowFriendlyFire = false
+#Maximum number of living entities one mob swing may hit.
+# Default: 8
+# Range: 1 ~ 64
+maxTargets = 8
+#How much of the selected Better Combat attack range is used by the AI reach check. The original 1.20.1 mod used 1.0; the separate start delay lets the mob close distance before the visible swing begins.
+# Default: 1.0
+# Range: 0.25 ~ 1.0
+attackStartRangeMultiplier = 1.0
+#Ticks between the AI deciding it is in range and the Better Combat upswing beginning. Matches the original 1.20.1 Better Mob Combat default and prevents attacks from visibly starting at maximum reach.
+# Default: 10
+# Range: 0 ~ 100
+attackStartDelayTicks = 10
+#Extra recovery ticks after a Better Combat attack interval. The original 1.20.1 default was 7.
+# Default: 7
+# Range: 0 ~ 100
+additionalAttackCooldownTicks = 7
+#Continuously force a mob to face its intended target during the entire windup. Disabled by default so telegraphed swings can be sidestepped.
+trackTargetDuringWindup = false
+#Fastest allowed attack interval, in ticks. Prevents extreme attack-speed values from creating hit spam.
+# Default: 5
+# Range: 1 ~ 40
+minimumAttackIntervalTicks = 5
+#Ticks without starting another attack before the mob returns to the first combo animation.
+# Default: 30
+# Range: 1 ~ 400
+comboResetTicks = 30
+#Amount added to Better Combat's own upswing multiplier for mob attacks. This matches the original 1.20.1 Better Mob Combat behavior: 0.0 uses Better Combat's normal timing, while positive values make the telegraphed upswing longer.
+# Default: 0.15
+# Range: 0.0 ~ 0.8
+additionalUpswingMultiplier = 0.15
+#Fine visual-only adjustment (in ticks, 1 tick = 0.05s) to when the swing animation appears to make contact, relative to the server's actual damage tick. This does NOT change when damage is applied - the server tick rate can't be adjusted more finely than whole ticks - it only re-paces the client animation playback. Positive values make the visible swing reach its hit pose later (sound/damage happens first); negative values make it reach the hit pose earlier. Try small values like 0.1-0.3.
+# Default: 0.0
+# Range: -5.0 ~ 5.0
+clientHitTimingNudgeTicks = 0.0
+#Entity type ids that should keep vanilla melee combat. Example: minecraft:warden
+entityBlacklist = []

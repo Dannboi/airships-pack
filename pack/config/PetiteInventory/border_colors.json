@@ -1,0 +1,18 @@
+[
+  {
+    "match": ["minecraft:diamond"],
+    "theme": "orange"
+  },
+  {
+    "match": ["minecraft:emerald"],
+    "theme": "red"
+  },
+  {
+    "match": ["#minecraft:tools"],
+    "theme": "blue"
+  },
+  {
+    "match": ["#c:ores"],
+    "theme": "purple"
+  }
+]

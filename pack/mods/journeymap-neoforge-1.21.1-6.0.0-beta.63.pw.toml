@@ -1,0 +1,8 @@
+name = "journeymap-neoforge-1.21.1-6.0.0-beta.63"
+filename = "journeymap-neoforge-1.21.1-6.0.0-beta.63.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/89c04bea5f-journeymap-neoforge-1.21.1-6.0.0-beta.63.jar"
+hash-format = "sha512"
+hash = "f084a97fb63b299f98123a2db935a310103e9c79d780618ec3a97d3a03ee308b981dcf2a329f2374a8101b6d6ed29b01a167a9023403ff3259096f7a1d2b1710"

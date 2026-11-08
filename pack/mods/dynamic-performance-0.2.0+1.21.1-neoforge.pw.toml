@@ -1,0 +1,13 @@
+name = "Dynamic Performance"
+filename = "dynamic-performance-0.2.0+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/V5q1d6dx/versions/ul0tiGEP/dynamic-performance-0.2.0%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "d775e73f479880c48a7764baf50e7692f92f75e334b24db6ec8fd7b6ddc97c2844fc6a79d131f4b43d66f44e90cb8a1b0fe11c9c7be4cc1301f2df8574199bc7"
+
+[update]
+[update.modrinth]
+mod-id = "V5q1d6dx"
+version = "ul0tiGEP"

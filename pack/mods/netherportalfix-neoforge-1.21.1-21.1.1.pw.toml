@@ -1,0 +1,8 @@
+name = "netherportalfix-neoforge-1.21.1-21.1.1"
+filename = "netherportalfix-neoforge-1.21.1-21.1.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/7cf40ec774-netherportalfix-neoforge-1.21.1-21.1.1.jar"
+hash-format = "sha512"
+hash = "582d46878a66f4d41792acfc767dc22edf0e05c58c45dbee8c3953d4fa39366862301ee4c8a8097fdf77dda288147635d3304c57870fc03ea931ca90b43c332d"

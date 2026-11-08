@@ -1,0 +1,6 @@
+{
+  "items": {
+    "minecraft:diamond_axe": "grim:item/hatchet/minecraft/diamond_axe",
+    "minecraft:iron_axe": "grim:item/hatchet/minecraft/iron_axe"
+  }
+}

@@ -1,0 +1,8 @@
+name = "origins-0.3.2"
+filename = "origins-0.3.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/a3285d328f-origins-0.3.2.jar"
+hash-format = "sha512"
+hash = "974dcf228775356f311272ff9d41a6fb7535a512f426ab710f998dd7ced993daf5402acac6f8a1b9944792adfe7efd0d017b178ae72dd80d68fedd3b5c6b9145"

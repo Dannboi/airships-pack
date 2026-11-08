@@ -1,0 +1,20 @@
+#Seconds between samples appended to logs/leaksentinel/session-*.csv
+# Default: 30
+# Range: 5 ~ 3600
+sampleIntervalSeconds = 30
+#Write a .hprof heap dump automatically once the old generation stays above the threshold
+autoHeapDump = true
+#Old-gen occupancy (percent of max, measured after the last GC) considered critical
+# Default: 88
+# Range: 50 ~ 99
+oldGenThresholdPercent = 88
+#Consecutive critical samples required before the automatic heap dump fires
+# Default: 3
+# Range: 1 ~ 20
+consecutiveCriticalSamples = 3
+#Cap on automatic heap dumps per game session (dumps are large; 0 disables)
+# Default: 1
+# Range: 0 ~ 10
+maxDumpsPerSession = 1
+#Post warnings into chat when memory health degrades
+chatAlerts = true

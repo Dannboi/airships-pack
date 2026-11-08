@@ -1,0 +1,8 @@
+name = "othertime_patches-1.3.0"
+filename = "othertime_patches-1.3.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/ed4fb0fde5-othertime_patches-1.3.0.jar"
+hash-format = "sha512"
+hash = "5d5c82d1b0163e820ca3123bad1e53c6538369397a4891402a5994ddab675415ce3dd367c4de7d9ea1f34735d8433a97c9e264cd856b09fe2cbabe3cd1356b54"

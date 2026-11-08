@@ -1,0 +1,15 @@
+{
+    "parent": "grim:item/base/minecraft/golden_pickaxe__m_item_handheld_grimdark",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/golden_pickaxe__t_item_golden_pickaxe"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.85
+            },
+            "model": "grim:item/base/minecraft/golden_pickaxe__m_item_golden_pickaxe_1"
+        }
+    ]
+}

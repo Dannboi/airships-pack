@@ -1,0 +1,8 @@
+name = "mods_optimizer-neoforge-1.21.1-4.3.0"
+filename = "mods_optimizer-neoforge-1.21.1-4.3.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar"
+hash-format = "sha512"
+hash = "3412f7d43d98b5a234486381e83d7397c79e9e36d6c831d069a90f88118f4465e254ff1ceefa278ea5bac2a3ae14bdd0298b3aeb42d3183c606e67f5c3f963d0"

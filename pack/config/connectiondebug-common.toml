@@ -1,0 +1,50 @@
+#Pre-play outbound traffic pacer (dedicated server only).
+#Spreads the login/configuration payload burst (~1+ MB on a big modpack) over several
+#seconds instead of firing it in under a second. Host-side DDoS/flood mitigation can
+#mistake the burst for an attack and silently drop the client's return packets, which
+#shows up as clients timing out at 'synchronize_registries' / entering PLAY to silence.
+#The pacer is removed from the connection the moment it is promoted to PLAY - gameplay
+#traffic is never shaped.
+[pacer]
+	#Master switch. Disable to restore stock unshaped behaviour.
+	enabled = true
+	#Outbound rate limit in KB/s applied before PLAY. 192 KB/s spreads a 1.3 MB config
+	#payload over ~7 seconds. Keep high enough that (payload KB / rate) stays well under
+	#the 15s vanilla configuration keepalive timeout.
+	# Default: 192
+	# Range: 16 ~ 8192
+	rateKBps = 192
+	#Cap on how long any single queued write may be delayed. Safety valve so a bucket
+	#miscalculation can never wedge a join outright.
+	# Default: 8
+	# Range: 1 ~ 14
+	maxDelaySeconds = 8
+
+#Late-ack grace window for the configuration->play handoff (dedicated server only).
+#After the server sends FinishConfiguration, vanilla kicks 'Timed out' if the client's
+#ack is not processed within 15s. Hosting-side flood mitigation on this server holds the
+#client's upstream for 10-60s right after the config payload burst and then releases it
+#intact (see 'STALL' / 'inbound data RESUMED' pairs in connection-debug.log) - so a
+#wider deadline lets held-then-recovered joins complete instead of dying at 15s.
+#Note: the client hard-closes after 30s with NO inbound data at all, and the server
+#cannot send during the handoff, so values much above ~40s change nothing.
+[graceWindow]
+	#Master switch. Disable to restore vanilla's 15s handoff deadline.
+	enabled = true
+	#Seconds after FinishConfiguration before the server gives up on the client's ack.
+	# Default: 75
+	# Range: 15 ~ 120
+	seconds = 75
+
+#Netty read-timeout patience (both sides).
+#Vanilla installs a hard 30s ReadTimeoutHandler on every connection. During the
+#config->play handoff NEITHER side can transmit (both outbound pipelines are
+#unconfigured mid-switch), so a slow world placement trips this 30s limit on the
+#server and the client even when the grace window above would have saved the join.
+#This raises that handler on both ends. Play-phase liveness is unaffected: the
+#vanilla 15s keepalive kick still reaps genuinely dead sessions once in-game.
+[patience]
+	#Replacement for the vanilla 30s socket read timeout. Should exceed graceWindow.seconds.
+	# Default: 90
+	# Range: 30 ~ 300
+	readTimeoutSeconds = 90

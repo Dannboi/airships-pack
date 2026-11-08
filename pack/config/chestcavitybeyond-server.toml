@@ -1,0 +1,99 @@
+[Organ]
+	#Immunize harmful effects reduced by detoxification or withered when their duration is at or below this value (ticks, 0 = only effects reduced to 0 ticks)
+	# Default: 20
+	# Range: > 0
+	detoxificationImmunityDurationThreshold = 20
+	#Filtration period of organ system (ticks)
+	# Default: 60
+	# Range: 20 ~ 600
+	filtrationPeriod = 60
+	#Enable entity scale side effect when chest cavity size increases (each extra row adds 0.25 scale)
+	enableChestCavityScaleSideEffect = true
+
+[ChestOpener]
+	#Target max health at or below this value can be opened directly without reducing current health
+	# Default: 15
+	# Range: > 1
+	minChestOpenMaxHealth = 15
+	#When target max health exceeds direct-open threshold, target current health must be below this ratio of max health to open (0.3 = ≤30%, each Advanced Surgery level adds +10%)
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	chestOpenBaseHealthRatio = 0.3
+	#Whether chestplate blocks the chest opener from opening the chest cavity (creative mode is not affected)
+	chestplateBlocksChestOpener = true
+
+[SkillParameters]
+	#Effective distance of guardian laser skill
+	# Default: 16
+	# Range: 5 ~ 64
+	guardianLaserDistance = 16
+	#Maximum duration of furnace power effect (ticks)
+	# Default: 24000
+	# Range: 1200 ~ 72000
+	furnacePowerMaxDuration = 24000
+	#Search range of end crystal for has crystallization entities
+	# Default: 16
+	# Range: 5 ~ 64
+	crystalEffectSearchRange = 16
+	#Attempt loops for enderman teleport skill
+	# Default: 16
+	# Range: 1 ~ 64
+	randomTeleportAttempts = 16
+	#Detection distance of shulker bullet skill
+	# Default: 32
+	# Range: 10 ~ 128
+	shulkerBulletDistance = 32
+	#Distance of warden sonic boom skill
+	# Default: 7
+	# Range: 3 ~ 32
+	sonicBoomDistance = 7
+
+	[SkillParameters.PortableJukebox]
+		#Filter mode for effects a music disc can grant: BLACKLIST excludes listed effects, WHITELIST allows only listed effects
+		#Allowed Values: BLACKLIST, WHITELIST
+		portableJukeboxEffectFilterMode = "BLACKLIST"
+		#Effect ids for the filter, e.g. "minecraft:wither"
+		#An empty whitelist disables the jukebox effect entirely
+		#Changing this reshuffles which effect each disc grants
+		portableJukeboxEffectFilter = []
+
+[Immunity]
+	#Fire resistance threshold: immune to hot block (magma block/campfire) damage
+	# Default: 5.0
+	# Range: 0.0 ~ 100.0
+	fireImmunityHotFloor = 5.0
+	#Fire resistance threshold: immune to fire damage, and clear fire status
+	# Default: 10.0
+	# Range: 0.0 ~ 100.0
+	fireImmunityFire = 10.0
+	#Fire resistance threshold: immune to lava damage
+	# Default: 15.0
+	# Range: 0.0 ~ 100.0
+	fireImmunityLava = 15.0
+	#Frost resistance threshold: immune to freezing damage, and clear frozen ticks
+	# Default: 5.0
+	# Range: 0.0 ~ 100.0
+	frostImmunity = 5.0
+
+[MobSkill]
+	#Enable non-player entities to automatically use organ skills
+	enableMobGoalSkill = true
+	#Goal organ skill evaluation interval (ticks), higher = better performance but slower reaction
+	#Note: odd values are rounded up to even (e.g. 3→4) due to Mob AI dual-tick, minimum effective value is 2
+	# Default: 100
+	# Range: 2 ~ 1000
+	goalSkillEvalInterval = 100
+	#Enemy detection range for Goal organ skill (blocks)
+	# Default: 16.0
+	# Range: 4.0 ~ 64.0
+	goalSkillEnemyDetectRange = 16.0
+	#Goal organ skill target memory duration (ticks), how long the mob keeps attacking after losing target (0 = disabled, 300 = 15s)
+	# Default: 300
+	# Range: 0 ~ 1200
+	goalSkillTargetMemoryTicks = 300
+	#Whether pet-type mobs' (wolves/cats, i.e. ownable entities) organ skills retaliate against players who dealt damage
+	#false = no, default protects against accidental player damage (only affects OwnableEntity, not monsters)
+	mobSkillRetaliatePlayer = false
+	#Whether pet-type mobs' (wolves/cats, i.e. ownable entities) organ skills retaliate against other pets with different owners
+	#false = no, default prevents pet mutual damage (only affects OwnableEntity, not monsters)
+	mobSkillRetaliateOtherPet = false

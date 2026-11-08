@@ -1,0 +1,8 @@
+name = "dwarfs_tyranny-1.0.8-neoforge-1.21.1"
+filename = "dwarfs_tyranny-1.0.8-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/b4cbbf6424-dwarfs_tyranny-1.0.8-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "5010df8486d41dd6f18c87d52886348d4ee7f4a7b053192daaebcbf585ba375fe48512f5c940f4e2d73a2338b74d3a98526e5423da50959e5cc8fd281388294d"

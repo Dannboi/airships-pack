@@ -1,0 +1,8 @@
+name = "fangs_n_claws-1.2.5"
+filename = "fangs_n_claws-1.2.5.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/ac4a39fc38-fangs_n_claws-1.2.5.jar"
+hash-format = "sha512"
+hash = "0ea8dc938e7d5d6285d8ab8bbdb3fd716bfea265ffaee8894b0eced1db3bf160d8e7323ddffd3a4031d5958839adfa8416b4011408a4f964dc9e9d5cdfc766bf"

@@ -1,0 +1,8 @@
+name = "sophisticatedstoragecreateintegration-1.21.1-0.1.18.178"
+filename = "sophisticatedstoragecreateintegration-1.21.1-0.1.18.178.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/696e412222-sophisticatedstoragecreateintegration-1.21.1-0.1.18.178.jar"
+hash-format = "sha512"
+hash = "dd054a29b21b23d870764a5471d0fc28bd905d06de28b046abf18c716328ac9dba4ece9da455544031f45953fecc9014929889ee954b497a757a207706ab1bdf"

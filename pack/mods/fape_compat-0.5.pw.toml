@@ -1,0 +1,13 @@
+name = "FA: Player Extension Compat"
+filename = "fape_compat-0.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/I44nKnul/versions/bnJ3NeZX/fape_compat-0.5.jar"
+hash-format = "sha512"
+hash = "f31250b316ee0042c9198a9ea33b31f1f5a739d2b9e88b32c525e09fc1e2f15ab0e8fbcc4bc08f01b7f5da9d47f6ee58ad92750ac7b2ea882f3077e0522db837"
+
+[update]
+[update.modrinth]
+mod-id = "I44nKnul"
+version = "bnJ3NeZX"

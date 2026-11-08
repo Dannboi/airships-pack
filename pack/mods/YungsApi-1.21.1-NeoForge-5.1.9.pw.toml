@@ -1,0 +1,8 @@
+name = "YungsApi-1.21.1-NeoForge-5.1.9"
+filename = "YungsApi-1.21.1-NeoForge-5.1.9.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/31c5b4d54b-YungsApi-1.21.1-NeoForge-5.1.9.jar"
+hash-format = "sha512"
+hash = "c8061dc8ae19fc0b6cf723f6dbd9b5eb3affb93b7eb84a3079ae1035bbdb4682adf9c78742f4a1011211ac88e2434d0d89684824e104c2e779aad529da8a507f"

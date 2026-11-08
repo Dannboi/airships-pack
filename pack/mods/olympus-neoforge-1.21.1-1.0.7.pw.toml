@@ -1,0 +1,8 @@
+name = "olympus-neoforge-1.21.1-1.0.7"
+filename = "olympus-neoforge-1.21.1-1.0.7.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/fd7e39da09-olympus-neoforge-1.21.1-1.0.7.jar"
+hash-format = "sha512"
+hash = "a5976c7f013dffe8b67f369885f6fde07d21f92edf6b010d5019187106b31ea1492a9a3778dbcccbbf4a065502772d916ff89ffd80d0f75b46d0cb8ff94a5e14"

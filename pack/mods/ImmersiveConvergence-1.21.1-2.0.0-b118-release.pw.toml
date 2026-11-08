@@ -1,0 +1,13 @@
+name = "Immersive Convergence"
+filename = "ImmersiveConvergence-1.21.1-2.0.0-b118-release.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/qb6tndiJ/versions/SW5VkCMy/ImmersiveConvergence-1.21.1-2.0.0-b118-release.jar"
+hash-format = "sha512"
+hash = "55111a249bf87edd89854e4e5c875180442c9d6562d94ec3d1c29f6efecfba1af6a2b06ec69239f0647194a455bd184393db94a2bcd5a71c6c29643fda0d3739"
+
+[update]
+[update.modrinth]
+mod-id = "qb6tndiJ"
+version = "SW5VkCMy"

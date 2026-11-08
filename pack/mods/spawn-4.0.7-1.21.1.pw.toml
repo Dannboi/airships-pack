@@ -1,0 +1,8 @@
+name = "spawn-4.0.7-1.21.1"
+filename = "spawn-4.0.7-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/6c2a2658f6-spawn-4.0.7-1.21.1.jar"
+hash-format = "sha512"
+hash = "7c08f8da1ba0a21e3b96303c3337e422078c535c5df053c2c97b1ff3c8760dd14ed98358d698825450fe53caf6941443270595c7fa4f3b286c868ce75957d9a4"

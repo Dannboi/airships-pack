@@ -1,0 +1,8 @@
+name = "uniqueartifacts-1.0.0"
+filename = "uniqueartifacts-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/70ade98fc0-uniqueartifacts-1.0.0.jar"
+hash-format = "sha512"
+hash = "a05a43074717f9a2cfe22aa96f731717e94606feaa2aa65753fce69e4f7094912ef49b15177080a12544dab3582844f0822fbc49e9c74f3599dad43807967376"

@@ -1,0 +1,10 @@
+{
+  "items": {
+    "minecraft:diamond_axe": "grim:item/ono/minecraft/diamond_axe",
+    "minecraft:golden_axe": "grim:item/ono/minecraft/golden_axe",
+    "minecraft:iron_axe": "grim:item/ono/minecraft/iron_axe",
+    "minecraft:netherite_axe": "grim:item/ono/minecraft/netherite_axe",
+    "minecraft:stone_axe": "grim:item/ono/minecraft/stone_axe",
+    "minecraft:wooden_axe": "grim:item/ono/minecraft/wooden_axe"
+  }
+}

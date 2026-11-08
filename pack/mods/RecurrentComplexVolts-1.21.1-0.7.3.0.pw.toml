@@ -1,0 +1,13 @@
+name = "Recurrent Complex Volts"
+filename = "RecurrentComplexVolts-1.21.1-0.7.3.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/J8SYWt2i/versions/wuQ1vWhy/RecurrentComplexVolts-1.21.1-0.7.3.0.jar"
+hash-format = "sha512"
+hash = "d590240ef7a6fa4cb4eb40b0a1e44119fe36adf651d0c5d213aa757655ca26c1d25ec9e19fe2e7dc9fd3f58581ee4acb06c2ad470f64b0ab0cfda708abfebc20"
+
+[update]
+[update.modrinth]
+mod-id = "J8SYWt2i"
+version = "wuQ1vWhy"

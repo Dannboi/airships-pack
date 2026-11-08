@@ -1,0 +1,10 @@
+{
+  "items": {
+    "minecraft:diamond_hoe": "grim:item/handscythe/minecraft/diamond_hoe",
+    "minecraft:golden_hoe": "grim:item/handscythe/minecraft/golden_hoe",
+    "minecraft:iron_hoe": "grim:item/handscythe/minecraft/iron_hoe",
+    "minecraft:netherite_hoe": "grim:item/handscythe/minecraft/netherite_hoe",
+    "minecraft:stone_hoe": "grim:item/handscythe/minecraft/stone_hoe",
+    "minecraft:wooden_hoe": "grim:item/handscythe/minecraft/wooden_hoe"
+  }
+}

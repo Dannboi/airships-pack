@@ -1,0 +1,13 @@
+name = "Zelda: Hyrule Terrors"
+filename = "Hyrule_Terrors-neoforge-2.2.2-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/jAMbDyhp/versions/kyuiL8ke/Hyrule_Terrors-neoforge-2.2.2-1.21.1.jar"
+hash-format = "sha512"
+hash = "f23d4cd098b3f9b1fb25038ee0b533ea34e850bd4ef119d3eef68fa46cb6490fb0dee14e5af8179945285a3804bd42dcb86034a3013d796393f46971ff76607b"
+
+[update]
+[update.modrinth]
+mod-id = "jAMbDyhp"
+version = "kyuiL8ke"

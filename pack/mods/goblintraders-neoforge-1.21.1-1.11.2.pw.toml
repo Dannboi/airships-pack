@@ -1,0 +1,8 @@
+name = "goblintraders-neoforge-1.21.1-1.11.2"
+filename = "goblintraders-neoforge-1.21.1-1.11.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/4507faefb9-goblintraders-neoforge-1.21.1-1.11.2.jar"
+hash-format = "sha512"
+hash = "020a4c812b83edf4c5bbd6cf1dee61ada945792632571e5814ad31f254e4fe1bd7e20e64c195d2997949711888f18f7ae96f0375a1e19262ec0284015ac27d83"

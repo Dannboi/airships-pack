@@ -1,0 +1,214 @@
+#Precursory Configuration
+[machines]
+	#Maximum RPM the Blue Eco Motor outputs at its highest speed tier.
+	# Default: 256
+	# Range: 32 ~ 512
+	blueEcoMotorMaxRPM = 256
+	#Blue Eco (mB/SECOND) the motor consumes at MAX RPM.
+	#Consumption scales DOWN linearly with the chosen speed and is metered in fractional
+	#amounts per tick (via an accumulator), so slow tiers genuinely sip under 1 mB/tick.
+	#Default 16 mB/s at max RPM => 2 mB/s at the lowest speed tier (tier 1).
+	# Default: 16.0
+	# Range: 0.1 ~ 400.0
+	blueEcoMotorMaxFuelPerSecond = 16.0
+	#Number of selectable speed steps per direction (scroll the wrench value box).
+	#Each tier is maxRPM / tiers apart; e.g. 8 tiers at 256 RPM = 32 RPM per step.
+	# Default: 8
+	# Range: 1 ~ 32
+	blueEcoMotorSpeedTiers = 8
+	#Speed multiplier for Red Eco Furnace (compared to vanilla)
+	# Default: 4
+	# Range: 1 ~ 20
+	redEcoFurnaceSpeedMultiplier = 4
+	#Lifting gas (m^3/tick) the Red Eco Heater feeds a Create: Aeronautics hot-air balloon
+	#above it at FULL redstone signal (output scales linearly with the 0-15 signal).
+	#For reference, Aeronautics' own stock Hot Air Burner maxes at 500 and a Steam Vent at
+	#5000 -- this matches a maxed-out Steam Vent (10x the stock burner) in a single compact
+	#block. Only active when Aeronautics is installed and the heater sits under an envelope.
+	# Default: 5000.0
+	# Range: 0.0 ~ 100000.0
+	redEcoHeaterMaxGasOutput = 5000.0
+	#Red Eco (mB/SECOND) the heater burns at FULL redstone signal (scales down with the
+	#signal). Deliberately TINY: the vanilla hot-air burner uses no fuel, so this stronger
+	#eco burner should barely sip Red Eco. Metered in fractional amounts per tick.
+	# Default: 0.5
+	# Range: 0.01 ~ 100.0
+	redEcoHeaterFuelPerSecond = 0.5
+	#Range of Green Eco Sprinkler effect (radius in blocks)
+	# Default: 3
+	# Range: 1 ~ 10
+	greenEcoSprinklerRange = 3
+	#mB of Green Eco per durability point repaired
+	# Default: 200
+	# Range: 10 ~ 1000
+	greenEcoMenderRepairCost = 200
+	#mB of Eco fluid required to condense one crystal
+	# Default: 500
+	# Range: 100 ~ 2000
+	ecoCondenserFluidPerCrystal = 500
+
+[precursorMachines]
+	#Maximum RPM the Precursor Motor can be set to (speed cap, both directions).
+	#Below a creative motor's 256 so it isn't a true creative motor.
+	# Default: 192
+	# Range: 16 ~ 256
+	precursorMotorRPM = 192
+	#Maximum stress (Stress Units) the Precursor Motor generates, reached at its top RPM.
+	#Free + perpetual but bounded: a LOT of power, just not the infinite capacity of a creative motor.
+	# Default: 16384
+	# Range: 256 ~ 131072
+	precursorMotorStressCapacity = 16384
+	#Precursor Pump transfer rate in mB/tick
+	# Default: 100
+	# Range: 10 ~ 1000
+	precursorPumpRate = 100
+	#Duration of Precursor Awakening Array process in ticks (20 ticks = 1 second)
+	# Default: 12000
+	# Range: 1200 ~ 72000
+	awakeningArrayDuration = 12000
+	#Thrust the Precursor Duct produces as a MOUNTED THRUSTER on a Create: Aeronautics /
+	#Sable craft, as a linear impulse per tick. Rocket convention: blowing pushes the ship
+	#OPPOSITE the duct's facing (exhaust), sucking pushes TOWARD it. Mass-scaled by the craft,
+	#so heavier ships accelerate more slowly. 0 disables. Only active when Sable is installed.
+	#Positioning: fuel-free CONVENIENCE engine — deliberately below the eco-burning Yellow
+	#Eco Thruster (default 100), which must reward gathering fuel with superior thrust.
+	# Default: 80.0
+	# Range: 0.0 ~ 1000000.0
+	precursorDuctCraftThrust = 80.0
+	#Yellow Eco Thruster: linear impulse per tick at FULL throttle (redstone 15) when
+	#mounted on a Create: Aeronautics / Sable craft. Scales down with the analog redstone
+	#signal (signal/15). Mass-scaled by the craft. Only active when Sable is installed.
+	#SCALE REFERENCE (all converted to impulse/tick — Sable applies thruster/propeller force
+	#multiplied by timeStep, so their config 'thrust' values divide by 20; verified in each
+	#mod's source 2026-07-25): Aeronautics small propeller @256 RPM = 12.8 (fades to 0 near
+	#airflow speed); 9/16-sail Propeller Bearing @256 RPM = ~69/~164 (fades, huge multiblock).
+	#PEER FUELED THRUSTERS: Create Propulsion: Simulated — Solid Fuel 10, standard Thruster
+	#26.7 @ 1 mB/t, Vector 36.7 @ 1 mB/t, Ion 40 @ 40 FE/t; Lift n' Load Thruster 22.5
+	#(45 superheated). Default 100 @ 1.5 mB/t = ~2.2x the strongest peer and ~2x their
+	#thrust-per-mB — deliberately dominant: eco demands harvester infrastructure + research,
+	#so burning it must clearly beat blaze/kerosene peers AND the fuel-free Precursor Duct (80).
+	# Default: 100.0
+	# Range: 0.0 ~ 1000000.0
+	yellowEcoThrusterMaxThrust = 60.0
+	#Yellow Eco Thruster: mB/SECOND of Yellow Eco burned at FULL throttle (redstone 15).
+	#Scales down linearly with the throttle and is metered in fractional mB/tick. No eco = no thrust.
+	# Default: 30.0
+	# Range: 0.1 ~ 1000.0
+	yellowEcoThrusterMaxFuelPerSecond = 30.0
+
+[researchBench]
+	#Eco tank capacity of Research Bench in mB
+	# Default: 2000
+	# Range: 500 ~ 10000
+	researchBenchTankCapacity = 2000
+
+[vehicles]
+	#Maximum speed of Hover Zoomer
+	# Default: 0.5
+	# Range: 0.1 ~ 2.0
+	hoverZoomerMaxSpeed = 0.5
+	#Ticks of fuel per Blue Eco Crystal
+	# Default: 600
+	# Range: 100 ~ 6000
+	hoverZoomerFuelPerCrystal = 600
+	#DEBUG: right-click a Hover Zoomer with a Stick to add/remove a dummy occupant
+	#in a seat (for testing the 2-seater passenger position). Leave false for normal play.
+	debugZoomerDummyRider = false
+	#Maximum speed of Flut-Flut
+	# Default: 0.4
+	# Range: 0.1 ~ 1.0
+	flutFlutMaxSpeed = 0.4
+
+[weapons]
+	#Base damage of Red Eco Saber when active
+	# Default: 12.0
+	# Range: 1.0 ~ 50.0
+	redEcoSaberDamage = 12.0
+	#Damage per Yellow Eco Blaster shot
+	# Default: 6.0
+	# Range: 1.0 ~ 20.0
+	yellowEcoBlasterDamage = 6.0
+	#Cooldown between Yellow Eco Blaster shots in ticks
+	# Default: 10
+	# Range: 1 ~ 100
+	yellowEcoBlasterCooldown = 10
+
+[loot]
+	#Base chance for Precursor Orbs in dungeon loot (0.0 - 1.0)
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	precursorOrbDropChance = 0.3
+	#Base chance for Dormant Power Cells in dungeon loot (0.0 - 1.0)
+	# Default: 0.03
+	# Range: 0.0 ~ 1.0
+	dormantCellDropChance = 0.03
+	#Base chance for Precursor Artifacts in dungeon loot (0.0 - 1.0)
+	# Default: 0.08
+	# Range: 0.0 ~ 1.0
+	artifactDropChance = 0.08
+
+[darkEco]
+	#Duration of Dark Eco Imbued effect in ticks
+	# Default: 6000
+	# Range: 600 ~ 72000
+	darkEcoImbuedDuration = 6000
+	#Damage dealt by Dark Eco Inoculator injection
+	# Default: 25.0
+	# Range: 1.0 ~ 100.0
+	darkEcoInoculatorDamage = 25.0
+	#Dark Eco Separator conversion ratio: mB of Dark Eco consumed per 1 mB of separated
+	#eco produced (green/blue/red/yellow, chosen by the crystal in the selector slot).
+	#Default 5 = five buckets of dark eco become one bucket of pure eco. 1 = lossless.
+	# Default: 5
+	# Range: 1 ~ 64
+	darkEcoSeparatorRatio = 5
+
+[precursorRuins]
+	#Weights of the surface-ruin variants in the precursor_ruin start pool.
+	#Applied on server start (overrides the datapack template pool). 0 disables a variant.
+	#Pool weight of the overgrown_shrine ruin variant (0 = never generates)
+	# Default: 4
+	# Range: 0 ~ 100
+	overgrown_shrine = 4
+	#Pool weight of the collapsed_arch ruin variant (0 = never generates)
+	# Default: 4
+	# Range: 0 ~ 100
+	collapsed_arch = 4
+	#Pool weight of the buried_vaultlet ruin variant (0 = never generates)
+	# Default: 3
+	# Range: 0 ~ 100
+	buried_vaultlet = 3
+	#Pool weight of the oracle_shrine_wild ruin variant (0 = never generates)
+	# Default: 1
+	# Range: 0 ~ 100
+	oracle_shrine_wild = 1
+	#Pool weight of the basin_spire ruin variant (0 = never generates)
+	# Default: 3
+	# Range: 0 ~ 100
+	basin_spire = 3
+	#Pool weight of the basin_bridge ruin variant (0 = never generates)
+	# Default: 3
+	# Range: 0 ~ 100
+	basin_bridge = 3
+	#Pool weight of the basin_drum ruin variant (0 = never generates)
+	# Default: 3
+	# Range: 0 ~ 100
+	basin_drum = 3
+	#Pool weight of the standing_ring ruin variant (0 = never generates)
+	# Default: 2
+	# Range: 0 ~ 100
+	standing_ring = 2
+	#Pool weight of the stepping_spiral ruin variant (0 = never generates)
+	# Default: 3
+	# Range: 0 ~ 100
+	stepping_spiral = 3
+	#Pool weight of the hop_causeway ruin variant (0 = never generates)
+	# Default: 3
+	# Range: 0 ~ 100
+	hop_causeway = 3
+
+[items]
+	#Entity IDs the Green Eco Reliquary is NOT allowed to capture, e.g. "minecraft:villager".
+	#Bosses and anything the Blue Eco Levitator can't lift (the precursory:levitator_immune
+	#entity tag and mobs over 150 max health) are ALWAYS excluded on top of this list.
+	reliquaryBlacklist = []

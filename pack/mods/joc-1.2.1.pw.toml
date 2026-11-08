@@ -1,0 +1,13 @@
+name = "Aeronautics: Joy of Creation"
+filename = "joc-1.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9hwV1OSS/versions/Z7bLLekT/joc-1.2.1.jar"
+hash-format = "sha512"
+hash = "c001fa514007988b3f986f33436da7193798a8691be0b8f34b054c1b91d33bb8e4c78b77f568495083dd23ae53cec56fe4e6eb25af0bbacd4ebac20c690b7eee"
+
+[update]
+[update.modrinth]
+mod-id = "9hwV1OSS"
+version = "Z7bLLekT"

@@ -1,0 +1,12 @@
+[wheel]
+	#Generic wheel configuration
+	#Roll coefficient
+	# Default: 0.1
+	# Range: 0.0 ~ 100.0
+	roll = 0.1
+	#Ground adhesion coefficient
+	# Default: 20.0
+	# Range: 0.0 ~ 100.0
+	ground = 20.0
+	#Enable honey rolling sounds for sticky wheels
+	enable_sound = true

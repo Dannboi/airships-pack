@@ -1,0 +1,6 @@
+{
+    "parent": "grim:item/base/minecraft/bow",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/bow__m_item_bow_1__t_item_bow_1"
+    }
+}

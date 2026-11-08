@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "greekmyth:item/greekmyth/minecraft/fishing_rod"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "cast": 1
+      },
+      "model": "greekmyth:item/greekmyth/minecraft/fishing_rod_cast"
+    }
+  ]
+}

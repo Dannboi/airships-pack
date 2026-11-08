@@ -1,0 +1,1 @@
+{ "parent": "minecraft:item/generated", "textures": { "layer0": "militia:item/militia/minecraft/chainmail_boots" } }

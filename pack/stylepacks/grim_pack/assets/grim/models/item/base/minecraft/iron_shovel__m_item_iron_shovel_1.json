@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/iron_shovel__m_item_iron_shovel_1__t_item_iron_shovel_1"
+    }
+}

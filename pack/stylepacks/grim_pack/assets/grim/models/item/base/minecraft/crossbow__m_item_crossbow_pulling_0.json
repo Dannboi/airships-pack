@@ -1,0 +1,6 @@
+{
+    "parent": "grim:item/base/minecraft/crossbow",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/crossbow__m_item_crossbow_pulling_0__t_item_crossbow_pulling_0"
+    }
+}

@@ -1,0 +1,61 @@
+#Hylian Races Client Configuration
+[client]
+
+	#Camera settings
+	[client.camera]
+		#Automatically switch to third person when rolling (and back when stopping)
+		autoThirdPersonWhenRolling = true
+
+	#Rolling settings
+	[client.rolling]
+		#Number of ticks to hold sneak before entering rolling state.
+		#During this delay, vanilla sneaking works normally (shift-place blocks, etc.).
+		#20 ticks = 1 second. Set to 0 to disable the delay (instant rolling).
+		# Default: 20
+		# Range: 0 ~ 100
+		sneakDelayTicks = 20
+		#How fast the ball spins relative to how far it actually travels.
+		#1.0 is physically exact: one full turn every pi blocks, for a ball one
+		#block across. Above 1 it spins faster than the ground going by, below 1
+		#slower. Purely visual.
+		# Default: 1.0
+		# Range: 0.1 ~ 5.0
+		rollSpinMultiplier = 1.0
+		#The rolling rumble: one looping sound per rolling Goron, pitched and
+		#faded with its speed. This is what makes rolling feel heavy.
+		rollingSoundEnabled = true
+		#Volume of the rolling rumble at top speed. Silent while sitting still,
+		#then rising with speed; the rhythm in it speeds up with the gears.
+		# Default: 0.45
+		# Range: 0.0 ~ 1.0
+		rollingSoundVolume = 0.45
+		#How harsh a roll gets at full speed: the level of the grinding layer that
+		#fades in over the top half of the speed range. 0 keeps only the soft bed.
+		# Default: 1.0
+		# Range: 0.0 ~ 2.0
+		rollingGritVolume = 1.0
+
+	#Rendering
+	[client.rendering]
+		#Render layers from other mods that may draw on a Goron, matched by any
+		#part of the layer's class name (case-insensitive).
+		#
+		#By default NOTHING but the Goron's own layer draws on a Goron. Every
+		#other layer - capes, parrots, arrows, trinket renderers - positions
+		#itself against the vanilla player model, which a Goron does not use, so
+		#it would appear inside the body at a human's proportions. Helmets, boots,
+		#held items and head-slot blocks are drawn by the Goron layer itself.
+		#
+		#A layer that was suppressed is named in the log once per session; if it
+		#turns out to look fine on the Goron, add part of its class name here.
+		allowedRenderLayers = []
+
+	#Names
+	[client.names]
+		#Which half of a race's name the selection screen shows.
+		#Every race has two: its Zelda name and a generic one that works outside
+		#Zelda - Goron / Mountain Dweller, Hylian / Human, Deku / Forest Folk, Zora / River Folk, Rito / Sky Folk.
+		#ZELDA shows the first, GENERIC the second. Applies to the Origins picker
+		#and anywhere else a race's name is shown.
+		#Allowed Values: ZELDA, GENERIC
+		raceNameStyle = "ZELDA"

@@ -1,0 +1,8 @@
+name = "horsecombatcontrols-1.21.0-1.0.5"
+filename = "horsecombatcontrols-1.21.0-1.0.5.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/e9a99eff36-horsecombatcontrols-1.21.0-1.0.5.jar"
+hash-format = "sha512"
+hash = "1fc2311c17b4c00fe676f6823f15acde5dd72152ed94fd0d78b424c9995b340c5d1abd36a7e07c884cac14d2aea60c5875b9f99f89041074bcb823d5506e3410"

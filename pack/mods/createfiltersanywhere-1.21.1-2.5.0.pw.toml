@@ -1,0 +1,8 @@
+name = "createfiltersanywhere-1.21.1-2.5.0"
+filename = "createfiltersanywhere-1.21.1-2.5.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/35f4daa828-createfiltersanywhere-1.21.1-2.5.0.jar"
+hash-format = "sha512"
+hash = "6652b345c534eb99dafb4d479f070e701395f30c0bfb621e07d5315f6d3c5eaf26123e90d782e4815a90a0649b6c597409abe4ace2d31e78587300cc02fad2e8"

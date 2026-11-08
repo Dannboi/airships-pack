@@ -1,0 +1,10 @@
+{
+  "items": {
+    "minecraft:diamond_pickaxe": "grim:item/warhammer/minecraft/diamond_pickaxe",
+    "minecraft:golden_pickaxe": "grim:item/warhammer/minecraft/golden_pickaxe",
+    "minecraft:iron_pickaxe": "grim:item/warhammer/minecraft/iron_pickaxe",
+    "minecraft:netherite_pickaxe": "grim:item/warhammer/minecraft/netherite_pickaxe",
+    "minecraft:stone_pickaxe": "grim:item/warhammer/minecraft/stone_pickaxe",
+    "minecraft:wooden_pickaxe": "grim:item/warhammer/minecraft/wooden_pickaxe"
+  }
+}

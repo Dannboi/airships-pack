@@ -1,0 +1,19 @@
+	[plants.bulbroot]
+		#Bulbroot growth rate (must be less than 1)
+		growth_rate = 0.1
+		#Bulbroot max height (must be at least 1)
+		max_height = 4.0
+		#Percent chance for Bulbroot to generate (0 to disable)
+		spawn_rate = 5.0
+
+	[plants.dialily]
+		#Dialily growth rate (must be less than 1)
+		growth_rate = 0.1
+		#Dialily max height (must be at least 1)
+		max_height = 3.0
+		#Percent chance for Dialily to generate (0 to disable)
+		spawn_rate = 15.0
+
+	[machines.washer]
+		#Amount of durability restored by Washer (must be more than 0)
+		repair_value = 1.0

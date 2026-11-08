@@ -1,0 +1,13 @@
+name = "Create Nuclear"
+filename = "createnuclear-2.0.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/z611fdf7/versions/zNIyk0mQ/createnuclear-2.0.1-neoforge.jar"
+hash-format = "sha512"
+hash = "f1bde1c921ae0091abaef338651778122923a9ac31218e6abb997d93cea60849f5a844e4d164aea485968d7125ed86dd09a3e635bd74a640b6bab2ccffc7ff42"
+
+[update]
+[update.modrinth]
+mod-id = "z611fdf7"
+version = "zNIyk0mQ"

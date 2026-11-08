@@ -1,0 +1,14 @@
+{
+  "items": {
+    "minecraft:leather_boots": "grim:item/sylvan/minecraft/leather_boots",
+    "minecraft:leather_chestplate": "grim:item/sylvan/minecraft/leather_chestplate",
+    "minecraft:leather_helmet": "grim:item/sylvan/minecraft/leather_helmet",
+    "minecraft:leather_leggings": "grim:item/sylvan/minecraft/leather_leggings"
+  },
+  "armor": {
+    "minecraft:leather_boots": "grim:sylvan/leather/leather",
+    "minecraft:leather_chestplate": "grim:sylvan/leather/leather",
+    "minecraft:leather_helmet": "grim:sylvan/leather/leather",
+    "minecraft:leather_leggings": "grim:sylvan/leather/leather"
+  }
+}

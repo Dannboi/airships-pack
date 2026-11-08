@@ -1,0 +1,8 @@
+name = "grindstoner-1.0.0"
+filename = "grindstoner-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/634afadac9-grindstoner-1.0.0.jar"
+hash-format = "sha512"
+hash = "43e3b371ec875c08d81ade1288bbcd8eb164cf62100bfbbc3f206ee2b08245672c40247fa2d21911c134cdeba895bc345ce6c40a5022b4855903434d9671dd91"

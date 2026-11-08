@@ -1,0 +1,8 @@
+name = "GlitchCore-neoforge-1.21.1-2.1.0.2"
+filename = "GlitchCore-neoforge-1.21.1-2.1.0.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/a31c3f3633-GlitchCore-neoforge-1.21.1-2.1.0.2.jar"
+hash-format = "sha512"
+hash = "ec7619393b110e625e8e21508b1e4370de865f9f1262e79bba53a9ba8934c8939ad5c0184344c800fde531c650fbb810a2a02c87c3daaffe6f6eb305ff3167b5"

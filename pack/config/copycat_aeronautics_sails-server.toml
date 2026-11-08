@@ -1,0 +1,17 @@
+[physics]
+	#Lift scalar used by Copycat Sail. Create/Sable's vanilla sail default is 0.475.
+	# Default: 0.475
+	# Range: 0.0 ~ 1.7976931348623157E308
+	copycatSailLift = 0.475
+	#Parallel drag scalar used by Copycat Symmetrical Sail. Simulated's symmetric sail default is 1.75.
+	# Default: 1.75
+	# Range: 0.0 ~ 1.7976931348623157E308
+	copycatSymmetricalSailDrag = 1.75
+	#Per-block sail power used by Aeronautics Propeller Bearings for Copycat Sail. Aeronautics' default sail power is 1.0.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	copycatSailPropellerPower = 1.0
+	#Per-block sail power used by Aeronautics Propeller Bearings for Copycat Symmetrical Sail. Aeronautics' default sail power is 1.0.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	copycatSymmetricalSailPropellerPower = 1.0

@@ -1,0 +1,34 @@
+[toolgunPolicy]
+	#Disable the toolgun's Query mode entirely: the vehicle list, previews and every
+	#query action (teleport, rename, delete) are rejected server-side. Players with
+	#permission level 2+ keep query if opsBypass is true; teleport actions remain
+	#governed by teleportPolicy even for them.
+	blockQuery = true
+	#How the toolgun query screen's teleport actions (teleport vehicle to coordinates,
+	#teleport player to vehicle) are handled.
+	#BLOCK_ALL = nobody may use them, BLOCK_NON_OPS = ops (permission level 2+) only, ALLOW = unmodified behaviour.
+	#Allowed Values: BLOCK_ALL, BLOCK_NON_OPS, ALLOW
+	teleportPolicy = "BLOCK_ALL"
+	#Hard cap in blocks on the survival toolgun's vehicle query range, enforced server-side
+	#regardless of what range the client requests. 0 disables the cap.
+	# Default: 64
+	# Range: 0 ~ 100000
+	queryRangeCap = 64
+	#Maximum cumulative distance in blocks a single translate session may move a structure.
+	#0 disables the cap.
+	# Default: 128.0
+	# Range: 0.0 ~ 1.0E7
+	translateSessionCap = 128.0
+	#Cooldown in seconds between toolgun actions (save, load, weld, simple weld,
+	#begin translate, begin rotate). 0 disables the cooldown.
+	# Default: 60
+	# Range: 0 ~ 86400
+	toolgunCooldownSeconds = 60
+	#Cooldown in seconds between portable structure container uses (capturing a vehicle
+	#into the item or releasing a stored vehicle). 0 disables the cooldown.
+	# Default: 300
+	# Range: 0 ~ 86400
+	containerCooldownSeconds = 300
+	#If true, players with permission level 2+ bypass the cooldowns, the query range cap
+	#and the translate distance cap. Teleport actions are governed solely by teleportPolicy.
+	opsBypass = true

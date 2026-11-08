@@ -1,0 +1,13 @@
+name = "Thick Air"
+filename = "thick_air-1.21.1-NeoForge-1.1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YCdc6cKo/versions/XZ93w1xP/thick_air-1.21.1-NeoForge-1.1.2.jar"
+hash-format = "sha512"
+hash = "0f60a7322a1403aeecb26598110ec3bde3841a32aa3d9e6a1f6298407ac053730286bca8e8108a9ad68b189c089411767f6f03fda0a66d9bf0e7dc4e36ba017e"
+
+[update]
+[update.modrinth]
+mod-id = "YCdc6cKo"
+version = "XZ93w1xP"

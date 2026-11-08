@@ -1,0 +1,8 @@
+name = "imb-1.0.1"
+filename = "imb-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/db9b652d8c-imb-1.0.1.jar"
+hash-format = "sha512"
+hash = "6a4bbe974018d5f976d9ffa9bd4e6987d16ba546646728080cc128f82070b47415691f64303eb7af62768cbb72b56ac0bcabab249d660e960fd61c462c344524"

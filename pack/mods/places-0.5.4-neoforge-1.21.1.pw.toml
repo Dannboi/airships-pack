@@ -1,0 +1,8 @@
+name = "places-0.5.4-neoforge-1.21.1"
+filename = "places-0.5.4-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/afbcedbc8c-places-0.5.4-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "df4e368b19bb89322b2f0ef858e0e42c6ffb54e7a12bac65e4ad3cb6b2b0fe2f7b94e08e1ea06ee9b7cb836ff934de4e7e22436092d2292deee7c3acd08812db"

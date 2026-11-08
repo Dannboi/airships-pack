@@ -1,0 +1,9 @@
+[memories]
+	#How many in-game days memories are kept before they expire.
+	# Default: 7
+	# Range: 1 ~ 365
+	memoryRetentionDays = 7
+	#Maximum number of remembered scenes stored per player.
+	# Default: 20
+	# Range: 1 ~ 200
+	maxMemoriesPerPlayer = 20

@@ -1,0 +1,9 @@
+#Allowed Values: GUI, CYCLE, MIXED
+platform_select = "MIXED"
+
+#Select A GUI Style
+[gui_style]
+	#Allowed Values: DEFAULT, VANILLA
+	platformer = "DEFAULT"
+	#Allowed Values: DEFAULT, VANILLA
+	wrench = "DEFAULT"

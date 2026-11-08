@@ -1,0 +1,11 @@
+{
+  "baseCost": 1,
+  "blocksPerLevel": 5000,
+  "maxCost": 10,
+  "blocksPerSecond": 75.0,
+  "maxTravelSeconds": 600,
+  "minTravelSeconds": 5,
+  "allowCrossDimension": false,
+  "onlyOwnerCanBreak": true,
+  "combatLockSeconds": 10
+}

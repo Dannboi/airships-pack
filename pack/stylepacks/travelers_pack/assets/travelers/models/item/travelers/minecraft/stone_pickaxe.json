@@ -1,0 +1,1 @@
+{ "parent": "minecraft:item/handheld", "textures": { "layer0": "travelers:item/travelers/minecraft/stone_pickaxe" } }

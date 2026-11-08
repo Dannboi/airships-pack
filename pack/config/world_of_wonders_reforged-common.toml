@@ -1,0 +1,86 @@
+#World of Wonders structure generation settings. Spacing and separation are measured in chunks. Larger spacing means rarer structures. Separation must stay lower than spacing; if not, the generated datapack clamps it safely.
+[structures]
+
+	[structures.acidic_pickaxe]
+		#Set to false to disable this structure set.
+		enabled = true
+		#Average distance between placement attempts in chunks. Higher values make this structure rarer.
+		# Default: 130
+		# Range: 1 ~ 4096
+		spacing = 130
+		#Minimum chunk separation between placement attempts. Must be lower than spacing.
+		# Default: 10
+		# Range: 0 ~ 4095
+		separation = 10
+
+	[structures.brokencastle]
+		#Set to false to disable this structure set.
+		enabled = true
+		#Average distance between placement attempts in chunks. Higher values make this structure rarer.
+		# Default: 130
+		# Range: 1 ~ 4096
+		spacing = 130
+		#Minimum chunk separation between placement attempts. Must be lower than spacing.
+		# Default: 10
+		# Range: 0 ~ 4095
+		separation = 10
+
+	[structures.experience_pickaxe]
+		#Set to false to disable this structure set.
+		enabled = true
+		#Average distance between placement attempts in chunks. Higher values make this structure rarer.
+		# Default: 130
+		# Range: 1 ~ 4096
+		spacing = 130
+		#Minimum chunk separation between placement attempts. Must be lower than spacing.
+		# Default: 2
+		# Range: 0 ~ 4095
+		separation = 2
+
+	[structures.fluit_tanker]
+		#Set to false to disable this structure set.
+		enabled = true
+		#Average distance between placement attempts in chunks. Higher values make this structure rarer.
+		# Default: 120
+		# Range: 1 ~ 4096
+		spacing = 120
+		#Minimum chunk separation between placement attempts. Must be lower than spacing.
+		# Default: 10
+		# Range: 0 ~ 4095
+		separation = 10
+
+	[structures.mansionofwonders]
+		#Set to false to disable this structure set.
+		enabled = true
+		#Average distance between placement attempts in chunks. Higher values make this structure rarer.
+		# Default: 200
+		# Range: 1 ~ 4096
+		spacing = 200
+		#Minimum chunk separation between placement attempts. Must be lower than spacing.
+		# Default: 10
+		# Range: 0 ~ 4095
+		separation = 10
+
+	[structures.nuclearsiren]
+		#Set to false to disable this structure set.
+		enabled = true
+		#Average distance between placement attempts in chunks. Higher values make this structure rarer.
+		# Default: 110
+		# Range: 1 ~ 4096
+		spacing = 110
+		#Minimum chunk separation between placement attempts. Must be lower than spacing.
+		# Default: 2
+		# Range: 0 ~ 4095
+		separation = 2
+
+	[structures.toweroffossia]
+		#Set to false to disable this structure set.
+		enabled = true
+		#Average distance between placement attempts in chunks. Higher values make this structure rarer.
+		# Default: 120
+		# Range: 1 ~ 4096
+		spacing = 120
+		#Minimum chunk separation between placement attempts. Must be lower than spacing.
+		# Default: 10
+		# Range: 0 ~ 4095
+		separation = 10

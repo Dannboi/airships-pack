@@ -1,0 +1,8 @@
+name = "zeldaswordskills-1.0.0"
+filename = "zeldaswordskills-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/dafb1bee9c-zeldaswordskills-1.0.0.jar"
+hash-format = "sha512"
+hash = "7e853dccd71e2ae87cc9a49ee0e7c54fb4325ce19e6864df814e1aa33db68c6265890b6d6927401483ab1df5042eead3363c8d8c09c0d702713578baf8b17256"

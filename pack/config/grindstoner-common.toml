@@ -1,0 +1,9 @@
+[sharpening]
+	#Number of hits a sharpened weapon lasts before dulling.
+	# Default: 20
+	# Range: 1 ~ 1000
+	sharpenedUses = 20
+	#Damage multiplier while the weapon is sharpened. 1.5 = 50% more damage.
+	# Default: 1.5
+	# Range: 1.0 ~ 5.0
+	damageMultiplier = 1.5

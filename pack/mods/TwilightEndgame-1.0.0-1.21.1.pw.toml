@@ -1,0 +1,13 @@
+name = "Twilight Endgame"
+filename = "TwilightEndgame-1.0.0-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/CpdnjymJ/versions/gxuRUdW3/TwilightEndgame-1.0.0-1.21.1.jar"
+hash-format = "sha512"
+hash = "8f1c237257883bab541f8cf1e06d41765de31ed18b3b2ae91cacb92802d413c0ab2b697b752e21be5b4cfda71b36f6fd1af6bc6bacc1101bf5589cdcdefad044"
+
+[update]
+[update.modrinth]
+mod-id = "CpdnjymJ"
+version = "gxuRUdW3"

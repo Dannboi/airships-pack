@@ -1,0 +1,8 @@
+name = "connectivity-1.21.1-7.6"
+filename = "connectivity-1.21.1-7.6.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/6adebe84f7-connectivity-1.21.1-7.6.jar"
+hash-format = "sha512"
+hash = "a2210b4dadf3ccdbfd835fe6ce504a211c8c27ce68ee34610bb3acf60cfc7ed9ab57ac0465db10bc5ad937aab08beb79afd25dc163af0c153830e93a28d62b0d"

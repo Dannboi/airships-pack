@@ -1,0 +1,9 @@
+{
+  "items": {
+
+  },
+  "armor": {
+    "minecraft:diamond_helmet": "rustic:visor_down/diamond/diamond",
+    "minecraft:netherite_helmet": "rustic:visor_down/netherite/netherite"
+  }
+}

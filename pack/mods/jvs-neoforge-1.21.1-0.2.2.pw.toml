@@ -1,0 +1,13 @@
+name = "Jaki Versatile Structures"
+filename = "jvs-neoforge-1.21.1-0.2.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/xrB3Khwy/versions/8uLbeYO8/jvs-neoforge-1.21.1-0.2.2.jar"
+hash-format = "sha512"
+hash = "e70007d3d30c21f24b67981b69decde7985e46841c8b4c48c7370c612317e5d4cb7eb8cf7f29286cb2a18c8b3f20f6fa12485a999646e4a8d30e10ccadb176ff"
+
+[update]
+[update.modrinth]
+mod-id = "xrB3Khwy"
+version = "8uLbeYO8"

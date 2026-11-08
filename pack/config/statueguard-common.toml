@@ -1,0 +1,2 @@
+#Stone statues trapping these entity types are deleted on join (server side).
+blockedStatueTypes = ["iceandfire:troll"]

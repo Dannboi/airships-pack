@@ -1,0 +1,13 @@
+name = "Much More Dungeons"
+filename = "muchmoredungeons-neoforge-1.21.1-2.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ydBxwDBa/versions/UVY2JEM6/muchmoredungeons-neoforge-1.21.1-2.0.1.jar"
+hash-format = "sha512"
+hash = "e264b1996412963d2eef68a74b427a598387dba31b56ab960b22d831eb6b1280af51183244efcd9f7ac2144a3ac26c4c228b4daddff94bfa934e9824eba0c5f2"
+
+[update]
+[update.modrinth]
+mod-id = "ydBxwDBa"
+version = "UVY2JEM6"

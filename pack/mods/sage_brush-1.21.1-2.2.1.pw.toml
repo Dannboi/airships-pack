@@ -1,0 +1,8 @@
+name = "sage_brush-1.21.1-2.2.1"
+filename = "sage_brush-1.21.1-2.2.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/fa6bb580e0-sage_brush-1.21.1-2.2.1.jar"
+hash-format = "sha512"
+hash = "bc8db8408eab4c58e1579ac4fd8e076e3a602a3e523b9b9082cb2685f8a1bea7303ed9d0a15860ccad8d39eea4d730cc43eb23dba6b9f6e790bf1ff65cde7de3"

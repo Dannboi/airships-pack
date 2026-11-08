@@ -1,0 +1,8 @@
+{
+  "items": {
+    "minecraft:elytra": "grim:item/chainmail/minecraft/elytra"
+  },
+  "elytra": {
+    "minecraft:elytra": "grim:chainmail/elytra/minecraft/elytra"
+  }
+}

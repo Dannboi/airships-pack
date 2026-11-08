@@ -1,0 +1,8 @@
+name = "Create Aeronautics Gyroscope Stabilizers"
+filename = "Create Aeronautics Gyroscope Stabilizers.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/0aad3242de-Create_Aeronautics_Gyroscope_Stabilizers.jar"
+hash-format = "sha512"
+hash = "d52e228ea0efbeb1fbf93701eba5dcad9d90677f7122877f15d6696afe12471c9cbe4736a1f57d02bf311ff048178fbe253275f7d6e829c79498f51b7ea12830"

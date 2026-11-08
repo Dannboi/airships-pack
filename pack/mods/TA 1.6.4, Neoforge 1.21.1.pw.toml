@@ -1,0 +1,8 @@
+name = "TA 1.6.4, Neoforge 1.21.1"
+filename = "TA 1.6.4, Neoforge 1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/177bbeea7e-TA_1.6.4__Neoforge_1.21.1.jar"
+hash-format = "sha512"
+hash = "88cd1708283d2a2faf5a836424ce465b3f74bb8e58b48519fe5a5843f5e13992bcbe346c5fdc9d055b09913c2a085fe4b8cc086b576656eb9695b291c6bcaef8"

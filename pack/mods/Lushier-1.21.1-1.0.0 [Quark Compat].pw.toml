@@ -1,0 +1,13 @@
+name = "Lushier"
+filename = "Lushier-1.21.1-1.0.0 [Quark Compat].jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XMloINtN/versions/dwOrMfP4/Lushier-1.21.1-1.0.0%20%5BQuark%20Compat%5D.jar"
+hash-format = "sha512"
+hash = "e2a8ff11c46a6ca8fd6b3641916f4c9b248728542804f60b8b4a04201cc55a41252d983f06d653bf3f3e8f324d565497e32341240c7761930031d354d51f9fcb"
+
+[update]
+[update.modrinth]
+mod-id = "XMloINtN"
+version = "dwOrMfP4"

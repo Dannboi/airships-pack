@@ -1,0 +1,8 @@
+name = "aeronauticsdiscovery-2.2.0"
+filename = "aeronauticsdiscovery-2.2.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/3946e32e01-aeronauticsdiscovery-2.2.0.jar"
+hash-format = "sha512"
+hash = "135961f65c166ea7756dbb2991be4b20bfc1a65d26edd6167263106121a37eb68c8e69b8acda8bc955ea79a53db40fd05bafc9392fb15b4371f9e5b0154f08b7"

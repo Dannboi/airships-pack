@@ -1,0 +1,8 @@
+name = "inventorysorter-1.21.1-24.0.24"
+filename = "inventorysorter-1.21.1-24.0.24.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/8c842959ec-inventorysorter-1.21.1-24.0.24.jar"
+hash-format = "sha512"
+hash = "53fd25f0f3845b3d481b66a283ba10ecfdb325d111734daaa0af6a41fdacafd67b6c14e8fc1a078683606e47b7789d242b226b5adf64a966911202ab7dc1da4d"

@@ -1,0 +1,43 @@
+[crafting]
+	#Assign a random style to a (stylable) item when it is crafted.
+	#Turn this off to keep styling deliberate (Style Bench only).
+	styleOnCraft = true
+	#Probability [0..1] that a freshly crafted stylable item gets a random style.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	craftChance = 1.0
+
+[loot]
+	#Assign a random style to stylable items generated from loot tables
+	#(chests, mob drops, fishing, ...) — styles as 'flavored loot' found in the world.
+	styleOnLoot = true
+	#Probability [0..1] that a stylable loot item gets a random style.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	lootChance = 0.5
+
+[trades]
+	#Give each villager / wandering trader a consistent style, applied to the
+	#stylable gear it sells (e.g. a trader that sells "Royal" armor).
+	styleVillagerTrades = true
+
+[mobs]
+	#Assign a random style to the gear a mob spawns with — worn armor and the
+	#held weapon / shield (e.g. an armored zombie or a sword-wielding skeleton).
+	#Only naturally / spawner-spawned mobs are affected; mobs reloaded from saved
+	#chunks keep whatever they already have.
+	styleOnMobSpawn = true
+	#Probability [0..1] that an individual gear piece on a spawning mob gets a style.
+	#Rolled per equipment slot, so the held sword and each armor piece are independent.
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	mobSpawnChance = 0.5
+
+[selection]
+	#Relative weight of the plain vanilla look in random style selection (craft/loot/trades).
+	#It competes against the styles' own weights, so with N styles of weight 1 the chance of
+	#vanilla is vanillaWeight/(vanillaWeight+N). Raise it so a heavily-styled modpack still
+	#shows vanilla items regularly; set 0 to always apply a style when one is available.
+	# Default: 30
+	# Range: 0 ~ 100000
+	vanillaWeight = 30

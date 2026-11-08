@@ -1,0 +1,8 @@
+name = "opposing_force-2.1.0"
+filename = "opposing_force-2.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/b3fa2e8742-opposing_force-2.1.0.jar"
+hash-format = "sha512"
+hash = "5ce0775ae44293ea5f9210a129973d6230e7fe8a2b2ab6680c133595af7d673e98de9d0b4026e4b12dafd9d93f344ae4ab8b9c4379930fb5283786b219e41a38"

@@ -1,0 +1,10 @@
+#General Settings
+[general]
+	#Lock controls to the combat mode
+	lock_combat_mode = false
+	#Cancel horse random and hurt rearing
+	cancel_rand_rearing = true
+	#A multiplier for the rotation speed
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	rot_mutli = 1.0

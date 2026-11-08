@@ -1,0 +1,13 @@
+name = "Create: Brass Golem"
+filename = "create_brass_golem-1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4ripGPJy/versions/Y3JLl7vD/create_brass_golem-1.0.jar"
+hash-format = "sha512"
+hash = "71bc419436319a2169dade6205b408f0f36443641706ba0c0c47f5c25008762d86cd7f6fd5afa9c53d9ed71a512a4b2490d4c3d9aec833f21b20f6bac3118371"
+
+[update]
+[update.modrinth]
+mod-id = "4ripGPJy"
+version = "Y3JLl7vD"

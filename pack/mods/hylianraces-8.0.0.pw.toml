@@ -1,0 +1,8 @@
+name = "hylianraces-8.0.0"
+filename = "hylianraces-8.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/e758419a30-hylianraces-8.0.0.jar"
+hash-format = "sha512"
+hash = "e47801254b0f20ca7dd73da14af39d4947ffec4942e54d08347b8d1f1bb9f2e2566d6ffcd9f54326c152f28e0f045ad4f4bc8101ac3126ae5898086d07d7b3dc"

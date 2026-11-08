@@ -1,0 +1,9 @@
+[worldgen]
+	#Nether House structure rarity. Higher = rarer. The structure tries once per chunk that passes biome + lava-block filters; this is the additional 1-in-N dice roll on top. Default 64 ≈ one house per ~64 lava-lake-chunks.
+	# Default: 64
+	# Range: 1 ~ 10000
+	nether_house_rarity = 64
+
+[guidebook]
+	#Give each player a Smith's Guide the first time they join. Crafting a Forge for the first time always grants one regardless of this setting.
+	grant_on_first_join = true

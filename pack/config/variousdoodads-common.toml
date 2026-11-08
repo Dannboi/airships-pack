@@ -1,0 +1,109 @@
+[faustian_contract]
+	#If true, refusing (ESC or close) the Faustian Pact GUI kills the player.
+	#If false, refusing simply walks away with no effect.
+	#The contract is consumed either way.
+	killOnPactRefusal = true
+
+[slaying_arrows]
+	#Arrow of Slaying target lists. Each entry is a full entity registry ID
+	#like 'minecraft:zombie' or 'mymod:custom_mob'. Arrows deal +100 bonus damage
+	#on hit if the target's entity ID is in the relevant list.
+	#The ALL_THINGS variant ignores these lists and always deals bonus damage.
+	#All-Things — hits every living entity (lists ignored for this type).
+	all_things = []
+	#Aberration — bizarre/otherworldly creatures
+	aberration = ["minecraft:endermite", "minecraft:shulker", "minecraft:phantom"]
+	#Arthropod — spiders, insects, and other joint-legged creatures
+	arthropod = ["minecraft:spider", "minecraft:cave_spider", "minecraft:bee", "minecraft:silverfish", "minecraft:endermite"]
+	#Beast — non-humanoid animals
+	beast = ["minecraft:cow", "minecraft:sheep", "minecraft:pig", "minecraft:chicken", "minecraft:wolf", "minecraft:cat", "minecraft:ocelot", "minecraft:fox", "minecraft:rabbit", "minecraft:horse", "minecraft:donkey", "minecraft:mule", "minecraft:llama", "minecraft:trader_llama", "minecraft:goat", "minecraft:panda", "minecraft:polar_bear", "minecraft:parrot", "minecraft:camel", "minecraft:sniffer", "minecraft:mooshroom"]
+	#Wyrm — dragons and dragon-kin
+	wyrm = ["minecraft:ender_dragon"]
+	#Fey — faerie-kin and whimsical magical creatures
+	fey = ["minecraft:vex", "minecraft:allay"]
+	#Giant — massive brute creatures
+	giant = ["minecraft:giant", "minecraft:ravager", "minecraft:hoglin", "minecraft:zoglin"]
+	#God — boss-tier entities and ancient powers
+	god = ["minecraft:wither", "minecraft:elder_guardian", "minecraft:warden"]
+	#Golem — constructed and magically-animated creatures
+	golem = ["minecraft:iron_golem", "minecraft:snow_golem", "minecraft:shulker"]
+	#Humanoid — anything with a player-shaped silhouette: villagers,
+	#pillagers, piglins, witches, players, and their ilk
+	humanoid = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:pillager", "minecraft:vindicator", "minecraft:evoker", "minecraft:witch", "minecraft:illusioner", "minecraft:piglin", "minecraft:piglin_brute", "minecraft:zombified_piglin", "minecraft:player"]
+	#Outsider — creatures from other planes (Nether, End, etc.)
+	outsider = ["minecraft:blaze", "minecraft:ghast", "minecraft:wither_skeleton", "minecraft:magma_cube", "minecraft:strider"]
+	#Plant — plant-based or woodland creatures (empty by default — add your own)
+	plant = []
+	#Player — the Player specifically, for PvP-focused gameplay
+	player = ["minecraft:player"]
+	#Slime — slimes and slime-adjacent creatures
+	slime = ["minecraft:slime", "minecraft:magma_cube"]
+	#Undead — zombies, skeletons, phantoms, and the like
+	undead = ["minecraft:zombie", "minecraft:zombie_villager", "minecraft:husk", "minecraft:drowned", "minecraft:skeleton", "minecraft:stray", "minecraft:wither_skeleton", "minecraft:phantom", "minecraft:wither", "minecraft:zoglin", "minecraft:zombified_piglin", "minecraft:zombie_horse", "minecraft:skeleton_horse"]
+	#Vermin — small pests
+	vermin = ["minecraft:silverfish", "minecraft:endermite"]
+
+[soul_gem]
+	#Entity IDs that cannot be captured by the Soul Gem.
+	#Players are always excluded regardless of this list.
+	#Example: 'minecraft:ender_dragon', 'minecraft:wither'
+	blacklist = ["minecraft:ender_dragon", "minecraft:wither", "minecraft:elder_guardian", "minecraft:warden"]
+
+	[zelda.starting_gear]
+		#Grant starting gear to new players
+		enable_starting_gear = true
+		#Grant Kokiri Sword
+		enable_sword = true
+		#Grant Kokiri tunic chest
+		enable_tunic = false
+		#Grant full Kokiri tunic set
+		enable_full_set = false
+		#Auto-equip granted gear
+		enable_auto_equip = false
+		#Grant Navi fairy bottle
+		enable_navi = false
+
+	[zelda.drops]
+		grass_can_drop_arrows = true
+		grass_can_drop_bombs = false
+		grass_can_drop_emeralds = true
+
+	[zelda.loot]
+		bombs_in_chests = false
+		bomb_bags_in_chests = false
+
+	[zelda.recipes]
+		allow_gold_smelting = false
+		enable_crafting_hammer = true
+		enable_crafting_mudora = true
+
+	[zelda.world]
+		enable_boss_dungeons = true
+		#Spawn bomb flowers next to surface lava pools
+		enable_bomb_flower_gen = false
+		#Average number of chunks between naturally generated Gossip Stones (1-in-N chunks).
+		#Higher = rarer. Set to 0 to disable generation entirely.
+		# Default: 400
+		# Range: 0 ~ 10000
+		gossip_stone_rarity = 400
+		#Chance (0.0-1.0) for each ceramic jar cluster attempt to actually generate.
+		#Scales both surface and underground jar density. Set to 0 to disable generation.
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		ceramic_jar_chance = 1.0
+
+	[zelda.gameplay]
+		# Default: 50
+		# Range: 1 ~ 1000
+		skeleton_key_uses = 50
+		# Default: 500
+		# Range: 100 ~ 10000
+		max_magic_points = 500
+		always_pickup_hearts = false
+
+	[zelda.bugs]
+		#Per-check chance (0.0–1.0) that a flying beetle spawns when a player walks through grass / Nether plants.
+		#Checked roughly every 0.5 s per moving player. Default 0.01 (~1 in 100). Set to 0 to disable spawns entirely.
+		# Default: 0.01
+		# Range: 0.0 ~ 1.0
+		beetle_spawn_chance = 0.01

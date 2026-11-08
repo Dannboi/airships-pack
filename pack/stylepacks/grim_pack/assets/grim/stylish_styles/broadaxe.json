@@ -1,0 +1,10 @@
+{
+  "items": {
+    "minecraft:diamond_axe": "grim:item/broadaxe/minecraft/diamond_axe",
+    "minecraft:golden_axe": "grim:item/broadaxe/minecraft/golden_axe",
+    "minecraft:iron_axe": "grim:item/broadaxe/minecraft/iron_axe",
+    "minecraft:netherite_axe": "grim:item/broadaxe/minecraft/netherite_axe",
+    "minecraft:stone_axe": "grim:item/broadaxe/minecraft/stone_axe",
+    "minecraft:wooden_axe": "grim:item/broadaxe/minecraft/wooden_axe"
+  }
+}

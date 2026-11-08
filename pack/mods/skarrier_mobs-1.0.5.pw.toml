@@ -1,0 +1,8 @@
+name = "skarrier_mobs-1.0.5"
+filename = "skarrier_mobs-1.0.5.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/99e82dd617-skarrier_mobs-1.0.5.jar"
+hash-format = "sha512"
+hash = "01dec62116230333719c6a2ec97779426e61659f090daa590c191b0808bfea7e25a5b6d4b25c386f2eee62e326d6cb9c8891a6f4d24a4b8be45a50cbb29d6312"

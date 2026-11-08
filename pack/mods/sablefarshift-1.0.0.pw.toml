@@ -1,0 +1,8 @@
+name = "sablefarshift-1.0.0"
+filename = "sablefarshift-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/1a6df46cc0-sablefarshift-1.0.0.jar"
+hash-format = "sha512"
+hash = "815e2008acab53fa9cffdc34ca13a73bd9dec4ec0380bff558354baa9cdc4c40a33c5c3de7c08a23d9fd879b6a44626aab4d2ca8be26cc085541e316e8b17afc"

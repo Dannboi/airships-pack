@@ -1,0 +1,7 @@
+[enabled_controls]
+	#Server/common toggle: enable drag control for Create analog lever.
+	enable_create_analog_lever = true
+	#Server/common toggle: enable drag control for DnDecor stepped lever.
+	enable_dndecor_stepped_lever = true
+	#Server/common toggle: enable drag control for Supplementaries crank.
+	enable_supplementaries_crank = true

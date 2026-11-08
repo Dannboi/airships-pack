@@ -1,0 +1,16 @@
+#Goron Race Client Configuration
+[client]
+
+	#Camera settings
+	[client.camera]
+		#Automatically switch to third person when rolling (and back when stopping)
+		autoThirdPersonWhenRolling = true
+
+	#Rolling settings
+	[client.rolling]
+		#Number of ticks to hold sneak before entering rolling state.
+		#During this delay, vanilla sneaking works normally (shift-place blocks, etc.).
+		#20 ticks = 1 second. Set to 0 to disable the delay (instant rolling).
+		# Default: 20
+		# Range: 0 ~ 100
+		sneakDelayTicks = 20

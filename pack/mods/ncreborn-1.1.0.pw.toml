@@ -1,0 +1,8 @@
+name = "ncreborn-1.1.0"
+filename = "ncreborn-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/6a96755f39-ncreborn-1.1.0.jar"
+hash-format = "sha512"
+hash = "570352f241b6be7aa246d583d2ad14982150187913acfafcbbc2de1fb0b086df73a9589fd074cd93e658fba4dac2db5b7868676e44bfa623bab825b4718006f5"

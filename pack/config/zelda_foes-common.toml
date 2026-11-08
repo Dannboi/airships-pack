@@ -1,0 +1,48 @@
+[like_like]
+	#Enchantment IDs that make items immune to Like-Like consumption.
+	#Loyalty is always immune and does not need to be listed here.
+	#Format: "modid:enchantment_name" (e.g., "minecraft:mending")
+	immuneEnchantments = ["minecraft:binding_curse"]
+
+#Spawn weights for each mob. Set to 0 to disable natural spawning.
+#Higher values = more common. For reference, vanilla Zombies are ~100.
+[spawns]
+	#Cave Dodongo spawn weight (underground only)
+	# Default: 10
+	# Range: 0 ~ 1000
+	caveDodongo = 10
+	#Deku Baba spawn weight (forest biomes)
+	# Default: 95
+	# Range: 0 ~ 1000
+	dekuBaba = 95
+	#Deku Scrub spawn weight (forest biomes)
+	# Default: 80
+	# Range: 0 ~ 1000
+	dekuScrub = 80
+	#Like-Like spawn weight (overworld, underground)
+	# Default: 30
+	# Range: 0 ~ 1000
+	likeLike = 30
+	#Redead spawn weight (all biomes)
+	# Default: 75
+	# Range: 0 ~ 1000
+	redead = 75
+	#Tektite spawn weight (all biomes)
+	# Default: 90
+	# Range: 0 ~ 1000
+	tektite = 90
+	#Stalfos spawn weight (all biomes, mini-boss). Reference: vanilla Enderman is 10.
+	# Default: 12
+	# Range: 0 ~ 1000
+	stalfos = 12
+
+[stalfos]
+	#FALLBACK sword if the zelda_foes:stalfos_equipment loot table (editable
+	#in-game via /skogg tables) rolls no mainhand item.
+	#Format: "modid:item" (e.g., "spartanweaponry:longsword_iron")
+	swordItem = "minecraft:iron_sword"
+	#FALLBACK shield if the zelda_foes:stalfos_equipment loot table rolls no
+	#offhand item. Any modded item that registers the shield_block ability
+	#works (Spartan Shields, Skyrim Skeletons, etc.).
+	#Format: "modid:item" (e.g., "skyrim_skeletons:skeleton_shield")
+	shieldItem = "minecraft:shield"

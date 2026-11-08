@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/wooden_axe__m_item_wooden_axe_1__t_item_wooden_axe_1"
+    }
+}

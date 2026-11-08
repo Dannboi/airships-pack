@@ -1,0 +1,64 @@
+[rewards]
+	#Chance (0.0 - 1.0) at trust 30 for the first-daily-talk apple reward
+	#to be a Golden Apple instead of a regular Apple. Default: 0.25
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	goldenAppleChance = 0.25
+
+[worldgen]
+	#Chance (0.0 - 1.0) that a wise tree spawns surrounded by a fairy ring of
+	#flowers. One flower species is picked at random per tree. Default: 0.25
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	fairyRingChance = 0.25
+	#Wise tree spawn rarity. The feature is rolled once per eligible chunk;
+	#a tree appears with probability 1/N. Larger = rarer. Default: 400.
+	#Set to 1 to spawn one per attempt (testing); set to a very large value to disable natural spawning.
+	# Default: 400
+	# Range: 1 ~ 1000000
+	spawnRarity = 400
+	#Additional structure tags the tree can give directions to.
+	#Each entry is a structure tag identifier in the form 'namespace:path'.
+	#Invalid or unloaded tags are silently skipped at lookup time.
+	#
+	#  Example:
+	#    customStructureTags = [
+	#        "mymod:ancient_temples",
+	#        "anothermod:floating_islands"
+	#    ]
+	customStructureTags = []
+
+[dialogue]
+	#Custom dialogue lines the tree may say. Blended into its normal rotation.
+	#
+	#  HOW TO ADD LINES:
+	#  Put each line in double quotes, separate them with commas, all inside [ ].
+	#  An empty list [] means no custom lines.
+	#
+	#  Two-line example:
+	#    customLines = [
+	#        "The seasons turn — have you noticed?",
+	#        "I taste rain on tomorrow."
+	#    ]
+	#
+	#  One-line example:
+	#    customLines = ["A short line on a single row works too."]
+	customLines = []
+	#Additional LORE lines blended into the tree's lore pool. Same format as
+	#customLines above. Use this to weave your mods' worldbuilding into the tree.
+	#
+	#  Example:
+	#    customLore = [
+	#        "The shrines at Eldrin's Hollow remember when the river had two mouths.",
+	#        "Long before villages, the obsidian people walked here."
+	#    ]
+	customLore = []
+	#Additional SECRETS lines (high-trust only). Same format as customLines above.
+	#Good for modpack-specific tips, hidden mechanics, or rumours.
+	#
+	#  Example:
+	#    customSecrets = [
+	#        "The frost-iron forge wakes only when struck by lightning.",
+	#        "A door opens beneath the desert pyramid every full moon."
+	#    ]
+	customSecrets = []

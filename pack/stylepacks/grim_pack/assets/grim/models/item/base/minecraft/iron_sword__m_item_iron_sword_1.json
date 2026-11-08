@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/iron_sword__m_item_iron_sword_1__t_minecraft_item_iron_sword_1"
+    }
+}

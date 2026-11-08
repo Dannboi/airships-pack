@@ -1,0 +1,8 @@
+name = "chestcavity_mythical-0.1.0"
+filename = "chestcavity_mythical-0.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/52fd80a4f7-chestcavity_mythical-0.1.0.jar"
+hash-format = "sha512"
+hash = "0413aaf3fc908b9cbf085ca4a4927f5a36b21abd6f5c9082cf67b1db040a11463c08f293d3e52518a46d2d751e048f6b3959b64e1781b1be0a100c9b2dfb73ab"

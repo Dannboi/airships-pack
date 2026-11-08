@@ -1,0 +1,8 @@
+name = "integrated_api-1.7.4+1.21.1-neoforge"
+filename = "integrated_api-1.7.4+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/11e291c2c3-integrated_api-1.7.4+1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "9aa4cb9b713d82eff50af54f303acfc67c1562c235795e56c6c5c869c670720047f812ed75f210b4bea58ae19c201ed1aa4020086028d5ddc9cc91b4b0b321ab"

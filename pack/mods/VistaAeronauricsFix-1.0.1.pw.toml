@@ -1,0 +1,8 @@
+name = "VistaAeronauricsFix-1.0.1"
+filename = "VistaAeronauricsFix-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/0596cfcd47-VistaAeronauricsFix-1.0.1.jar"
+hash-format = "sha512"
+hash = "dbe4b8a609e03a6e69c81975a554b8cb44f45c887b4e2dd6d1f750b8f5f1e40a56bc94cf9aba6a8d889e47a1ef57fa5f5d0e6bd83254d21901851d2e3d80362a"

@@ -1,0 +1,13 @@
+name = "Copper Overthrow"
+filename = "copperoverthrow-1.0.2-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YmjYxO56/versions/Jmw1QRsA/copperoverthrow-1.0.2-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "6ee06b9125c2d34148c771ac57ffb1d6aefef877cb0a5f1cd7e48cdc90f072a3ca37152f8bd21b5e7a83004e03f5dc6f2305ca979c3f1742d6c23fa75545048f"
+
+[update]
+[update.modrinth]
+mod-id = "YmjYxO56"
+version = "Jmw1QRsA"

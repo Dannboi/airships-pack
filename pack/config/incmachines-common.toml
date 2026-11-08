@@ -1,0 +1,6 @@
+[integration]
+	#Enable Create-gated recipes (Mechanical Crafting variants) when
+	#Create is loaded. Set to false to skip them even if Create is
+	#present — useful when a pack provides custom crafting recipes
+	#via KubeJS or CraftTweaker. Default: true.
+	enable_create_recipes = true

@@ -1,0 +1,8 @@
+name = "aeroworks-1.2.11"
+filename = "aeroworks-1.2.11.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/b36e8b2abe-aeroworks-1.2.11.jar"
+hash-format = "sha512"
+hash = "f9eb4ebd8b42e56e4832ce8c172a4ffee2a3f8f8cddba729a1f7406a9c9665e3243148d4203b1069401b2b105acfdd220e8ccf181ea38d1377efa7bc8d572838"

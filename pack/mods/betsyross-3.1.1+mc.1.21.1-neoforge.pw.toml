@@ -1,0 +1,13 @@
+name = "Ritchie's Betsy Ross"
+filename = "betsyross-3.1.1+mc.1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/QHsVGyjJ/versions/zu0UFH4R/betsyross-3.1.1%2Bmc.1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "ca79caf26828b413071aa387d4590b3fc01f9a9747e5260e4e8d3f755602356c3a8b8e702c0c324577a473a7e0ba690c83018c5f578495d78d859797db6b84b5"
+
+[update]
+[update.modrinth]
+mod-id = "QHsVGyjJ"
+version = "zu0UFH4R"

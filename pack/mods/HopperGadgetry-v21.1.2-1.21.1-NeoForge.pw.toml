@@ -1,0 +1,13 @@
+name = "Hopper Gadgetry"
+filename = "HopperGadgetry-v21.1.2-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/RCK4uOMN/versions/oNpW2PtS/HopperGadgetry-v21.1.2-1.21.1-NeoForge.jar"
+hash-format = "sha512"
+hash = "ba5562fb8eb4f62d9da98a1c36cf2c0825728e4ff3391e6f869817f6e0a19cf7d8f003ada13bfe6c7110cb3036487748a174d6d6438432a221d710b48dcdd836"
+
+[update]
+[update.modrinth]
+mod-id = "RCK4uOMN"
+version = "oNpW2PtS"

@@ -1,0 +1,9 @@
+[ui]
+	#Visual style of the Forge GUI.
+	#STEEL  = brushed-iron textured panel with cream-on-dark forge title (default).
+	#VANILLA = flat gray inventory-style panel.
+	#Allowed Values: STEEL, VANILLA
+	forge_gui_style = "STEEL"
+	#Whether sentient gear speaks to you on the action bar (warnings, kill/hurt/mining
+	#remarks, low-durability alerts, and a parting line when it breaks).
+	gear_speech = true

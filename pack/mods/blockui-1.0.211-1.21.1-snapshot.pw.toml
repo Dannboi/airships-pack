@@ -1,0 +1,8 @@
+name = "blockui-1.0.211-1.21.1-snapshot"
+filename = "blockui-1.0.211-1.21.1-snapshot.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/0ab4e0342b-blockui-1.0.211-1.21.1-snapshot.jar"
+hash-format = "sha512"
+hash = "b31e68b526b30b1a5b58cbc624b4d586937e6ca5d4eff83cec4e48017a5b24171716c0ef146be329d5f1add738352c5ac794fb2245a9e3bf4b58326f71a0e381"

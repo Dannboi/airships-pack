@@ -1,0 +1,8 @@
+name = "StorageDrawers-neoforge-1.21.1-13.11.4"
+filename = "StorageDrawers-neoforge-1.21.1-13.11.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/c9678332f2-StorageDrawers-neoforge-1.21.1-13.11.4.jar"
+hash-format = "sha512"
+hash = "68a882475132879bea919601529ed23252d278fde99afd1e2eaa9a5276dcfb42d2e746d1d0ce2ddac4cd8d48704ebb1a765afbfa6fd3281cf443a09b382c1f80"

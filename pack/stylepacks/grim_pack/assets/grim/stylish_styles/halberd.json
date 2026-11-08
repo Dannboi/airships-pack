@@ -1,0 +1,10 @@
+{
+  "items": {
+    "minecraft:diamond_axe": "grim:item/halberd/minecraft/diamond_axe",
+    "minecraft:golden_axe": "grim:item/halberd/minecraft/golden_axe",
+    "minecraft:iron_axe": "grim:item/halberd/minecraft/iron_axe",
+    "minecraft:netherite_axe": "grim:item/halberd/minecraft/netherite_axe",
+    "minecraft:stone_axe": "grim:item/halberd/minecraft/stone_axe",
+    "minecraft:wooden_axe": "grim:item/halberd/minecraft/wooden_axe"
+  }
+}

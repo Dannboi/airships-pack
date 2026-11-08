@@ -1,0 +1,2 @@
+#Default mode shows detailed descriptions. When disabled, hold SHIFT to view details.
+detailedTooltips = false

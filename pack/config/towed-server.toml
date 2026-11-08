@@ -1,0 +1,139 @@
+#Server-side settings for Create: Towed
+[server]
+	#Maximum number of tow-ropes that can be attached to a single entity (animal/mob) at once.
+	#Default: 2  |  Min: 1  |  Max: 64
+	# Default: 2
+	# Range: 1 ~ 64
+	max_ropes_per_entity = 2
+
+#Who is in charge of a freshly attached harness, and how strong mobs are when they do the pulling.
+#Every harness can be switched between the two modes in-game by right-clicking its anchor block
+#(Rope Connector / Rope Winch) with a Rope Coupling while nothing is pending on the coupling.
+#
+#Mob-controlled towing is force based: once the mob walks past the slack of the rope the rope acts as a
+#spring-damper whose tension pulls the contraption. The mob can only build up tension up to its pull force,
+#walks slower the closer it gets to that limit, and is yanked back if the tension rises above it.
+#Force units: a force of 1 accelerates a body of Sable mass 1 (one plain block; stone is 2) by 1 block/s^2.
+[towing]
+	#Mode a new harness starts in.
+	#CONTRAPTION_CONTROLLED: the contraption pulls/drags the mob (original Create: Towed behaviour).
+	#MOB_CONTROLLED: the mob pulls the contraption behind it, limited by its pull force.
+	#Allowed Values: CONTRAPTION_CONTROLLED, MOB_CONTROLLED
+	default_tow_mode = "MOB_CONTROLLED"
+	#Pull force of a mob per unit of body size. Body size = strength * weight, both derived from the hitbox
+	#(a horse is roughly 0.7, a cow 0.4, a pig 0.3, a chicken 0.1, an iron golem 1.1, a ravager 1.3).
+	#With the default of 520 a horse pulls with a force of about 370. For scale: an Offroad wheel at the
+	#default suspension strength drags with about 15 x speed, so a four-wheel cart needs ~120 to cruise at
+	#2 blocks/s, a powered Offroad wheel at 64 RPM pushes with ~110, Sable gravity is 11 blocks/s^2, and
+	#dragging a wheel-less 20-block platform over stone needs ~220.
+	#Swimming or airborne mobs pull far weaker.
+	#Default: 520
+	# Default: 520.0
+	# Range: 0.0 ~ 1000000.0
+	mob_pull_strength = 520.0
+	#Rope tension per block of stretch beyond the slack. Together with the pull force this sets how far a
+	#mob can stretch the rope before it is held back: max stretch = pull force / stiffness
+	#(a horse at the defaults stretches the rope about 1.2 blocks when pulling flat out).
+	#Lower values feel more elastic, higher values feel more like a chain.
+	#Default: 300
+	# Default: 300.0
+	# Range: 1.0 ~ 100000.0
+	rope_stiffness = 300.0
+	#Damping of the rope spring relative to critical damping for the contraption it is pulling.
+	#0 = bouncy, 1 = no overshoot. Only resists the two ends separating; a rope never pushes.
+	#Default: 0.7
+	# Default: 0.7
+	# Range: 0.0 ~ 3.0
+	rope_damping_ratio = 0.7
+	#How much rope tension slows the mob down while it is pulling. The slowdown grows with the square of
+	#tension / pull force, so light loads barely slow the mob and heavy ones slow it a lot:
+	#speed factor = 1 - this * (tension / pull force)^2. 0 = no slowdown.
+	#Default: 0.8
+	# Default: 0.8
+	# Range: 0.0 ~ 1.0
+	mob_pull_load_slowdown = 0.8
+	#Lower bound of the pulling speed factor while the mob is still below its pull force.
+	#Default: 0.3
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	mob_pull_min_speed_factor = 0.3
+	#Working pace: while the rope is under tension the mob never moves faster than this fraction of its
+	#normal speed, no matter how light the load. The load slowdown above stacks on top of it.
+	#Default: 0.6
+	# Default: 0.6
+	# Range: 0.05 ~ 1.0
+	mob_pull_towing_speed_cap = 0.6
+	#Hard cap (in blocks) on how far any mob may stretch the rope, regardless of its pull force.
+	#Default: 3.0
+	# Default: 3.0
+	# Range: 0.0 ~ 16.0
+	mob_pull_max_stretch = 3.0
+	#How hard the mob is yanked back once the rope tension exceeds its pull force, e.g. when the cart
+	#rolls away downhill or an airship it is tied to lifts off. 0 disables the yank (the mob is still
+	#teleported after the contraption if it gets too far).
+	#Default: 1.0
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	mob_pull_reaction = 1.0
+	#Mass of a mob in Sable mass units per unit of hitbox weight (a horse has weight 0.7, so about 14 blocks
+	#worth of mass at the default). Only used to scale the yank-back reaction above.
+	#Default: 20.0
+	# Default: 20.0
+	# Range: 0.1 ~ 1000.0
+	mob_pull_mass = 20.0
+	#Traction ramp: how long (seconds) a mob has to keep leaning into a taut rope before its full pull
+	#force is available. Makes a mob visibly strain against a load before it gets it moving.
+	#The ramp winds down twice as fast while the rope is slack. 0 disables it.
+	#Default: 1.5
+	# Default: 1.5
+	# Range: 0.0 ~ 30.0
+	mob_pull_ramp_seconds = 1.5
+	#Fraction of the pull force available the moment the rope goes taut, before the traction ramp.
+	#Default: 0.3
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	mob_pull_ramp_start = 0.3
+	#Inertia buffer on the contraption side: the mob has to keep pulling for this long before the full rope
+	#tension reaches the contraption, so it creeps into motion instead of snapping after the mob. The
+	#duration grows linearly with contraption mass above the reference mass below (a contraption twice
+	#the reference mass takes twice as long), capped at four times this value. Shares the clock and the
+	#reset delay of the traction ramp. 0 disables it.
+	#Default: 1.5
+	# Default: 1.5
+	# Range: 0.0 ~ 30.0
+	mob_pull_inertia_seconds = 1.5
+	#Contraption mass (Sable units, one plain block = 1) at and below which the inertia buffer lasts
+	#exactly mob_pull_inertia_seconds.
+	#Default: 30
+	# Default: 30.0
+	# Range: 1.0 ~ 100000.0
+	mob_pull_inertia_reference_mass = 30.0
+	#Fraction of the rope tension that reaches the contraption at the start of the inertia buffer.
+	#Default: 0.15
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	mob_pull_inertia_start = 0.15
+	#Once the mob has leaned in, the ramp only winds back down after the towed contraption has been
+	#at rest for this many seconds. A brief slack while the contraption catches up therefore never
+	#knocks the pull force back down mid-tow (which would make the mob jerk against the ramp).
+	#Default: 1.0
+	# Default: 1.0
+	# Range: 0.0 ~ 30.0
+	mob_pull_ramp_reset_delay = 1.0
+	#Contraption speed (blocks/s) below which it counts as at rest for the ramp reset above.
+	#Default: 0.3
+	# Default: 0.3
+	# Range: 0.0 ~ 10.0
+	mob_pull_ramp_reset_speed = 0.3
+	#A mob-controlled (hitched) mob stands still instead of wandering off with the contraption: its own
+	#pathfinding is suppressed while it is hitched. It can still be ridden, and still follows a player
+	#holding it on a lead. Set to false to let hitched animals roam and tow on their own.
+	#Default: true
+	mob_pull_hold_still = true
+	#Debug/creative: when true mobs have unlimited pull force and are never slowed down or yanked back.
+	#Default: false
+	mob_pull_ignore_load = false
+	#Debug: log the live towing numbers (pull force, tension, stretch, contraption mass and speed) of every
+	#mob-controlled rope to the server log twice a second and show them on the action bar of nearby players.
+	#Default: false
+	mob_pull_debug = false

@@ -1,0 +1,10 @@
+{
+  "items": {
+    "minecraft:diamond_shovel": "grim:item/warfork/minecraft/diamond_shovel",
+    "minecraft:golden_shovel": "grim:item/warfork/minecraft/golden_shovel",
+    "minecraft:iron_shovel": "grim:item/warfork/minecraft/iron_shovel",
+    "minecraft:netherite_shovel": "grim:item/warfork/minecraft/netherite_shovel",
+    "minecraft:stone_shovel": "grim:item/warfork/minecraft/stone_shovel",
+    "minecraft:wooden_shovel": "grim:item/warfork/minecraft/wooden_shovel"
+  }
+}

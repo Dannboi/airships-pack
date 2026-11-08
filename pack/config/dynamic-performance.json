@@ -1,0 +1,37 @@
+{
+  "interval": 15,
+  "lag_threshold": 45.0,
+  "recovery_threshold": 30.0,
+  "levels": [
+    {
+      "type": "SIMULATION_DISTANCE",
+      "max": 16,
+      "min": 8,
+      "increment": 1
+    },
+    {
+      "type": "MOB_CAP_PERCENTAGE",
+      "max": 100,
+      "min": 75,
+      "increment": 5
+    },
+    {
+      "type": "SIMULATION_DISTANCE",
+      "max": 8,
+      "min": 5,
+      "increment": 1
+    },
+    {
+      "type": "MOB_CAP_PERCENTAGE",
+      "max": 75,
+      "min": 30,
+      "increment": 15
+    },
+    {
+      "type": "VIEW_DISTANCE",
+      "max": 20,
+      "min": 4,
+      "increment": 2
+    }
+  ]
+}

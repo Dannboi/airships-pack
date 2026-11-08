@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/shears__m_item_shears_1__t_item_shears_1"
+    }
+}

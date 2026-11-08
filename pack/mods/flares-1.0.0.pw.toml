@@ -1,0 +1,13 @@
+name = "Flare Guns"
+filename = "flares-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/HBcgcG1W/versions/xkFVBr0Q/flares-1.0.0.jar"
+hash-format = "sha512"
+hash = "b3afd753c3e739674e6348d1e54f58f80779db0dd520cb4355efaf979828766ea80d202ef782e9272f32dc9dcd6aa5b31190c5802a55522d9dbb1aec14ac660d"
+
+[update]
+[update.modrinth]
+mod-id = "HBcgcG1W"
+version = "xkFVBr0Q"

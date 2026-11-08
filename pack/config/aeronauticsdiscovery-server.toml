@@ -1,0 +1,27 @@
+[log]
+	#Enable [BRIDGE] log output
+	bridge = false
+	#Enable [MIXIN] log output
+	mixin = false
+	#Enable [FLYOVER] log output
+	flyover = false
+	#Enable [FLYOVER_TEST] log output
+	flyoverTest = false
+	#Enable [PHYSICS] log output
+	physics = false
+	#Enable [BUOYANCY] log output
+	buoyancy = false
+	#Enable [QUEUE] log output
+	queue = false
+	#Enable [TRADE] log output
+	trade = false
+	#Enable [GEN] log output
+	gen = false
+	#Enable [SEAT] log output
+	seat = false
+	#Enable [PIN] log output
+	pin = false
+	#Enable [PIPELINE] log output
+	pipeline = false
+	#Enable [GENERAL] log output
+	general = false

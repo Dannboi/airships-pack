@@ -1,0 +1,8 @@
+name = "balm-neoforge-1.21.1-21.0.59"
+filename = "balm-neoforge-1.21.1-21.0.59.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/b0bf4bed33-balm-neoforge-1.21.1-21.0.59.jar"
+hash-format = "sha512"
+hash = "093235b2f26d09237961ce431498ce2c1af230993a9e9e3106705a8bdccbfeea8d56300c002706da93ed8f90311785d464aa209930bc1aefa37d680930b9fbe0"

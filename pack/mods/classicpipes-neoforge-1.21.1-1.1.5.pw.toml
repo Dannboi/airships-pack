@@ -1,0 +1,8 @@
+name = "classicpipes-neoforge-1.21.1-1.1.5"
+filename = "classicpipes-neoforge-1.21.1-1.1.5.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/64e955008e-classicpipes-neoforge-1.21.1-1.1.5.jar"
+hash-format = "sha512"
+hash = "7486e20d754387909b583e1aa9c44cd7475e721bd421e4153ceb89d427adb5c05423f0e551129155aa5df893c1728ee9e9fe1a969ce87acdcfb9c1d0ea52c3ec"

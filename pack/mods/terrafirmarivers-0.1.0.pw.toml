@@ -1,0 +1,8 @@
+name = "terrafirmarivers-0.1.0"
+filename = "terrafirmarivers-0.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/4a82bcdb74-terrafirmarivers-0.1.0.jar"
+hash-format = "sha512"
+hash = "55f27e1e523fcb15e5b9619429efd5a0a60aa329cd3708d94ad6fecfc28bacaa420b0558d95ef3439ec409cf97cc6e6aff9f880ef1276e1aef9e82ff762e6b0e"

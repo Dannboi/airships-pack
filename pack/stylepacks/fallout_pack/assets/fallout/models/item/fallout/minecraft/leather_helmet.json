@@ -1,0 +1,1 @@
+{ "parent": "minecraft:item/generated", "textures": { "layer0": "fallout:item/fallout/minecraft/leather_helmet", "layer1": "fallout:item/fallout/minecraft/leather_helmet_overlay" } }

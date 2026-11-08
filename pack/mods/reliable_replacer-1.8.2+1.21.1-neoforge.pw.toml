@@ -1,0 +1,13 @@
+name = "Reliable Replacer"
+filename = "reliable_replacer-1.8.2+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/swDAEYpN/versions/UF1v9jTk/reliable_replacer-1.8.2%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "d14459ecac3a49ac436f78b2437e1692b5be6861921585c59eb44f97c2e615da711a7fd79fcacfeb53ff28cefbfe998f1f2bbd682dce2d27fbbd20886c71c4dd"
+
+[update]
+[update.modrinth]
+mod-id = "swDAEYpN"
+version = "UF1v9jTk"

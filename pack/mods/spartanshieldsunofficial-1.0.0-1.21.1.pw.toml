@@ -1,0 +1,13 @@
+name = "Spartan Shields Unofficial"
+filename = "spartanshieldsunofficial-1.0.0-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EvjGFdKp/versions/xzXbZ0oN/spartanshieldsunofficial-1.0.0-1.21.1.jar"
+hash-format = "sha512"
+hash = "0b88b858e4611c1a2f78368d37b673dbcd207b5dc740aa41b9a7667a4589a132fa9537d2168964e2725550d2af3474a53ccc44626d12fe26ddfa500556d60e6c"
+
+[update]
+[update.modrinth]
+mod-id = "EvjGFdKp"
+version = "xzXbZ0oN"

@@ -1,0 +1,8 @@
+name = "Engineers Delight 1.21.1 neoforge R.1.8"
+filename = "Engineers Delight 1.21.1 neoforge R.1.8.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/2be0beb1af-Engineers_Delight_1.21.1_neoforge_R.1.8.jar"
+hash-format = "sha512"
+hash = "4f39b9f25a4d8d093a1cf25789056fd8f1681fede9dc5733a57647d670764682556a4840d8cd387ca1ff5263926b330a6f9cd962afb71aa553a53eb3449e503d"

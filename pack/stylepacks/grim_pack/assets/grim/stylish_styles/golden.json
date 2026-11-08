@@ -1,0 +1,9 @@
+{
+  "items": {
+    "minecraft:bow": "grim:item/golden/minecraft/bow",
+    "minecraft:elytra": "grim:item/golden/minecraft/elytra"
+  },
+  "elytra": {
+    "minecraft:elytra": "grim:golden/elytra/minecraft/elytra"
+  }
+}

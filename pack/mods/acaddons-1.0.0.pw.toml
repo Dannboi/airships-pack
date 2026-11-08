@@ -1,0 +1,8 @@
+name = "acaddons-1.0.0"
+filename = "acaddons-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/9c6bdbf936-acaddons-1.0.0.jar"
+hash-format = "sha512"
+hash = "16f1778eae836cb1fb6aad7807178fea04dc4375445f153986db91418bc684a9a8df5783c22875a715f598f43035aada30627b5b1ed6b1d5d954fd29bbb43359"

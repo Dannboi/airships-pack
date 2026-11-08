@@ -1,0 +1,1 @@
+{ "parent": "minecraft:item/generated", "textures": { "layer0": "chinamyth:item/chinamyth/minecraft/chainmail_helmet" } }

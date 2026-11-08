@@ -1,0 +1,13 @@
+name = "Ender Zoology"
+filename = "EnderZoology-v21.1.4-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/CUQhzQjg/versions/OR1IjCku/EnderZoology-v21.1.4-1.21.1-NeoForge.jar"
+hash-format = "sha512"
+hash = "d89775f61996520bd28df05b845714ac3b038041022995dbb56cdb4c42675056950285f187fb71e504d8dd579c015c3fb06cd541e3183f84c4927173bedc2a32"
+
+[update]
+[update.modrinth]
+mod-id = "CUQhzQjg"
+version = "OR1IjCku"

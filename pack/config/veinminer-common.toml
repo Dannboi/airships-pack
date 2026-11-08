@@ -1,0 +1,64 @@
+#General toggles
+[general]
+	#Master switch for the whole feature.
+	enableVeinMiner = true
+	#If true, the vein is only mined while the player is sneaking. Prevents accidental vein mining.
+	requireSneakToActivate = true
+
+#Scan and size limits (performance and anti-grief)
+[limits]
+	#Hard cap on ore blocks mined per vein. Also an early-exit guard against huge veins.
+	# Default: 64
+	# Range: 1 ~ 4096
+	maxBlocksPerVein = 64
+	#Maximum distance (in blocks, Chebyshev) the scan may travel from the broken ore.
+	# Default: 8
+	# Range: 1 ~ 64
+	scanRadius = 8
+
+#Durability
+[durability]
+	#Durability damage applied to the pickaxe per mined ore. 1.0 = 1 damage per ore.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	durabilityMultiplier = 1.0
+
+#Block protection
+[protection]
+	#If false (default), Ancient Debris is never vein-mined. Set true to allow it.
+	allowAncientDebris = false
+
+#Wandering Trader trade (the only merchant source of the Vein Miner book).
+#This enchantment is intentionally NOT sold by librarians and NOT in the enchanting table.
+[wanderingTrader]
+	#Master switch for the Wandering Trader selling the Vein Miner book.
+	wanderingTraderEnabled = true
+	#Per-trader chance (0..1) to offer the Vein Miner book. Rare, similar to Mending.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	wanderingTraderChance = 0.05
+	#Minimum emerald cost of the Wandering Trader trade.
+	# Default: 24
+	# Range: 1 ~ 64
+	wanderingTraderMinEmeralds = 24
+	#Maximum emerald cost of the Wandering Trader trade.
+	# Default: 48
+	# Range: 1 ~ 64
+	wanderingTraderMaxEmeralds = 48
+
+#Dungeon / structure loot injection
+[dungeon]
+	#Master switch for injecting the Vein Miner book into structure loot tables.
+	dungeonLootEnabled = true
+	#Chance (0..1) per applicable loot roll to add a Vein Miner book.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	dungeonLootChance = 0.05
+
+#Block filters
+[filters]
+	#Block IDs that must NEVER be vein-mined (e.g. minecraft:ancient_debris).
+	blockedBlocks = []
+	#Block tag IDs (without the leading #) whose members must NEVER be vein-mined
+	#(e.g. minecraft:redstone_ores).
+	blockedTags = []

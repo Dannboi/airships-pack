@@ -1,0 +1,1 @@
+{ "parent": "minecraft:item/generated", "textures": { "layer0": "steampunk:item/steampunk/minecraft/leather_boots", "layer1": "steampunk:item/steampunk/minecraft/leather_boots_overlay" } }

@@ -1,0 +1,8 @@
+name = "biomancy-2.8.19.0+1.21.1"
+filename = "biomancy-2.8.19.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/7bbc956ade-biomancy-2.8.19.0+1.21.1.jar"
+hash-format = "sha512"
+hash = "e30df23d6f6cb84c0e77db8793e1d255fce955f3e2c9b085af76bc6c989f567352a0b08237df5b56ee1036ea98d5abf8df3ff1c33af0b3311b4a6e8e5af6f48d"

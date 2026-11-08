@@ -1,0 +1,1 @@
+{ "parent": "minecraft:item/generated", "textures": { "layer0": "travelers:item/travelers/minecraft/leather_helmet", "layer1": "travelers:item/travelers/minecraft/leather_helmet_overlay" } }

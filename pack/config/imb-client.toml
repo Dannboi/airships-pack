@@ -1,0 +1,5 @@
+["Render Distance"]
+	#How far in blocks should the converted Graffiti Blocks continue to render away from the player.
+	# Default: 256
+	# Range: 16 ~ 512
+	render_distance = 256

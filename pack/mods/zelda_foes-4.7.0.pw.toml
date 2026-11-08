@@ -1,0 +1,8 @@
+name = "zelda_foes-4.7.0"
+filename = "zelda_foes-4.7.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/7adb8ac829-zelda_foes-4.7.0.jar"
+hash-format = "sha512"
+hash = "8eda90741c7943dd3ede9a04b51415d774ea8c8f41681926feb0f95f3e64a9b0537dc35f88c63b3e016564f44b18ee8a98a7180fe2953c98c2e2d060ca318a32"

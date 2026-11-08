@@ -1,0 +1,8 @@
+name = "aether-1.21.1-1.5.10-neoforge"
+filename = "aether-1.21.1-1.5.10-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/5b5592989c-aether-1.21.1-1.5.10-neoforge.jar"
+hash-format = "sha512"
+hash = "6265af9d4bb6595db11909bbe0c8a17898f6630e1ef98b1930d3d7d61a90921fa76f26422535242f284155c6301559312933453d3866b2f480f0110a8a1d07b1"

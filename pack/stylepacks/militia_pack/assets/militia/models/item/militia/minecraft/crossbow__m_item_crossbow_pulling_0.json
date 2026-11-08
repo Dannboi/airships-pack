@@ -1,0 +1,17 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "militia:item/militia/minecraft/crossbow",
+	"textures": {
+		"layer0": "militia:item/militia/minecraft/crossbow__m_item_crossbow_pulling_0__t_item_crossbow_pulling_0"
+	},
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [-50, -12, -11],
+			"translation": [1.6, 4.8, -0.8]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-50, -12, 79],
+			"translation": [1.6, 4.8, -0.8]
+		}
+	}
+}

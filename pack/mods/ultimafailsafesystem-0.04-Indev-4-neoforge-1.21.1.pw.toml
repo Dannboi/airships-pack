@@ -1,0 +1,8 @@
+name = "ultimafailsafesystem-0.04-Indev-4-neoforge-1.21.1"
+filename = "ultimafailsafesystem-0.04-Indev-4-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/ef00f168d4-ultimafailsafesystem-0.04-Indev-4-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "59813e0c082357d9024ad42ba14d7fd26e5ce1e37edce8ffde5662f3e66da5aa04c7bd620f34f722cee0f8605c945247e2ff726dd515deab862699102ea03cc0"

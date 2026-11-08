@@ -1,0 +1,8 @@
+name = "spelunkery-1.21.1-0.4.4-neoforge"
+filename = "spelunkery-1.21.1-0.4.4-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/123b0da250-spelunkery-1.21.1-0.4.4-neoforge.jar"
+hash-format = "sha512"
+hash = "1ce4561b185e4304d7c497de31df3a9bc42d615a5b0e7d9d537a6d8e81d4434c847b944018aed19267081352c9102cf6bb44431cafc95161ccd16303ea216a9c"

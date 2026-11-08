@@ -1,0 +1,28 @@
+[
+  {
+    "name": "ctm_islands",
+    "match": {
+      "source": "conquerthemines:floating_island"
+    },
+    "trigger": {
+      "type": "grounded",
+      "max_y": 100,
+      "max_velocity": 0.2,
+      "grace_ticks": 240
+    },
+    "style": "crumble"
+  },
+  {
+    "name": "plane_cleanup",
+    "match": {
+      "mod": "aeronauticsdiscovery",
+      "sublevel_name": "*plane*"
+    },
+    "trigger": {
+      "type": "max_age",
+      "ticks": 72000
+    },
+    "require_no_players_within": 64,
+    "style": "instant"
+  }
+]

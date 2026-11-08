@@ -1,0 +1,8 @@
+name = "rhino-2101.2.7-build.81"
+filename = "rhino-2101.2.7-build.81.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/5dcc800790-rhino-2101.2.7-build.81.jar"
+hash-format = "sha512"
+hash = "c06a12dd8a2ef52d3836874bf5cddba6df9032a13bda618fc7bc399ddfa7a8b296794bad5084dac81c88dac49d203b1c6a4889f6b0e314b1f6f5eff96e62b9f1"

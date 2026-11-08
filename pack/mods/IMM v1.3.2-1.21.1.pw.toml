@@ -1,0 +1,13 @@
+name = "Integrated Mowzie's Mobs"
+filename = "IMM v1.3.2-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/D0BAyuxZ/versions/i00pqRHn/IMM%20v1.3.2-1.21.1.jar"
+hash-format = "sha512"
+hash = "02270263654b03ce4506d0774f11a4e0c7b6b25298835dd6e2b9dc558c8729573582c72326d2c34fe0ec977058327a7d24d72024b735d752debddf00ed1b646c"
+
+[update]
+[update.modrinth]
+mod-id = "D0BAyuxZ"
+version = "i00pqRHn"

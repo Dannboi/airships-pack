@@ -1,0 +1,13 @@
+name = "Talk Balloons"
+filename = "TalkBalloons-neoforge-1.6.6+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/l3tS9WUS/versions/ZxPHAAla/TalkBalloons-neoforge-1.6.6%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "5b5367c07ca400e84c7400415916b84f5cbbc9d78a59a7f08a641d5c1b560456c22ef0dc2758aacabcdc17e32f5b3c9129129c61e6e34df557532634d1493d3a"
+
+[update]
+[update.modrinth]
+mod-id = "l3tS9WUS"
+version = "ZxPHAAla"

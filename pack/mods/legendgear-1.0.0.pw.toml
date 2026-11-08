@@ -1,0 +1,8 @@
+name = "legendgear-1.0.0"
+filename = "legendgear-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/c9b7a79818-legendgear-1.0.0.jar"
+hash-format = "sha512"
+hash = "42b31eba90003542336bfb5780269cace62f77dfc68ebaed293a33b988855de21617e897b94d3440ddf8f63fb1350975265157d36e20c0a888ed7b05a2de8c36"

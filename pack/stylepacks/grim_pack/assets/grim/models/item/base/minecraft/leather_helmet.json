@@ -1,0 +1,1 @@
+{ "parent":"minecraft:item/generated","textures":{"layer0":"grim:item/base/minecraft/leather_helmet","layer1":"grim:item/base/minecraft/leather_helmet_overlay"} }

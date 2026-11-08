@@ -1,0 +1,8 @@
+name = "terrarianvillages-0.2.0"
+filename = "terrarianvillages-0.2.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/e5397ec288-terrarianvillages-0.2.0.jar"
+hash-format = "sha512"
+hash = "013ce3d0ff1ee786e75e21ae1f8da76a6a20414a2c6fc425ed9f383c6e87a5bbd972aa69d1cabbe856747f66f691c22a1b98c2562ca02b7a672d970743afd433"

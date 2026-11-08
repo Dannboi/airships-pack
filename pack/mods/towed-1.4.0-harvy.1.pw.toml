@@ -1,0 +1,8 @@
+name = "towed-1.4.0-harvy.1"
+filename = "towed-1.4.0-harvy.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/e157ec5c20-towed-1.4.0-harvy.1.jar"
+hash-format = "sha512"
+hash = "562610da4296e48851fd91c9d0d1c7ec29f05ab69e97075fcc890653942a8fc95759dc17133adc3fe78ff02e88c6e255bb0d7849ad79aef0a3227ae8babed5a0"

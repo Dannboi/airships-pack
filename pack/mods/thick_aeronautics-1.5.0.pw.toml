@@ -1,0 +1,8 @@
+name = "thick_aeronautics-1.5.0"
+filename = "thick_aeronautics-1.5.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/cb1198c3a4-thick_aeronautics-1.5.0.jar"
+hash-format = "sha512"
+hash = "f5ba084511fc35833b7d7c328c44f533c7ee0b46ee1e5f75b22175ab166c406485287650929ceb6927c6af63f64fcc909bdf01192a80c759078ef9e5e80f3fa9"

@@ -1,0 +1,33 @@
+[companions]
+	#Maximum number of tamed companions per player.
+	#Set to -1 for unlimited.
+	# Default: 5
+	# Range: -1 ~ 100
+	max_per_player = 5
+
+#Structure generation settings.
+#Spacing = average distance between structures (in chunks).
+#Separation = minimum distance between structures (in chunks).
+#Separation must always be less than spacing.
+#Changes require a world restart to take effect.
+[structures]
+
+	[structures.camp]
+		#Enable companion camp generation
+		enabled = true
+		#Average distance between camps (in chunks)
+		# Default: 24
+		# Range: 1 ~ 4096
+		spacing = 24
+		#Minimum distance between camps (in chunks)
+		# Default: 8
+		# Range: 1 ~ 4096
+		separation = 8
+
+	[structures.village_integration]
+		#Chance (0.0-1.0) for a companion to spawn per villager when a village generates.
+		#With ~5 villagers per village, 0.05 gives roughly 1 companion per 4 villages on average.
+		#Set to 0 to disable.
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		companion_chance = 0.05

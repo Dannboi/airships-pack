@@ -1,0 +1,8 @@
+name = "ImmersiveEngineering-1.21.1-12.4.2-194"
+filename = "ImmersiveEngineering-1.21.1-12.4.2-194.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/3f8d80f131-ImmersiveEngineering-1.21.1-12.4.2-194.jar"
+hash-format = "sha512"
+hash = "66a21d7e42d14a0f096ccb3462d4632ffb665ee5680934f0bbd7633883916ff5db532427fd73d762efb0e295f6c507ab8523f22dc169c894507fd3565e2576be"

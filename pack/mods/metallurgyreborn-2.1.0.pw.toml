@@ -1,0 +1,8 @@
+name = "metallurgyreborn-2.1.0"
+filename = "metallurgyreborn-2.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/ea725c8342-metallurgyreborn-2.1.0.jar"
+hash-format = "sha512"
+hash = "d469c05471254f52e5fd91ad8fda45f28caea39508a632b8fe6c16e6ad8b842cf4f68ddb240517b508281fbb200799bf67e5af2e37625ac912a58cc41fa21e89"

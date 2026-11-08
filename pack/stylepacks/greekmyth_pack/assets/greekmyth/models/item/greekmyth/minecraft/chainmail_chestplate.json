@@ -1,0 +1,1 @@
+{ "parent": "minecraft:item/generated", "textures": { "layer0": "greekmyth:item/greekmyth/minecraft/chainmail_chestplate" } }

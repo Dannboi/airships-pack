@@ -1,0 +1,5 @@
+[rendering]
+	#should core shader effects be enabled
+	endable_shaders = true
+	#should level 0 have a shader enabled (wont work if core shaders are disabled)
+	level__0_shaders = true

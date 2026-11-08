@@ -1,0 +1,166 @@
+#Walled Cities Configuration
+[surface_cities]
+	#Enable surface walled city generation
+	enabled = true
+	#Average distance between surface cities in chunks
+	# Default: 60
+	# Range: 20 ~ 200
+	spacing = 60
+	#Minimum distance between surface cities in chunks
+	# Default: 30
+	# Range: 10 ~ 100
+	separation = 30
+	#Minimum city radius in blocks
+	# Default: 48
+	# Range: 32 ~ 200
+	minRadius = 48
+	#Maximum city radius in blocks (larger = more sprawling cities)
+	# Default: 96
+	# Range: 48 ~ 256
+	maxRadius = 96
+
+[cave_cities]
+	#Enable cave city generation
+	enabled = true
+	#Average distance between cave cities in chunks
+	# Default: 80
+	# Range: 20 ~ 200
+	spacing = 80
+	#Minimum distance between cave cities in chunks
+	# Default: 40
+	# Range: 10 ~ 100
+	separation = 40
+	#Minimum Y level for cave cities
+	# Default: 0
+	# Range: -64 ~ 60
+	minY = 0
+	#Maximum Y level for cave cities
+	# Default: 30
+	# Range: -32 ~ 80
+	maxY = 30
+
+[buildings]
+	#Minimum number of buildings per city
+	# Default: 8
+	# Range: 4 ~ 30
+	minBuildings = 8
+	#Maximum number of buildings per city
+	# Default: 24
+	# Range: 8 ~ 50
+	maxBuildings = 24
+
+[siege]
+	#Chance per wall segment to have a siege breach (0.0 = none, 1.0 = all)
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	breachChance = 0.4
+	#Minimum width of siege breaches in blocks
+	# Default: 3
+	# Range: 1 ~ 10
+	minBreachWidth = 3
+	#Maximum width of siege breaches in blocks
+	# Default: 6
+	# Range: 2 ~ 15
+	maxBreachWidth = 6
+
+[degradation]
+	#Chance for blocks to be removed (0.0 = none, 1.0 = all)
+	# Default: 0.08
+	# Range: 0.0 ~ 0.5
+	blockIntegrity = 0.08
+	#Chance for stone bricks to become mossy
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	mossiness = 0.15
+	#Chance for stone bricks to become cracked
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	cracking = 0.2
+	#Chance for vines to appear on exterior walls
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	vineChance = 0.15
+	#Chance for cobwebs in interior corners
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	cobwebChance = 0.1
+	#Chance for roof sections to be missing
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	roofDecayChance = 0.15
+
+[debug]
+	#Enable debug mode (catalog/save/spawn/reload commands, debug logging)
+	enabled = false
+
+[sprawl]
+	#Enable sprawling settlements (walledcities:settlement) — massive organic ruins with
+	#winding roads, irregular walls, and districts. Separate from the compact square
+	#walled cities, which generate under surface_cities as always.
+	enabled = true
+	#Minimum settlement radius in blocks (distance from plaza to the outer wall)
+	# Default: 130
+	# Range: 64 ~ 300
+	minRadius = 130
+	#Maximum settlement radius in blocks. Values above 240 risk two neighboring
+	#settlements overlapping when they spawn close together.
+	# Default: 220
+	# Range: 96 ~ 300
+	maxRadius = 220
+	#Number of main roads radiating out from the central plaza
+	# Default: 4
+	# Range: 2 ~ 8
+	arterialRoads = 4
+	#Average distance in blocks between side streets branching off main roads
+	# Default: 24
+	# Range: 12 ~ 64
+	sideStreetSpacing = 24
+	#Fraction of candidate building plots along roads that receive a building
+	# Default: 0.8
+	# Range: 0.1 ~ 1.0
+	buildingDensity = 0.8
+	#Density of street decoration (market stalls, wagons, lamp posts, hay piles...)
+	# Default: 0.7
+	# Range: 0.0 ~ 1.0
+	decoDensity = 0.7
+	#Chance a settlement is a frontier variant with sharpened wooden palisade
+	#walls, wooden watchtowers and gates instead of the stone curtain.
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	palisadeChance = 0.35
+	#Minimum buried-city radius in blocks (sprawling cave city tunnel network)
+	# Default: 80
+	# Range: 48 ~ 220
+	caveMinRadius = 80
+	#Maximum buried-city radius in blocks
+	# Default: 140
+	# Range: 64 ~ 220
+	caveMaxRadius = 140
+	#Chance a settlement is a monster lair — a beast nesting in the central plaza
+	#that explains the ruin's abandonment. Set to 0 to disable.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	lairChance = 0.3
+	#Weighted lair inhabitants, comma-separated entries of:
+	#  'boss_id min max weight'                          — plaza boss only
+	#  'boss_id min max weight minion_id chance'         — boss + street infestation
+	#  append 'cold' or 'hot' to restrict an entry to snowy/scorching biomes.
+	#minion_id spawns throughout the whole settlement, 'chance' percent per chunk.
+	#Entries whose entity isn't registered (mod not installed) are skipped automatically,
+	#so modded entries are safe to keep here. Add ANY mod's monster the same way.
+	#Avoid mobs with daylight death mechanics helmets can't prevent (petrifying trolls,
+	#burning mobs that ignore head-slot gear).
+	lairEntities = "iceandfire:fire_dragon 1 1 4, iceandfire:ice_dragon 1 1 3 cold, iceandfire:lightning_dragon 1 1 2, iceandfire:cyclops 1 2 3, iceandfire:gorgon 1 1 1, iceandfire:dread_knight 2 4 2 iceandfire:dread_ghoul 10, mowziesmobs:ferrous_wroughtnaut 1 1 3, mowziesmobs:frostmaw 1 1 1 cold, minecraft:ravager 1 3 3 minecraft:pillager 7, minecraft:cave_spider 4 7 2 minecraft:cave_spider 8, minecraft:husk 4 8 1 minecraft:husk 8"
+
+[lore]
+	#Comma-separated loot table ids from book datapacks to mix into library,
+	#chapel, and noble house book pools. Default supports the Babel datapack;
+	#add any other book pack's table the same way. Absent tables log one
+	#validation line at load and simply roll nothing — safe to leave set.
+	extraBookTables = "babel:books"
+
+[compat]
+	#Use Heraldics' blocks and items when that mod is installed: city-liveried tabards on
+	#armor stands, garrison mobs and in military loot, and its masonry (flagstone bricks,
+	#sandstone mosaic, wrought iron) in plazas, streets and prisons
+	heraldics = true

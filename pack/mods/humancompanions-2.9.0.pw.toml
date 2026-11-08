@@ -1,0 +1,8 @@
+name = "humancompanions-2.9.0"
+filename = "humancompanions-2.9.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/7d0967b8cf-humancompanions-2.9.0.jar"
+hash-format = "sha512"
+hash = "1f27a102475d71dfb837b47c20610fcf2c4c2a9a0e4fec78c8c2d1aaf2f5fb1c7d26c9d0d470c75c6e74bfff0858827b9fa697d0eef1df8eaa70e356d6c5b8d9"

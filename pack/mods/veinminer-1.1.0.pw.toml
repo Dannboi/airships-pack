@@ -1,0 +1,8 @@
+name = "veinminer-1.1.0"
+filename = "veinminer-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/3673f232be-veinminer-1.1.0.jar"
+hash-format = "sha512"
+hash = "938560f90e9e62df18bb3bdae9531319ed362feaef1b763faea6e3e42f22c5c5b4d7b87b61ce72d4c06391a4e4ee41054e3a534c07f2e2240b5cb7f03002265a"

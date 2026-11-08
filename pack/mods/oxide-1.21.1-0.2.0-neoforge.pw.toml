@@ -1,0 +1,13 @@
+name = "Oxide"
+filename = "oxide-1.21.1-0.2.0-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/mz1R5Wsg/versions/cxycX6tT/oxide-1.21.1-0.2.0-neoforge.jar"
+hash-format = "sha512"
+hash = "d8e630fce1db0b5480f32ff20ed1213a673f9ac590fa9b9dce6497412fe06364ef45329b912235a5142fe9e7b217b7003fea4289a40841b2cd4cceddde0efee9"
+
+[update]
+[update.modrinth]
+mod-id = "mz1R5Wsg"
+version = "cxycX6tT"

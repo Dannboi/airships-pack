@@ -1,0 +1,13 @@
+name = "Sketchbook"
+filename = "sketchbook-neoforge-1.21.1-1.5.6.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ooTrqkeY/versions/UV0NaIwt/sketchbook-neoforge-1.21.1-1.5.6.7.jar"
+hash-format = "sha512"
+hash = "85d852f74a47e7e8e7e7dc032fd6dfbb303155a0962e06598b44a52cae0ad1c4f60dbd3331fef46bf7400ca0eee692ea2b6f61445175e174135cbc564b7878dd"
+
+[update]
+[update.modrinth]
+mod-id = "ooTrqkeY"
+version = "UV0NaIwt"

@@ -1,0 +1,3 @@
+[portcullis]
+	#Lets you raise and lower a portcullis by hand even when Supplementaries is on. Off by default so its winch stays the way to move one
+	always_hand_pushable = false

@@ -1,0 +1,8 @@
+name = "corpse-neoforge-1.21.1-1.1.13"
+filename = "corpse-neoforge-1.21.1-1.1.13.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/4f42091ef3-corpse-neoforge-1.21.1-1.1.13.jar"
+hash-format = "sha512"
+hash = "d20c8bc23381a44bcf854fb6f948ec404de31598747be73664abb640f7ac19df56a03e701c6694e11cc856fc5ebc978f0982208925b5bcdd0d6fdb99b0c716ab"

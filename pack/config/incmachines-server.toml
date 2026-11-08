@@ -1,0 +1,77 @@
+[simulation]
+	#Duration of the CALIBRATING phase, in game ticks (20 ticks = 1 second).
+	#The machine keeps its pocket dimension loaded and ticking for this long
+	#while sampling tunnel throughput, then freezes the measured rates into a
+	#snapshot and enters the zero-cost RUNNING phase.
+	#Default 36000 = 30 minutes of real time.
+	# Default: 36000
+	# Range: > 20
+	calibration_ticks = 36000
+	#How long the pocket chunks stay loaded after the last player leaves
+	#(or a calibration ends), before the chunk tickets are released.
+	#Prevents in-flight items from vanishing. A pending release never
+	#interrupts live demand — an active calibration or force-load keeps
+	#its chunks. Default 1200 = 60 seconds.
+	# Default: 1200
+	# Range: > 0
+	grace_release_ticks = 1200
+	#Consecutive ticks of missing input before a running machine is
+	#flagged as STARVED. The machine keeps running (no production)
+	#and the UI surfaces a starvation warning so the player can
+	#restore supply. Default 100 = 5 seconds.
+	# Default: 100
+	# Range: > 20
+	starve_warn_ticks = 100
+	#Consecutive ticks of uninterrupted starvation before a running
+	#machine auto-pauses itself. Returning input even briefly resets
+	#the counter. Default 1200 = 1 minute.
+	# Default: 1200
+	# Range: > 20
+	starve_autostop_ticks = 1200
+	#Maximum time a player can remain inside a pocket dimension in
+	#Peek mode. After this many ticks they're auto-teleported back
+	#to safety, so a broken exit panel or destroyed machine can't
+	#trap them as a permanent spectator. Default 1200 = 1 minute.
+	# Default: 1200
+	# Range: > 100
+	peek_timeout_ticks = 1200
+	#Audit pocket storage at the calibration boundaries and dock each
+	#output rate by the net decrease of that item/fluid/energy in pocket
+	#storage. Prevents the free-resource exploit where a chest of e.g.
+	#diamonds is drained through the output wall during calibration and
+	#the machine then "produces" diamonds forever. Legitimate
+	#contraptions (farms, generators, stored-fuel burners, buffer
+	#chests) are unaffected: only a net drain of the SAME item that is
+	#being output gets docked. Default: true.
+	inventory_audit = true
+	#Extend the inventory audit across recipe conversions: storage
+	#drains that didn't match an output item directly are mapped to
+	#outputs through recipe chains (diamond block -> 9 diamonds,
+	#ore -> ingot -> nuggets, up to 3 hops) and docked at the
+	#conversion ratio. Closes "transformation laundering" where the
+	#pre-stocked item is uncrafted/smelted inside the pocket so its
+	#key never matches the output. Only recipes whose ingredients are
+	#all the same item are followed. Requires inventory_audit.
+	#Default: true.
+	inventory_audit_conversions = true
+	#If true, items/fluids/energy the contraption pushes into OUTPUT
+	#walls during calibration are voided after being measured, instead
+	#of delivered to the machine's output buffers. Harsher but airtight:
+	#the calibration window then yields rates only, never goods. Once a
+	#machine IS calibrated its walls always void regardless of this
+	#setting (that prevents doubling real + simulated production while
+	#the pocket is loaded). Default: false.
+	calibration_voids_outputs = false
+
+[chunkloading]
+	#Maximum number of machines each player may keep force-loaded at once.
+	#A force-loaded machine keeps its pocket interior chunkloaded and
+	#ticking in real time (Compact Machines style) instead of using the
+	#calibrate-then-simulate model — for contraptions whose input/output
+	#behavior is too complicated to snapshot. Force-loading one machine
+	#past the limit automatically releases that player's oldest
+	#force-loaded machine. Set 0 to disable force-loading entirely
+	#(removes the button from the machine UI). Default 1.
+	# Default: 1
+	# Range: 0 ~ 256
+	max_forceloaded_per_player = 1

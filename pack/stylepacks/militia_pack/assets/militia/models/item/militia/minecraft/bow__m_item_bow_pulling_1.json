@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "militia:item/militia/minecraft/bow__m_item_bow_pulling_0",
+	"textures": {
+		"layer0": "militia:item/militia/minecraft/bow__m_item_bow_pulling_1__t_item_bow_pulling_1"
+	}
+}

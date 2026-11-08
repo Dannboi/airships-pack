@@ -1,0 +1,48 @@
+#Houses and moving in
+[housing]
+	#How often (ticks) an empty Homestead Banner looks for a villager to move in.
+	#Move-in should take time: 6000 = 5 minutes. The owner must be online for advancement unlocks.
+	# Default: 6000
+	# Range: 200 ~ 144000
+	moveInCheckTicks = 6000
+	#A villager with no home at all is removed after this many ticks (a safety net
+	#for stray debug spawns). 0 = never.
+	# Default: 6000
+	# Range: 0 ~ 1728000
+	homelessDespawnTicks = 6000
+
+#Villager stats (applied on spawn and whenever a villager loads)
+[villagers]
+	#Multiplies every villager's max health.
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	healthMultiplier = 1.0
+	#Multiplies the attack damage of fighting villagers (Guard, Knight, Soldier...).
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	damageMultiplier = 1.0
+
+#The Porter's trips home ("Take it home" / "Take to depot")
+[porter]
+	#Shortest trip, in seconds (trips scale with distance: min + blocks/8).
+	# Default: 15
+	# Range: 1 ~ 3600
+	minTripSeconds = 15
+	#Longest trip in the same dimension, in seconds.
+	# Default: 180
+	# Range: 1 ~ 3600
+	maxTripSeconds = 180
+	#Trip time when home/depot is in another dimension, in seconds.
+	# Default: 90
+	# Range: 1 ~ 3600
+	crossDimensionSeconds = 90
+	#Within this many blocks of home/depot, he unloads on the spot instead of travelling.
+	# Default: 16
+	# Range: 2 ~ 128
+	unloadOnTheSpotRadius = 16
+
+#Admin / debug
+[debug]
+	#Allow the op-only debug tools: /tv spawn and the animation debug rod. Set false on
+	#public servers to disable them entirely.
+	allowDebugTools = true

@@ -1,0 +1,8 @@
+name = "copycats-3.0.4+mc.1.21.1-neoforge"
+filename = "copycats-3.0.4+mc.1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/748b210b36-copycats-3.0.4+mc.1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "f2ea5143866254177f0d197a2c36877c4887743b616734252356e6dc5fc400f8e00bf1ade8eeb160218cd7bfbe79a7ce1aa692cf00730d92c10264ba92f80d43"

@@ -1,0 +1,8 @@
+name = "tracks-neoforge-1.21.1-1.0.1"
+filename = "tracks-neoforge-1.21.1-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/3090539d9c-tracks-neoforge-1.21.1-1.0.1.jar"
+hash-format = "sha512"
+hash = "0dc396c2ec4b56690284e69c10b58eee569909700192f5f34a624e160b65eaa1a88a1d91f97f5789be9118c7bbb3474f3d61babd1646a60ba0bb0f5a2586c123"

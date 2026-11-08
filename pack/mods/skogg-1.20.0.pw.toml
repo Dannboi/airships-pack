@@ -1,0 +1,8 @@
+name = "skogg-1.20.0"
+filename = "skogg-1.20.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/30b0c8d903-skogg-1.20.0.jar"
+hash-format = "sha512"
+hash = "501b7fbbf591ff445a5ca64d58c510c1097ddc8837300492378d19696dfa82e330ab76d16d180d8b18069e2630a9eb7eb806fec21cd2cde91624705ddb5302ea"

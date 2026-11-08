@@ -1,0 +1,8 @@
+name = "enchanted_thesaurus-1.11.0"
+filename = "enchanted_thesaurus-1.11.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/57016891f6-enchanted_thesaurus-1.11.0.jar"
+hash-format = "sha512"
+hash = "cae836a0fa8f95f7f0b0b3127881330309595c3843aa5da71699ee7c06284c9b6f86b29c80053d3b49653612b7a57438b6715e2bb1f253fe90c945398853c873"

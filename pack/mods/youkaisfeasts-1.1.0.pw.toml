@@ -1,0 +1,8 @@
+name = "youkaisfeasts-1.1.0"
+filename = "youkaisfeasts-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/51aef4dd3e-youkaisfeasts-1.1.0.jar"
+hash-format = "sha512"
+hash = "a8ef1ec980b4172e2a4f46a69008c84d33010e22bf3e65e551a2a0e681f68ca83195751d9c9c614d34a58ccbdeb548c1966786fca142a891ae5b44c7439e569e"

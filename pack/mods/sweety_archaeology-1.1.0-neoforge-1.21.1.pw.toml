@@ -1,0 +1,13 @@
+name = "Sweety's Archaeology"
+filename = "sweety_archaeology-1.1.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Lwr07rKF/versions/5kvbRSuq/sweety_archaeology-1.1.0-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "7dfe622fe30ddeb7882d7d0a0772c1590f393bdd75789bfc9460f5a4215d5b772a6d54602233271a990fac6c18a46de72ca221a62eb19634ab8a3b613239c15e"
+
+[update]
+[update.modrinth]
+mod-id = "Lwr07rKF"
+version = "5kvbRSuq"

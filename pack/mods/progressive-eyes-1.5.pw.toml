@@ -1,0 +1,8 @@
+name = "progressive-eyes-1.5"
+filename = "progressive-eyes-1.5.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/57d3b1cff6-progressive-eyes-1.5.jar"
+hash-format = "sha512"
+hash = "f5b006f51abd8ab667f1cd5680ccd5236caff3eef29690a32509da6d80ecc7db2aaa32dd54523c2a0e77adfcdce48aada1d7431fdf26016a5ef42caddb6e371f"

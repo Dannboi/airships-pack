@@ -1,0 +1,8 @@
+name = "Lift-n-Load-1.21.1-1.0b"
+filename = "Lift-n-Load-1.21.1-1.0b.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/5c3f90e003-Lift-n-Load-1.21.1-1.0b.jar"
+hash-format = "sha512"
+hash = "d445b7473dc506aa02f86cedce6af31fd76f39270f06960dfe5508c5435804c29ab8159a57d051521ee5597e54f550bed227287aeaf1d3949c5e311d1c264dbf"

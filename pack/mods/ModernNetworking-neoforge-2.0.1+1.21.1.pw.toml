@@ -1,0 +1,13 @@
+name = "Modern Networking"
+filename = "ModernNetworking-neoforge-2.0.1+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/yMou0v20/versions/OpsR4tnJ/ModernNetworking-neoforge-2.0.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "3cdf06eb3c0e812c5f9951cff46968ac5c4d01d853140162219c915089982f435096315fce4d93bc2bade01394d6c7208874fcfa80d3795f3829b6eb898bde7a"
+
+[update]
+[update.modrinth]
+mod-id = "yMou0v20"
+version = "OpsR4tnJ"

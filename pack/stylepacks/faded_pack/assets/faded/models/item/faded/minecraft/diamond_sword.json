@@ -1,0 +1,14 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "faded:item/faded/minecraft/diamond_sword__t_minecraft_item_diamond_sword"
+	},
+	"overrides": [
+		{
+			"predicate": {
+			"custom_model_data": 1450003
+		},
+			"model": "incendium:item/chilling"
+		}
+	]
+}

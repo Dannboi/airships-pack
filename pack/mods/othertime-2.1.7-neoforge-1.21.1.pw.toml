@@ -1,0 +1,13 @@
+name = "Othertime"
+filename = "othertime-2.1.7-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YEiKYoIc/versions/X1ZrsQ1I/othertime-2.1.7-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "279771ee36fdb4c2851c1b7c8c2fa9ee76217d8d1893ee5d21c0fc669385e8ea22df6207950d610fcbf0fbbc9aec0653c2f0c7dbd638fff893c930abb3df5584"
+
+[update]
+[update.modrinth]
+mod-id = "YEiKYoIc"
+version = "X1ZrsQ1I"

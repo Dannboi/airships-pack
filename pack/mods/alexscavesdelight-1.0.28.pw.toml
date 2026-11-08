@@ -1,0 +1,8 @@
+name = "alexscavesdelight-1.0.28"
+filename = "alexscavesdelight-1.0.28.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/b4f3556842-alexscavesdelight-1.0.28.jar"
+hash-format = "sha512"
+hash = "3147a90debb294387b1f226c257dd9afc60f59299cd7d60b94539191ae802a65dfa8432a4eddd8e707fc6b3d03aac3a33de2fdfc519889bd7c41ab8c160f0710"

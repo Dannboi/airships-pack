@@ -1,0 +1,8 @@
+name = "species-1.0.0"
+filename = "species-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/c789def62a-species-1.0.0.jar"
+hash-format = "sha512"
+hash = "35a90d45459457af1e8d4db0a5a46fe3daef69a283412637c25a9c572c2733d090acc044c7d66e9eb2905b36ffc0e67c2632ddbfd276b8d0b308d6e574c5cba5"

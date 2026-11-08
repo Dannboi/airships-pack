@@ -1,0 +1,13 @@
+name = "Create: Deepfried"
+filename = "create_deepfried+1.21.1-0.1.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/76TqKW7O/versions/7hnhHENi/create_deepfried%2B1.21.1-0.1.4.jar"
+hash-format = "sha512"
+hash = "a6536b0ae8c68d58da7810726eb8c9c79aa3a45212be9a5fbdf9a595aeffe1d329e005124bcaed3c1bbe9405627793fa6f58d7a2ca2c1d73893f6145f0046e77"
+
+[update]
+[update.modrinth]
+mod-id = "76TqKW7O"
+version = "7hnhHENi"

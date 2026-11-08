@@ -1,0 +1,8 @@
+name = "toolgunpolicy-2.0.0"
+filename = "toolgunpolicy-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/15d0c340b6-toolgunpolicy-2.0.0.jar"
+hash-format = "sha512"
+hash = "a977e64aa6f5e2bdd5fb4919bd06004460cbd8df64385c13a571b46f02702670d347fc6a9cd08dd2e3c85c901d065fdc7f446a82b2d00a37b879a02dabefd33e"

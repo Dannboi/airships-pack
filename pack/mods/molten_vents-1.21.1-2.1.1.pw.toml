@@ -1,0 +1,8 @@
+name = "molten_vents-1.21.1-2.1.1"
+filename = "molten_vents-1.21.1-2.1.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/e1f6d1c400-molten_vents-1.21.1-2.1.1.jar"
+hash-format = "sha512"
+hash = "b30d08ebe642bbe57565be2923c45fbefd4850b632ccd3610d5b6bc9fb117fe7247fdf5cd8892e28fb6914f49352a7e8112adee3125d76a177a4ea8ecfb3a5c7"

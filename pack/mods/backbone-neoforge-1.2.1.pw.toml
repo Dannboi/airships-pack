@@ -1,0 +1,13 @@
+name = "Backbone"
+filename = "backbone-neoforge-1.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/cUdfdzGr/versions/UGhIObOh/backbone-neoforge-1.2.1.jar"
+hash-format = "sha512"
+hash = "6309fcd4773028ee0119e6e84d644e2d16e4f0e5df1eb45679e1f5c07c21a2239fcd0a898c61ff841cc3181ddfbcfce7c0790a531fad4e034b23fc125ee7bb8f"
+
+[update]
+[update.modrinth]
+mod-id = "cUdfdzGr"
+version = "UGhIObOh"

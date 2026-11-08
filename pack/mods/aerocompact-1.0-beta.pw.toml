@@ -1,0 +1,13 @@
+name = "Create Aeronautics: Compact Controls"
+filename = "aerocompact-1.0-beta.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Se3H3xEe/versions/xBXYn200/aerocompact-1.0-beta.jar"
+hash-format = "sha512"
+hash = "7043afe2255bf7c320a3e4969d222ca184cfdb7a8ca035abcd18f30ed6d66ffaeedeaa28f1e134d1819edb34b96bfa94931cc6551defcdf9e3171032df10d27f"
+
+[update]
+[update.modrinth]
+mod-id = "Se3H3xEe"
+version = "xBXYn200"

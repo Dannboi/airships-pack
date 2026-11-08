@@ -1,0 +1,8 @@
+name = "ScorchedGuns-1.5"
+filename = "ScorchedGuns-1.5.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/714837a997-ScorchedGuns-1.5.jar"
+hash-format = "sha512"
+hash = "54346e0e93d4e2f2c2c3162027f2c5ff1f24f111b21a1cfe766f0af4027fad62897498aab3d800d1a39c63cc115c2ef45eb90492ae8e9167e0834d281aaad4d2"

@@ -1,0 +1,8 @@
+name = "alexsdelight-1.6"
+filename = "alexsdelight-1.6.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/19e8d1e255-alexsdelight-1.6.jar"
+hash-format = "sha512"
+hash = "b0998752d5a17aaf56cbf60028f0328a0823452159e0418de34ecf5bb701e638db4eb698cf55969249c3096f78ff4c06c58e031113c96331360f074a398c92ab"

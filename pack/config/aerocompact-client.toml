@@ -1,0 +1,71 @@
+#Controls how the joystick reads your mouse while you are flying it.
+[input]
+	#Stick deflection per pixel of mouse movement. Higher = twitchier.
+	# Default: 0.005
+	# Range: 5.0E-4 ~ 0.1
+	mouseSensitivity = 0.005
+	#Push the mouse forward to pitch up instead of down.
+	invertPitch = false
+	#Spring the stick back to centre when the mouse is still.
+	selfCentering = false
+	#Fraction of the remaining deflection bled off each tick while self-centering.
+	# Default: 0.15
+	# Range: 0.01 ~ 1.0
+	selfCenteringSpeed = 0.15
+
+#Purely cosmetic: how far the moving parts travel.
+[visuals]
+	#Maximum tilt of the control column, in degrees, at full deflection.
+	# Default: 22.0
+	# Range: 1.0 ~ 45.0
+	stickMaxAngle = 22.0
+	#Throttle lever travel, in degrees, from centre to either stop.
+	# Default: 27.0
+	# Range: 1.0 ~ 60.0
+	throttleMaxAngle = 27.0
+	#Degrees the engine's propeller turns per tick at full throttle.
+	# Default: 180.0
+	# Range: 1.0 ~ 360.0
+	propellerSpeed = 180.0
+
+[sound]
+	#Volume of the joystick's own sounds. 0 disables them.
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	soundVolume = 0.35
+	#Volume of the engine's running sound. 0 disables it.
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+	engineVolume = 0.6
+
+#The engine's own throttle, worked by holding right click and moving the mouse.
+[engine]
+	#Throttle travel per pixel of vertical mouse movement. Higher = twitchier.
+	# Default: 0.004
+	# Range: 5.0E-4 ~ 0.1
+	engineSensitivity = 0.004
+
+#The steering column: a wheel and three pedals.
+[steering]
+	#Steer with A and D instead of the mouse.
+	#The camera stays locked either way; this only decides what turns the wheel.
+	steerWithKeys = false
+	#Wheel travel per pixel of horizontal mouse movement, when steering with the mouse.
+	# Default: 0.001
+	# Range: 5.0E-4 ~ 0.1
+	wheelSensitivity = 0.001
+	#Wheel travel per tick while A or D is held, when steering with the keys.
+	# Default: 0.05
+	# Range: 0.005 ~ 1.0
+	wheelKeySpeed = 0.05
+	#Let the wheel fall back to straight ahead when nothing is turning it.
+	#Also decides whether it recentres when the driver lets go of the controls.
+	wheelSelfCentering = false
+	#How far the wheel turns, in degrees, at full lock.
+	# Default: 45.0
+	# Range: 15.0 ~ 720.0
+	wheelMaxAngle = 45.0
+	#How far a pedal swings, in degrees, when fully pressed.
+	# Default: 12.0
+	# Range: -45.0 ~ 45.0
+	pedalMaxAngle = 12.0

@@ -1,0 +1,7 @@
+{
+  "swapper": {
+    "createnuclear:lead_ore": "minecraft:stone",
+    "createnuclear:deepslate_lead_ore": "minecraft:deepslate"
+  },
+"retro_gen": true
+}

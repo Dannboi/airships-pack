@@ -1,0 +1,8 @@
+name = "create_submarine-2.2.2"
+filename = "create_submarine-2.2.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/d73b930824-create_submarine-2.2.2.jar"
+hash-format = "sha512"
+hash = "5813734a51644f8482570983bfcf9adeb626ef498d3a4012cba978f069ce1a0c0ceebc6fa14b2c35f28e461b264105a2a95085c63dea950e6a34ce707cbe3607"

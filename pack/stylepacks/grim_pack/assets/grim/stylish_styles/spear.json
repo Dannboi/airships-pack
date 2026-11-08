@@ -1,0 +1,10 @@
+{
+  "items": {
+    "minecraft:diamond_sword": "grim:item/spear/minecraft/diamond_sword",
+    "minecraft:golden_sword": "grim:item/spear/minecraft/golden_sword",
+    "minecraft:iron_sword": "grim:item/spear/minecraft/iron_sword",
+    "minecraft:netherite_sword": "grim:item/spear/minecraft/netherite_sword",
+    "minecraft:stone_sword": "grim:item/spear/minecraft/stone_sword",
+    "minecraft:wooden_sword": "grim:item/spear/minecraft/wooden_sword"
+  }
+}

@@ -1,0 +1,336 @@
+#Hylian Races Configuration
+[goron]
+
+	#Rolling mechanic settings
+	[goron.rolling]
+		#Multiplier applied to the maximum rolling speed (1.0 = default 0.5 blocks/tick)
+		# Default: 1.0
+		# Range: 0.1 ~ 5.0
+		rollSpeedMultiplier = 1.0
+		#Hunger exhaustion per tick while rolling
+		# Default: 0.06
+		# Range: 0.0 ~ 1.0
+		rollHungerCost = 0.06
+		#Hunger at or below which a Goron cannot roll, out of 20. A roll already
+		#under way stops here too. 4 is two drumsticks, so rolling runs out well
+		#before starving does and leaves a Goron enough to walk home on.
+		#
+		#Set to 0 for the old behaviour, where a Goron could roll until the hunger
+		#bar was completely empty.
+		# Default: 4
+		# Range: 0 ~ 20
+		rollMinFood = 4
+		#Maximum speed multiplier from sustained rolling momentum (1.0 = no bonus)
+		# Default: 1.4
+		# Range: 1.0 ~ 3.0
+		momentumMaxMultiplier = 1.4
+		#Ticks of continuous rolling to reach maximum momentum (100 = 5 seconds)
+		# Default: 100
+		# Range: 20 ~ 400
+		momentumRampTicks = 100
+		#Extra acceleration per tick when rolling downhill
+		# Default: 0.03
+		# Range: 0.0 ~ 0.2
+		slopeDownhillBoost = 0.03
+		#How quickly a roll closes on whatever gear it is currently in, in blocks
+		#per tick per tick. This governs RESPONSIVENESS, not pacing: the gears
+		#below decide how fast a Goron may go and when, and this decides how
+		#briskly it settles into each one. Too low and the launch feels sluggish
+		#no matter what the gears say.
+		# Default: 0.04
+		# Range: 0.002 ~ 0.2
+		rollAcceleration = 0.04
+		#Speed in blocks per tick a roll must reach before hitting a wall counts
+		#as a bonk. Below this a Goron just stops.
+		# Default: 0.15
+		# Range: 0.02 ~ 1.0
+		bonkSpeedThreshold = 0.15
+		#Ticks after a roll begins during which no bonk can happen, whatever the
+		#speed. This is the buffer that stops a roll started against a wall, or
+		#in a tight space, from bonking the instant it begins. 40 = 2 seconds.
+		#
+		#With bonkRequiresTopGear on - the default - this is only a FLOOR, and
+		#the gear requirement is what actually decides, since top gear arrives
+		#later than this at the default gear timings. It still matters if the
+		#gears are shortened or the requirement turned off.
+		# Default: 40
+		# Range: 0 ~ 200
+		bonkGraceTicks = 40
+		#Whether a roll must have reached its final gear before hitting a wall
+		#can bonk. Bonking is the price of real speed, so it belongs to the gear
+		#that has real speed: while a Goron is still winding up through Takeoff
+		#and Cruising it simply stops at a wall instead of being stunned.
+		#
+		#This ties the two systems together rather than leaving bonkGraceTicks to
+		#be kept in sync with the gear timings by hand. Turn it off to go back to
+		#the flat grace period alone.
+		bonkRequiresTopGear = true
+
+		#Rolling gears.
+		#
+		#A roll climbs through three of them - Takeoff, Cruising, Top Speed - each
+		#a fraction of the maximum rolling speed. It sits in a gear for
+		#rollGearHoldTicks, then spends rollGearShiftTicks ramping into the next.
+		#With the defaults that is: Takeoff for 12 ticks, a 20 tick shift, Cruising
+		#for 12, another 20 tick shift, then Top Speed from tick 64 onward - about
+		#three seconds. Each shift is a full second so the climb is visible.
+		#
+		#These timings also decide when a roll can bonk: with bonkRequiresTopGear
+		#on, hitting a wall only stuns once the roll is in its final gear, so
+		#shortening the gears brings bonking forward with them and there is no
+		#second number to keep in sync by hand.
+		#
+		#The gears climb past running rather than starting there: Takeoff is
+		#between walking and sprinting, Cruising is level with a sprint, and only
+		#Top Speed overtakes it. A roll that starts slower than WALKING feels
+		#broken, which is the one floor worth enforcing.
+		[goron.rolling.gears]
+			#First gear, as a fraction of maximum rolling speed.
+			#0.48 of the default 0.5 is 0.24 blocks/tick: above walking at 0.216 but
+			#below sprinting at 0.28, so a roll starts as a heave rather than a
+			#launch. The floor a test enforces is WALKING, not sprinting - a roll
+			#slower than walking reads as broken, but slower than a sprint is fine
+			#for a boulder still getting going.
+			# Default: 0.48
+			# Range: 0.05 ~ 1.0
+			takeoffSpeedFraction = 0.48
+			#Second gear, as a fraction of maximum rolling speed.
+			#0.56 of 0.5 is 0.28 blocks/tick, level with sprinting. Top gear is where
+			#rolling finally overtakes running.
+			# Default: 0.56
+			# Range: 0.05 ~ 1.0
+			cruisingSpeedFraction = 0.56
+			#Ticks spent settled in each gear before shifting up
+			# Default: 12
+			# Range: 0 ~ 200
+			gearHoldTicks = 12
+			#Ticks spent ramping from one gear to the next.
+			#A full second at the default 20, so the change of gear is something the
+			#player watches happen rather than a step they only notice afterwards.
+			# Default: 20
+			# Range: 1 ~ 200
+			gearShiftTicks = 20
+
+	#Ground slam: a curled Goron landing from a height cracks the ground,
+	#damaging and throwing back everything nearby.
+	#
+	#Both the damage and the radius ramp from their base value at
+	#slamMinFallDistance to their maximum at slamFullPowerFallDistance. The ramp
+	#is eased by slamCurveExponent, so a short drop is worth very little and the
+	#payoff arrives late. Obeys the goronRollingDamage gamerule.
+	[goron.slam]
+		#Enable the rolling Goron ground slam
+		slamEnabled = true
+		#Fall distance in blocks at which a landing starts to slam. Below this,
+		#landing does nothing special. Set high enough that rolling over ordinary
+		#terrain does not slam constantly.
+		# Default: 5.0
+		# Range: 0.5 ~ 32.0
+		slamMinFallDistance = 5.0
+		#Fall distance in blocks at which the slam reaches full damage and its
+		#maximum radius. Falling further than this adds nothing.
+		# Default: 20.0
+		# Range: 2.0 ~ 128.0
+		slamFullPowerFallDistance = 20.0
+		#Shape of the ramp between the minimum and full-power fall distances.
+		#1.0 is a straight line. Above 1.0 the slam stays weak through the early
+		#part of the fall and gains most of its power near the end, so a drop
+		#just past the trigger is worth much less than a long one.
+		# Default: 2.0
+		# Range: 0.25 ~ 6.0
+		slamCurveExponent = 2.0
+		#Damage at the point of impact for a landing at exactly slamMinFallDistance.
+		#This is the entry price of a slam at all, so it should feel like a real hit
+		#rather than a nudge; the small base radius keeps it to whatever is underfoot.
+		# Default: 6.0
+		# Range: 0.0 ~ 100.0
+		slamBaseDamage = 6.0
+		#Damage at the point of impact at full power. Damage falls off from here
+		#to zero at the edge of the radius.
+		# Default: 30.0
+		# Range: 0.0 ~ 200.0
+		slamMaxDamage = 30.0
+		#Scales the whole damage curve, for tuning without rewriting it
+		# Default: 1.0
+		# Range: 0.0 ~ 5.0
+		slamDamageMultiplier = 1.0
+		#Slam radius in blocks at exactly slamMinFallDistance
+		# Default: 1.0
+		# Range: 0.5 ~ 16.0
+		slamBaseRadius = 1.0
+		#Slam radius in blocks at full power
+		# Default: 6.0
+		# Range: 0.5 ~ 32.0
+		slamMaxRadius = 6.0
+
+	#Mining settings
+	[goron.mining]
+		#Mining speed multiplier for stone and ores
+		# Default: 1.5
+		# Range: 1.0 ~ 5.0
+		miningSpeedMultiplier = 1.5
+		#Enable mining speed boost for Gorons
+		miningBoostEnabled = true
+
+	#Reach settings.
+	#
+	#A Goron stands 2.1 blocks tall against a human's 1.8, so its eyes are
+	#further from its hands and vanilla's reach feels shorter than it looks.
+	#These add to the vanilla 4.5 block and 3.0 entity ranges. Any value in
+	#range works, not just round fractions; 0.2 is a nudge, 1.0 is generous.
+	[goron.reach]
+		#Extra block reach in blocks for Gorons
+		# Default: 0.2
+		# Range: 0.0 ~ 5.0
+		blockReachBonus = 0.2
+		#Extra entity reach in blocks for Gorons
+		# Default: 0.2
+		# Range: 0.0 ~ 5.0
+		entityReachBonus = 0.2
+
+	#The Goron body. These are plain attribute modifiers, which is deliberate:
+	#attributes are what other mods read, so they are the most compatible way
+	#to make a Goron heavy. Applied only to Gorons and removed the moment a
+	#player stops being one.
+	[goron.body]
+		#Knockback resistance for Gorons, added to the vanilla 0. For scale, each
+		#piece of netherite armour gives 0.1, and 1.0 is complete immunity. A body
+		#of rock should be a little harder to shove than a human: 0.2.
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		knockbackResistance = 0.2
+		#Fraction slower a Goron walks than a human. Rolling is the Goron's sprint,
+		#so this is lifted for the whole of every roll and only bites on foot.
+		#Was a fixed 0.25 in code; this is the same number, now yours to tune.
+		# Default: 0.25
+		# Range: 0.0 ~ 0.9
+		walkSpeedReduction = 0.25
+		#Whether the Goron hitbox has the final word.
+		#
+		#Most mods change a player's size through EntityEvent.Size, and whichever
+		#of them runs last wins - so a scaling or posing mod written for the
+		#vanilla body would silently replace the Goron's hitbox and eye height with
+		#a human's. With this on, the Goron's own dimensions are reasserted after
+		#every other listener, and a warning names the fact the first time it
+		#happens so you know a mod is fighting it. Humans are never touched.
+		hitboxAuthority = true
+
+	#Sounds heard by everyone nearby. The rolling rumble itself is client-side;
+	#see hylianraces-client.toml.
+	[goron.sounds]
+		#A muted double thud each time a roll settles into its next gear.
+		gearShiftSounds = true
+
+	#Immunity settings
+	[goron.immunities]
+		#Enable fire immunity for Gorons
+		fireImmunityEnabled = true
+		#Lava damage multiplier for Gorons (0.0 = immune, 0.5 = half damage, 1.0 = full damage)
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		lavaDamageMultiplier = 0.5
+
+		#Legendary Survival Overhaul. Ignored entirely when that mod is absent.
+		[goron.immunities.legendarySurvivalOverhaul]
+			#Give Gorons immunity to Legendary Survival Overhaul's heat.
+			#A body of living rock has no business suffering heat stroke.
+			heatImmunityEnabled = true
+			#How much legendarysurvivaloverhaul:heat_resistance a Goron gets.
+			#
+			#LSO clamps a resistance correction to the temperature deviation itself,
+			#so resistance can pull a hot player back to normal and never past it -
+			#which means anything at or above the worst heat you can reach IS
+			#immunity, and going higher costs nothing. That is why this is not a
+			#carefully balanced number.
+			#
+			#For scale, LSO puts being on fire at +12.5 and its own fire origin,
+			#Blazeborn, at 15.0. The default sits well above both because those stack
+			#with biome, dimension and sprint heat. Drop it to 15 to be exactly as
+			#heatproof as a Blazeborn instead of flatly immune.
+			# Default: 100.0
+			# Range: 0.0 ~ 10000.0
+			heatResistance = 100.0
+
+			#Insulating gear.
+			#
+			#Which items count is decided by three item tags, not by this config, so
+			#any mod's armour can be added with a datapack and no code:
+			#  #hylianraces:heat_immunity_armor - proof against heat while worn
+			#  #hylianraces:heat_insulating     - partial heat resistance, per piece
+			#  #hylianraces:cold_insulating     - partial cold resistance, per piece
+			#
+			#The first is the 'Goron Tunic from any source' tag. Several Zelda mods
+			#ship a Goron Tunic and none agree on an id, so the tag is the list.
+			#
+			#These stack ON TOP of any values Legendary Survival Overhaul already ships
+			#for an item, so do not tag something LSO already covers unless you mean to
+			#add to it. LSO covers vanilla armour and a couple of dozen mods already.
+			[goron.immunities.legendarySurvivalOverhaul.insulation]
+				#Heat resistance granted by wearing anything in #hylianraces:heat_immunity_armor.
+				#Defaults to the same figure a Goron gets, so a Goron Tunic makes a human
+				#exactly as heatproof as the Gorons who made it.
+				# Default: 100.0
+				# Range: 0.0 ~ 10000.0
+				heatImmunityArmorResistance = 100.0
+				#Heat resistance per worn piece in #hylianraces:heat_insulating.
+				#For scale, LSO's own armour values run between 0.5 and 3.
+				# Default: 2.0
+				# Range: 0.0 ~ 1000.0
+				heatInsulationPerPiece = 2.0
+				#Cold resistance per worn piece in #hylianraces:cold_insulating.
+				#This is the furs-and-hides knob.
+				# Default: 2.0
+				# Range: 0.0 ~ 1000.0
+				coldInsulationPerPiece = 2.0
+
+	#Which items Gorons can eat, and how much they restore.
+	#These lists attach a real vanilla food component at startup, so eating them uses
+	#the normal animation, sound, particles and interruption rules.
+	#Item tags are not loaded yet when components are patched, so modded ores are added
+	#here (or picked up by oreFallbackPatterns) rather than in the goron_food_* tags.
+	#Nutrition/saturation per tier: feast 12/1.0, meal 8/0.8, snack 4/0.5, meager 2/0.3.
+	[goron.diet]
+		#Item IDs eaten as a feast (12 hunger, 1.0 saturation modifier)
+		feastItems = ["minecraft:raw_gold"]
+		#Item IDs eaten as a meal (8 hunger, 0.8 saturation modifier)
+		mealItems = ["minecraft:raw_iron"]
+		#Item IDs eaten as a snack (4 hunger, 0.5 saturation modifier)
+		snackItems = ["minecraft:raw_copper", "minecraft:lapis_lazuli"]
+		#Item IDs eaten as a meager meal (2 hunger, 0.3 saturation modifier)
+		meagerItems = ["minecraft:flint", "minecraft:coal"]
+		#Make any ore or raw material edible for Gorons at the meager tier
+		oreFallbackEnabled = true
+		#Item ID globs matched by the ore fallback ('*' is the only wildcard)
+		oreFallbackPatterns = ["*:*_ore", "*:raw_*"]
+		#Item ID globs the ore fallback skips, applied after oreFallbackPatterns
+		oreFallbackExcludes = ["*:*_block"]
+
+	#The Goron Wheel: the Create generator a Goron drives by rolling on it.
+	#Only read when Create is installed.
+	[goron.wheel]
+		#Stress capacity, in Stress Units per RPM.
+		#Create multiplies this by the speed the machine is turning at, so the
+		#power climbs with the Goron's gear on its own. At the default 128 a
+		#Goron curling up supplies 3584 SU and one flat out in top gear at 64
+		#RPM supplies 8192 - the same as a fully sailed windmill, but only while
+		#a player is actually rolling on it and burning food for it.
+		#Create rates a Large Water Wheel at this same 128, but it turns at 4
+		#RPM, so it supplies 512. A walking Goron NPC turns this at 8 RPM.
+		# Default: 128.0
+		# Range: 0.0 ~ 16384.0
+		stressCapacity = 128.0
+
+	#Goron size settings
+	[goron.size]
+		#Goron height in blocks (default player is 1.8)
+		# Default: 2.1
+		# Range: 1.0 ~ 4.0
+		height = 2.1
+		#Goron width in blocks (default player is 0.6)
+		# Default: 0.74
+		# Range: 0.4 ~ 2.0
+		width = 0.74
+		#Goron eye height in blocks
+		# Default: 1.9
+		# Range: 0.5 ~ 3.8
+		eyeHeight = 1.9

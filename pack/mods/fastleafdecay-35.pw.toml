@@ -1,0 +1,8 @@
+name = "fastleafdecay-35"
+filename = "fastleafdecay-35.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/589f05dcd5-fastleafdecay-35.jar"
+hash-format = "sha512"
+hash = "795f7e5a03b65705d18901fe28034df771e1843aabd16bfe49fe77b534938424ce26f3d0f723cd78ada058989bb758d14f091ca111f0b1e4d195e8baa031bbc5"

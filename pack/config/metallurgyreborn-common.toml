@@ -1,0 +1,28 @@
+#Per-metal effects
+[effects]
+	#Enable thematic armor-set bonuses, held-tool effects, and auto-smelt pickaxes.
+	thematicEffectsEnabled = true
+	#Enable the classic sword-on-hit effects (fire, poison, wither, etc.).
+	swordEffectsEnabled = true
+
+#Machines
+[machines]
+	#Processing speed multiplier for all machines (higher = faster).
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	speedMultiplier = 1.0
+
+#Gadgets
+[gadgets]
+	#Block radius the Metal Detector scans on use.
+	# Default: 8
+	# Range: 1 ~ 32
+	metalDetectorRadius = 8
+
+#World generation
+[worldgen]
+	#Ore spawn density (1.0 = full as generated, lower = rarer/more spread out).
+	#Only reduces frequency. Affects newly generated chunks.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	oreDensity = 0.5

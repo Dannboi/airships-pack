@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/netherite_axe__m_item_netherite_axe_1__t_item_netherite_axe_1"
+    }
+}

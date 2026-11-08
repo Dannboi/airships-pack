@@ -1,0 +1,8 @@
+name = "kotlinforforge-5.11.0-all"
+filename = "kotlinforforge-5.11.0-all.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/a8b9f12333-kotlinforforge-5.11.0-all.jar"
+hash-format = "sha512"
+hash = "9f6928c881bf952c31b48b3f4d8531a7372ecd66d0f1969c036d03d4c218d3491b08af840af49da2ece49f2b88cc45471e21876ab29935ace46e32823f9767ac"

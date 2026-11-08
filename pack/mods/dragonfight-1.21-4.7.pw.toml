@@ -1,0 +1,8 @@
+name = "dragonfight-1.21-4.7"
+filename = "dragonfight-1.21-4.7.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/9c4b7d0b35-dragonfight-1.21-4.7.jar"
+hash-format = "sha512"
+hash = "216ead02d5da60f522aa3bf7da591ce6d9e85d21f644c7846ac59afa3f87be7fce8c3e923c8ccb21c31a509251afb6cc2485878f2b5cdf41b932d1ecd26fdd3a"

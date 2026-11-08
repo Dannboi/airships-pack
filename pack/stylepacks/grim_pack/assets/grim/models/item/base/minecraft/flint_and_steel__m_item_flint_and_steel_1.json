@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "grim:item/base/minecraft/flint_and_steel__m_item_flint_and_steel_1__t_item_flint_and_steel_1"
+    }
+}

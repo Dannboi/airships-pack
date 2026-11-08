@@ -1,0 +1,8 @@
+name = "connectiondebug-1.4.3"
+filename = "connectiondebug-1.4.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/9c8a18ad4b-connectiondebug-1.4.3.jar"
+hash-format = "sha512"
+hash = "7eec8da541dad2168b2c9490b0c5e5fa03fe55538f3b7046df1c21313337cd6479ebcc3bd29187b724af70146411e45d8ffff103f39c1e6fb314242bbc1da93a"

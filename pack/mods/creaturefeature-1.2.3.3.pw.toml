@@ -1,0 +1,13 @@
+name = "Creature Feature"
+filename = "creaturefeature-1.2.3.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/7nEkcq0F/versions/eW0CuJzM/creaturefeature-1.2.3.3.jar"
+hash-format = "sha512"
+hash = "57e4be76859b4ebedc6ed04b01080191ba5b14dc759322fd52839290a4bb99cdaa6bb031dba30e20faf65705561e351f6ac2fb21a8e1ee62b355cbd338551684"
+
+[update]
+[update.modrinth]
+mod-id = "7nEkcq0F"
+version = "eW0CuJzM"

@@ -1,0 +1,8 @@
+name = "i_architecture-0.1.1b"
+filename = "i_architecture-0.1.1b.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/300de76d25-i_architecture-0.1.1b.jar"
+hash-format = "sha512"
+hash = "f0ecc8f430a1164e050bfdf3676d0e43bdf5c74925cd7e5ae00d6c2fcce7e94b085824da880288cbbb6a05ff86c0838ce41bdc42534c69e1709a3a141e651e56"

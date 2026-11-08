@@ -1,0 +1,8 @@
+name = "copycat_aeronautics_sails-0.1.17"
+filename = "copycat_aeronautics_sails-0.1.17.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/b1a5c15329-copycat_aeronautics_sails-0.1.17.jar"
+hash-format = "sha512"
+hash = "68abfaffb197966ca4d0ca5f045037b6e48102fa81401e65c857f5bf872b35c009a78e4c85fe34bf7072909d56ded98d140518c4b6ecdfd729f7044efea796ae"

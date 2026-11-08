@@ -1,0 +1,8 @@
+name = "incmachines-1.7.0"
+filename = "incmachines-1.7.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/f32ade3a28-incmachines-1.7.0.jar"
+hash-format = "sha512"
+hash = "155bbc7e5e6282b19a177de938dda0ef9c9661800548de625cab7f95ba47df0c7abb29bd7c0c120c6fcf77e9ea9912dd869fd9844733017dfdf2f7d224b1069b"

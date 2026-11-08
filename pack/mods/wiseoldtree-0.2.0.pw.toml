@@ -1,0 +1,8 @@
+name = "wiseoldtree-0.2.0"
+filename = "wiseoldtree-0.2.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/2c2806f776-wiseoldtree-0.2.0.jar"
+hash-format = "sha512"
+hash = "2a9f0362878ada648da8834f52a67877c83328ad2b9e7c094194ff16d74e93fac47f587480bc8ea1a94ccf192aa0242e0b0f5580ffa48332cde5a0e754cdbe0a"

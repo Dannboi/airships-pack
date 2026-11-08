@@ -1,0 +1,8 @@
+name = "knownpacksfix-3.1.0"
+filename = "knownpacksfix-3.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/03b7c05931-knownpacksfix-3.1.0.jar"
+hash-format = "sha512"
+hash = "fdfaff9b00abf2a8d97cf7066dbfce71c126fe463df76dec4fb9fbab99512f1a4af3c2e9aa7a35c63661323c6e2ab0f12a71f62d0a2c7230fdef1be40095531c"

@@ -1,0 +1,8 @@
+name = "alexpreserves-1.21.1-neoforge-1.1.0"
+filename = "alexpreserves-1.21.1-neoforge-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/5ba6bef1c3-alexpreserves-1.21.1-neoforge-1.1.0.jar"
+hash-format = "sha512"
+hash = "30e52466de5a39124cf2e780eeaffd040b975a9d226803acee4b297f1632c3f4f87f553c5739825fdbc5054e2efa374da5d851164c32e0ac4d28fdc9ca7a78be"

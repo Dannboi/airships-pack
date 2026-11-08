@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "steampunk:item/steampunk/minecraft/fishing_rod"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "cast": 1
+      },
+      "model": "steampunk:item/steampunk/minecraft/fishing_rod_cast"
+    }
+  ]
+}
