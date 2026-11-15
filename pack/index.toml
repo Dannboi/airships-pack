@@ -4196,8 +4196,8 @@ hash = "8fe741853924944b4bb7e8cf18822d39922a9bc85e1208cddfba509e1344a0a4"
 metafile = true
 
 [[files]]
-file = "mods/connectiondebug-1.4.3.pw.toml"
-hash = "179c875e1c65cdaad48f480f8b3ebebebf196e5b082fa820b9ac6b86fc3ef8f0"
+file = "mods/connectiondebug-1.4.4.pw.toml"
+hash = "94d3c0019c50a8553b3846dc49387448106769dc7fb57758f430483bd88cc10e"
 metafile = true
 
 [[files]]

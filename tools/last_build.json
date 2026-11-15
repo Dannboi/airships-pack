@@ -1,6 +1,6 @@
 {
- "version": "2026.11.15-24",
- "index_hash": "85e329588e880195b34e57c179a63380e3462bbd6ff3a8c1a07cb59b35220e40",
+ "version": "2026.11.15-25",
+ "index_hash": "2a630057b2419a8f59d75b9d717ea214788d3b5e377a92fc3aa23efec4376678",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -86,9 +86,9 @@
   "9230b20d78-more_critters-1.6.0.jar",
   "92485f0841-zeldaswordskills-1.0.0.jar",
   "99e82dd617-skarrier_mobs-1.0.5.jar",
+  "9b07bc9bc8-connectiondebug-1.4.4.jar",
   "9c4b7d0b35-dragonfight-1.21-4.7.jar",
   "9c6bdbf936-acaddons-1.0.0.jar",
-  "9c8a18ad4b-connectiondebug-1.4.3.jar",
   "9cfd415492-twilightforest-1.21.1-4.8.3345-universal.jar",
   "a31c3f3633-GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
   "a3285d328f-origins-0.3.2.jar",
