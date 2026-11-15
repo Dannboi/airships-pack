@@ -1,13 +1,8 @@
-name = "Immersive Petroleum"
+name = "ImmersivePetroleum-1.21.1-4.5.0-39"
 filename = "ImmersivePetroleum-1.21.1-4.5.0-39.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/MOw5TN6u/versions/1nu6ZI52/ImmersivePetroleum-1.21.1-4.5.0-39.jar"
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/be34f246c6-ImmersivePetroleum-1.21.1-4.5.0-39.jar"
 hash-format = "sha512"
-hash = "a8ac744ef639dec0ca64c5b4d1905351f5d476ecae955754231e09674684a7915fdfab0a16ccecbf5dfe302e1fa91ca6a861ab6cbc8ef83d9d6a7d9dd9d65319"
-
-[update]
-[update.modrinth]
-mod-id = "MOw5TN6u"
-version = "1nu6ZI52"
+hash = "7a531f38958922790a0099d305d44ff80c83916fb6b565cfb1a37d1b0560e1e72c9317ec6c63c276ed1951e0a3cefffffb5ab35d281061f3d34e14c30a745b7b"
