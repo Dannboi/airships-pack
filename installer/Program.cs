@@ -18,6 +18,11 @@ namespace AirshipsInstaller
                 try { return Core.PreLaunch(args[1], args.Length > 2 ? args[2] : "javaw"); }
                 catch (Exception e) { Console.WriteLine("[Airships] pre-launch failed: " + e); return 2; }
             }
+            if (args.Length >= 2 && args[0] == "--gpu-pref")   // --gpu-pref <exe>  (diagnostic)
+            {
+                Console.WriteLine(Core.EnsureHighPerformanceGpu(args[1]));
+                return 0;
+            }
             if (args.Length >= 1 && args[0] == "--silent")   // --silent [dir] [maxMemMb] [--no-desktop]
             {
                 try

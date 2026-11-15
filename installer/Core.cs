@@ -220,6 +220,8 @@ namespace AirshipsInstaller
             });
 
             // 5. shortcuts + Add/Remove Programs entry
+            // Prism downloads Mojang's Java 21 runtime here on first launch; pre-register it for the dedicated GPU.
+            EnsureHighPerformanceGpuForJava(Path.Combine(o.Dir, "java", "java-runtime-delta", "bin", "javaw.exe"));
             status("Creating shortcuts...", 90);
             string programs = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Programs), Config.PackName.Replace(":", ""));
             Directory.CreateDirectory(programs);
@@ -248,6 +250,42 @@ namespace AirshipsInstaller
         }
 
         static string SafePath(Process p) { try { return p.MainModule.FileName; } catch { return ""; } }
+
+        // ---------- GPU preference ----------
+        const string GpuPrefKey = @"Software\Microsoft\DirectX\UserGpuPreferences";
+
+        /// Ask Windows to run this exe on the high-performance GPU - the same per-user registry value that
+        /// Settings > Display > Graphics writes. On PCs with integrated + dedicated graphics (desktop Ryzen/Intel
+        /// iGPU enabled, laptops), a freshly installed java otherwise often lands on the weak integrated chip.
+        /// Respects an explicit "Power saving" (GpuPreference=1) the player chose themselves.
+        /// Returns a short description of what happened (for logs/tests).
+        public static string EnsureHighPerformanceGpu(string exePath)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(exePath)) return "no path";
+                string full = Path.GetFullPath(exePath.Replace('/', '\\'));
+                using (var k = Registry.CurrentUser.CreateSubKey(GpuPrefKey))
+                {
+                    string cur = k.GetValue(full) as string ?? "";
+                    var m = Regex.Match(cur, @"GpuPreference=(\d+);");
+                    if (m.Success && m.Groups[1].Value == "1") return "kept player's power-saving choice";
+                    if (m.Success && m.Groups[1].Value == "2") return "already high performance";
+                    string updated = m.Success ? cur.Replace(m.Value, "GpuPreference=2;") : "GpuPreference=2;" + cur;
+                    k.SetValue(full, updated, RegistryValueKind.String);
+                    return "set high performance";
+                }
+            }
+            catch (Exception e) { return "failed: " + e.Message; }
+        }
+
+        static void EnsureHighPerformanceGpuForJava(string javaPath)
+        {
+            if (string.IsNullOrEmpty(javaPath)) return;
+            string dir = Path.GetDirectoryName(javaPath.Replace('/', '\\')) ?? "";
+            foreach (var exe in new[] { Path.Combine(dir, "javaw.exe"), Path.Combine(dir, "java.exe") })
+                Console.WriteLine("[Airships] GPU preference for " + exe + ": " + EnsureHighPerformanceGpu(exe));
+        }
 
         static string MmcPackJson(string mc, string neo) =>
             "{\n    \"components\": [\n" +
@@ -318,6 +356,7 @@ namespace AirshipsInstaller
             }
             catch (Exception e) { Console.WriteLine("[Airships] couldn't check NeoForge version (" + e.Message + ") - continuing"); }
 
+            EnsureHighPerformanceGpuForJava(java); // applies to the game process Prism starts right after this
             if (string.IsNullOrEmpty(java) || !File.Exists(java))
             {
                 // INST_JAVA may point at javaw.exe or a dir; fall back to a sibling java.exe
