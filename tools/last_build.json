@@ -1,6 +1,6 @@
 {
- "version": "2026.11.15-26",
- "index_hash": "40cf7955bf4048abb49de711afbd55129e1bdfad55458ca71244d2360cf2d53e",
+ "version": "2026.11.15-27",
+ "index_hash": "055364fca7b8ee8cf00785d2e85d4b00c1ac86184c81150fe806332cd2abfce5",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -93,6 +93,7 @@
   "a31c3f3633-GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
   "a3285d328f-origins-0.3.2.jar",
   "a8b9f12333-kotlinforforge-5.11.0-all.jar",
+  "a922040e8b-minefantasyreforged-1.0.0.jar",
   "ac4a39fc38-fangs_n_claws-1.2.5.jar",
   "af88a4cf12-smithingreborn-0.7.0.jar",
   "afbcedbc8c-places-0.5.4-neoforge-1.21.1.jar",
@@ -107,7 +108,6 @@
   "c789def62a-species-1.0.0.jar",
   "c9678332f2-StorageDrawers-neoforge-1.21.1-13.11.4.jar",
   "cb1198c3a4-thick_aeronautics-1.5.0.jar",
-  "cfafb610a5-minefantasyreforged-1.0.0.jar",
   "d1f446f539-ancient_remnants-neoforge-1.21.1-1.1.0.jar",
   "d6669855df-createshaderfixes-1.0.0.jar",
   "d73b930824-create_submarine-2.2.2.jar",

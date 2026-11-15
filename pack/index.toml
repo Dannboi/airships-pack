@@ -4901,7 +4901,7 @@ metafile = true
 
 [[files]]
 file = "mods/minefantasyreforged-1.0.0.pw.toml"
-hash = "1afeef304ab7099f62792816533a3bfafe5577fe515b2640e58089c6feb12fcd"
+hash = "dcbd64b235161a3f849ef178b5a543cd3bc07a6a7b68e20f43cbc09a4487c9c7"
 metafile = true
 
 [[files]]
@@ -6749,7 +6749,7 @@ hash = "7d00407f62c9d84bf1f1da4bde2ea828ec2f00c345f287260d56db489d5cd2c3"
 
 [[files]]
 file = "stylepacks/elvish_pack/assets/elvish/models/item/elvish/minecraft/arrow.json"
-hash = "226a064885dd60b59ba48769f75bfcdbafbb6c548b7f792f2e6644f8638dbd4d"
+hash = "b3f17cca5f927512b5bf8cb6305c518c9f4b9eedaafc6322f12f3f7bc828f2d8"
 
 [[files]]
 file = "stylepacks/elvish_pack/assets/elvish/models/item/elvish/minecraft/bow.json"
