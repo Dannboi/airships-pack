@@ -1,0 +1,8 @@
+name = "create-roboleg-1.21.1-0.2.114"
+filename = "create-roboleg-1.21.1-0.2.114.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/0dbfbe086c-create-roboleg-1.21.1-0.2.114.jar"
+hash-format = "sha512"
+hash = "be33a68ad65138ac71453a60a30f7e3bbe15e3cfaf6caf8c6d1ddaf339eefe6bb2415490b3976394314324a13984970bbf141c292726933948d73ae77732fe05"

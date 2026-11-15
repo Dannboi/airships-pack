@@ -3,6 +3,6 @@ filename = "uniqueartifacts-1.0.0.jar"
 side = "both"
 
 [download]
-url = "https://github.com/Dannboi/airships-pack/releases/download/files/70ade98fc0-uniqueartifacts-1.0.0.jar"
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/b6dba232c7-uniqueartifacts-1.0.0.jar"
 hash-format = "sha512"
-hash = "a05a43074717f9a2cfe22aa96f731717e94606feaa2aa65753fce69e4f7094912ef49b15177080a12544dab3582844f0822fbc49e9c74f3599dad43807967376"
+hash = "35fb3a1129c23cd8cb744ae940e3ab75b15c7fbcaed156dec5e05f88afe41db8adf7ccc2aaba4a9d83449bd5be43d1a0fbc80f501a4999e44a3857b22c0fc8bc"

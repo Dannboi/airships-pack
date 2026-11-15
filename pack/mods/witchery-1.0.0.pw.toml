@@ -3,6 +3,6 @@ filename = "witchery-1.0.0.jar"
 side = "both"
 
 [download]
-url = "https://github.com/Dannboi/airships-pack/releases/download/files/2f54e0b343-witchery-1.0.0.jar"
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/e84e7a5f60-witchery-1.0.0.jar"
 hash-format = "sha512"
-hash = "48f630196fc683458347a12ea37acf8d4b20a9829ecc441460803e29e79bb5757bd5ceeb11d19028a240156a0bb376533f14ddc3be8ac99a8de739279a900dc4"
+hash = "61aca74b0b0f5573ed3b256a935c0be6829e0583a381341cb13706c0d06cfe4d01e2bc2b55173fd0a8a7782512b8f783d281a48956dfb5d85b58e10c35b91974"

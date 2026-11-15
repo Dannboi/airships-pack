@@ -1,0 +1,8 @@
+name = "let_it_walk-0.1.4"
+filename = "let_it_walk-0.1.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/5362bcc883-let_it_walk-0.1.4.jar"
+hash-format = "sha512"
+hash = "556c999634dfc73e61ee71bdc4837ef78a9b392ae6a6c0f5ec171441e5cc1fefa0560e5af002453c2aca4fb69bfee2e32116a4f4e0768f665a698eee1936a536"

@@ -1,0 +1,8 @@
+name = "LivingWind-NeoForge-1.21.1-v1.4.0"
+filename = "LivingWind-NeoForge-1.21.1-v1.4.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/12d2656443-LivingWind-NeoForge-1.21.1-v1.4.0.jar"
+hash-format = "sha512"
+hash = "5319ea2b5402d5ce3e63da9dca3047358df5d151f152d2023bc371e66686d8326489d1852c0efd857ae7883b63d8498321b9b4fa0bb11e3cd0da1bf1779fe0f9"

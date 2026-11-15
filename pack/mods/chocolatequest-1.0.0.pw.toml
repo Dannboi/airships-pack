@@ -3,6 +3,6 @@ filename = "chocolatequest-1.0.0.jar"
 side = "both"
 
 [download]
-url = "https://github.com/Dannboi/airships-pack/releases/download/files/13cbf28b97-chocolatequest-1.0.0.jar"
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/177e48ec2d-chocolatequest-1.0.0.jar"
 hash-format = "sha512"
-hash = "ae7ae8a668fb73cdf7b40e9c7325a3c017bd221c0102b408f86c9a38474d60454994b3ecaab8a70e5faf8c8d4c0fce0754c36d16b77848db67ee6abe02610277"
+hash = "3d5716443d2de37df527fa389747de8e104877d1ca191bf1b8801abc04d5d40d56721d3053037f556ff8f68ac8db5818e6995d1b05c0ef9f4f9439ce76270094"

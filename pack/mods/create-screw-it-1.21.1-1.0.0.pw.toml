@@ -1,0 +1,8 @@
+name = "create-screw-it-1.21.1-1.0.0"
+filename = "create-screw-it-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/e2432cdc9c-create-screw-it-1.21.1-1.0.0.jar"
+hash-format = "sha512"
+hash = "ecc8390414afce1b30ad1c8ce20cec9c70f07e815ff8431dfa30c8d55819251e5c67c0bd9b9ad9a680740b753b599d2569134952a01408646647bbf6aab7bd87"

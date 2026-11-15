@@ -3066,7 +3066,7 @@ hash = "15057a2a584fd75c7360e2744b63385174bc787188480fa5b93947dde5d808c2"
 
 [[files]]
 file = "config/submarine_hull.pw.toml"
-hash = "38afffb92dd355c342e447f061b34745625ec868a945902e343cb97c4d246690"
+hash = "b368af27c28a74c977e43c9b9429d37d5384e0621660bef3bcd794d41d73fbca"
 metafile = true
 
 [[files]]
@@ -3603,6 +3603,11 @@ hash = "c07d109b9f4bf77c1b74fe1cece3a0b52c0ae8aafd9d6a34ed11c1afe369e8be"
 metafile = true
 
 [[files]]
+file = "mods/LivingWind-NeoForge-1.21.1-v1.4.0.pw.toml"
+hash = "1fdd5fbd259cc5666695079e50bd2ee76cd4402452ec81b69d83b9d901c00212"
+metafile = true
+
+[[files]]
 file = "mods/Lushier-1.21.1-1.0.0 [Quark Compat].pw.toml"
 hash = "4a471e1ac03b1b6c4cd1563ae88587bf91e0b9b128bfdfd429330059cf0d111f"
 metafile = true
@@ -3710,6 +3715,11 @@ metafile = true
 [[files]]
 file = "mods/SereneSeasons-neoforge-1.21.1-10.1.0.3.pw.toml"
 hash = "0bd54046e63594e05b1bca0be0f28180e8c0e264c965f056ad2af6720264ecd9"
+metafile = true
+
+[[files]]
+file = "mods/Sinew-1.21.1-1.5.0.pw.toml"
+hash = "a6ebf4a08df1f09a74f56059078e10747517a5ba8c0eb5a938e6755faeca5e7a"
 metafile = true
 
 [[files]]
@@ -3914,7 +3924,7 @@ metafile = true
 
 [[files]]
 file = "mods/arsmagica2-1.0.0.pw.toml"
-hash = "0f20c01f1c7136de0d88ec3e571175fee4592b3025446c74d17c015def6ade01"
+hash = "2dbba1d843e331dfdb2c135f2410c41cabae9192621452c0febf695da39f46e2"
 metafile = true
 
 [[files]]
@@ -4074,7 +4084,7 @@ metafile = true
 
 [[files]]
 file = "mods/chocolatequest-1.0.0.pw.toml"
-hash = "80248377bcf57400e4fd7aee88bec6f3f0371485d92a8d4216c1b8c32c68d0d6"
+hash = "1f8d80707ff1fbcf8782fbe04d89e4bf114b1bdcbb6d662c10ffdc319358a59f"
 metafile = true
 
 [[files]]
@@ -4220,6 +4230,16 @@ metafile = true
 [[files]]
 file = "mods/create-otbwg-compat-1.0.pw.toml"
 hash = "10627b6f7e1a133e529d754ef69073f4a97abb1d383a9c4f9ee399c239d5cb7f"
+metafile = true
+
+[[files]]
+file = "mods/create-roboleg-1.21.1-0.2.114.pw.toml"
+hash = "d436181f5aa97a94887a5402b9a2eb74196033b575eebd0549e31118355cff6a"
+metafile = true
+
+[[files]]
+file = "mods/create-screw-it-1.21.1-1.0.0.pw.toml"
+hash = "76fec6052683de0f4d54b1bc385fca75b354c5ae3300658f67c9cff939b3e712"
 metafile = true
 
 [[files]]
@@ -4529,7 +4549,7 @@ metafile = true
 
 [[files]]
 file = "mods/fape_compat-0.5.pw.toml"
-hash = "f1021390eb6075ced08f47b2cdbbecd39120fa578a5c73262bd422b18f3249a9"
+hash = "5b21d4951590aa52c5a1e954ac0c6663cfcd11bd1fcc8a51c14cdc97b64b098e"
 metafile = true
 
 [[files]]
@@ -4575,6 +4595,11 @@ metafile = true
 [[files]]
 file = "mods/friendsandfoes-neoforge-5.0.4+mc1.21.1.pw.toml"
 hash = "dd747d8f87a5cbff501a4c59f5ac06faec2cc03c416cbff5dc3b920157552dc0"
+metafile = true
+
+[[files]]
+file = "mods/frozen_sea_spartan_bc-0.2.0.pw.toml"
+hash = "4a0744a7230f120966f8700a36d3c645d584ef7a242bbdb9c74b154192eb111f"
 metafile = true
 
 [[files]]
@@ -4794,7 +4819,12 @@ metafile = true
 
 [[files]]
 file = "mods/legendgear-1.0.0.pw.toml"
-hash = "e4f2950b3fb590cadea4d0c58cb6eaa116e671942ea98a6a164234266f292e55"
+hash = "000f6834b2e55d78ff1723c30a913a07456f13b6533a87c7345125d7aa225793"
+metafile = true
+
+[[files]]
+file = "mods/let_it_walk-0.1.4.pw.toml"
+hash = "6b5c735ace9d000757b795487e3943d40d05905fcc564902e460addf8fef447e"
 metafile = true
 
 [[files]]
@@ -4835,6 +4865,11 @@ metafile = true
 [[files]]
 file = "mods/mighty_mail-neoforge-1.21.1-1.1.4.pw.toml"
 hash = "ab25b495d9eadff928af5a99a45c15c1a1aea32a522c368241eab30acee3fdff"
+metafile = true
+
+[[files]]
+file = "mods/minefantasyreforged-1.0.0.pw.toml"
+hash = "90817f8627e18c042e434d43d4ef010d47f6bbc653ac55f046063939051acc4c"
 metafile = true
 
 [[files]]
@@ -4928,8 +4963,8 @@ hash = "bead9189538a283cb4f0063f3848f0e6866b2734f7feed347f8a043c2a12df0a"
 metafile = true
 
 [[files]]
-file = "mods/opposing_force-2.1.0.pw.toml"
-hash = "fd9a9a3b9c55728ed8ae18e67c595afd9ddd632b2e123088c0173a46bebdcff3"
+file = "mods/orevolution-1.21.1-6.0.1.pw.toml"
+hash = "968c2c17e5d6f12304b5bf9d73a66337907e2f43d9d76056ca68c2e76b925fed"
 metafile = true
 
 [[files]]
@@ -5073,8 +5108,8 @@ hash = "fa4dc46583e1d2ce3b4f4fbfef0b299dba92b077f68e6419d8eef126b4eff825"
 metafile = true
 
 [[files]]
-file = "mods/sable-neoforge-1.21.1-2.0.3.pw.toml"
-hash = "674aaf0dc67f808f0054cfc7bbe041d6725fcbbe97644a85ffbd946a22d35666"
+file = "mods/sable-neoforge-1.21.1-2.0.6.pw.toml"
+hash = "fadb5c9cfe145e51992894fe57209fc8f1696ef892ee9702a24c6205f042e9b2"
 metafile = true
 
 [[files]]
@@ -5148,8 +5183,8 @@ hash = "3e697f6b9d6ad525a21cc1beaf0b1a55ac40cf2b7e4fc39807f0cf8afcc622d6"
 metafile = true
 
 [[files]]
-file = "mods/skogg-1.20.0.pw.toml"
-hash = "69db05805ba69157087fd0ba8bf2949f8ca7cc29188040b79cda4f5fba2fb2ee"
+file = "mods/skogg-1.22.0.pw.toml"
+hash = "2264feb5d68ed99fce080cf696fea391351ff1db49a32ab92e64f1727037f202"
 metafile = true
 
 [[files]]
@@ -5399,7 +5434,7 @@ metafile = true
 
 [[files]]
 file = "mods/uniqueartifacts-1.0.0.pw.toml"
-hash = "43ee92767b990ff810d5e581210c4d52da7231ef2813065736873dc801378b3a"
+hash = "fc5a7080af3b0190b6ffb2406b02a7e7f49b1a5ff4796fd9f2adebaf36da0910"
 metafile = true
 
 [[files]]
@@ -5459,7 +5494,7 @@ metafile = true
 
 [[files]]
 file = "mods/witchery-1.0.0.pw.toml"
-hash = "5e293b13c23e0bed2f63effe68b1e93fad1f8bd2d99b4a4ed89608845a8d95b2"
+hash = "5810c5905cc2b6b66c85202e5ceb43ce30b743e9dbe4c51c4d78202ca8128984"
 metafile = true
 
 [[files]]
@@ -5484,7 +5519,7 @@ metafile = true
 
 [[files]]
 file = "mods/zeldaswordskills-1.0.0.pw.toml"
-hash = "c50eb2b7d8cddff2726be934badcd5079c425bb1534275bd44a65fc43a428ae9"
+hash = "6a5a3475b3bb0147c8e625c7094a8a96ded398f481d4c9e54fc9761230160aec"
 metafile = true
 
 [[files]]

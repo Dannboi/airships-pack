@@ -1,0 +1,8 @@
+name = "minefantasyreforged-1.0.0"
+filename = "minefantasyreforged-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/c5d92271e9-minefantasyreforged-1.0.0.jar"
+hash-format = "sha512"
+hash = "0e4a7c885302306f8b4d831bcee24115be2e14a9dc50e383ed4c50fc333d59b7821614f27b9efefd462da1582a36f6b6b944c7b5f3be3e39b1397cc4bfc4b7e8"

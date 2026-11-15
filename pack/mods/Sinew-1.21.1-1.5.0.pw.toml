@@ -1,0 +1,13 @@
+name = "Sinew"
+filename = "Sinew-1.21.1-1.5.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/iBgzSrdT/versions/NZXl7ibT/Sinew-1.21.1-1.5.0.jar"
+hash-format = "sha512"
+hash = "7ea0cd4a5e44da1f0a15c654dc47f50d0317ff5cdaec4091479fa7e5ec3f0842d5fdf4cf402d5b8d751bb1e82b94dce7d521719198302c3e9c2f805ff27bf19d"
+
+[update]
+[update.modrinth]
+mod-id = "iBgzSrdT"
+version = "NZXl7ibT"

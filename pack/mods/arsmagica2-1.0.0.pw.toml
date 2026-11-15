@@ -3,6 +3,6 @@ filename = "arsmagica2-1.0.0.jar"
 side = "both"
 
 [download]
-url = "https://github.com/Dannboi/airships-pack/releases/download/files/c12d85e46d-arsmagica2-1.0.0.jar"
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/6e944b5a37-arsmagica2-1.0.0.jar"
 hash-format = "sha512"
-hash = "efc3c8e983995f36bab5679a0a85a083d70e5bfcf829df2c50c26e7605fa932323fefd7e747cf38802cc770561c5646330e69fa75c157000ac28e0ce96c5493f"
+hash = "be5fa87212e5398f95490bdde75bc93933f914e7d14aeca6537f2f8d386190ea9a6473a2ab680575552afcce113a97d2d642974ac502538c3bc5f35718bbc2d3"

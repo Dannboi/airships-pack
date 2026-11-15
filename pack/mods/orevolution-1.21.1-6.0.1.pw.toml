@@ -1,0 +1,13 @@
+name = "Orevolution!"
+filename = "orevolution-1.21.1-6.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/80M3dS0F/versions/zUNnB852/orevolution-1.21.1-6.0.1.jar"
+hash-format = "sha512"
+hash = "7b5e7347d07327dd5a11ca96cb5ddaf7cda6f4f1a2cdf85ec2f78f7352dd84733c9688340e12190a257afa4829c87d1830453370c0eb7f25d50f3344ea09bde4"
+
+[update]
+[update.modrinth]
+mod-id = "80M3dS0F"
+version = "zUNnB852"

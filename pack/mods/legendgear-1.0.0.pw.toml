@@ -3,6 +3,6 @@ filename = "legendgear-1.0.0.jar"
 side = "both"
 
 [download]
-url = "https://github.com/Dannboi/airships-pack/releases/download/files/c9b7a79818-legendgear-1.0.0.jar"
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/757325bce0-legendgear-1.0.0.jar"
 hash-format = "sha512"
-hash = "42b31eba90003542336bfb5780269cace62f77dfc68ebaed293a33b988855de21617e897b94d3440ddf8f63fb1350975265157d36e20c0a888ed7b05a2de8c36"
+hash = "dca181eee438b0dd4d3a7a90361dce33d9737ae4765cf2e818877d20862374e2fd5b8b9baec774c8fb11dbcf2351a4147f002eb15ea988af5672b884ec2ac301"

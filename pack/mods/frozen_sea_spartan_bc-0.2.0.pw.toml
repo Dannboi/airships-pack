@@ -1,0 +1,8 @@
+name = "frozen_sea_spartan_bc-0.2.0"
+filename = "frozen_sea_spartan_bc-0.2.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/763de1dc96-frozen_sea_spartan_bc-0.2.0.jar"
+hash-format = "sha512"
+hash = "17c31b56dbbea544c68837963b2a6d72f2c890beee93df8a4e3b3d0b11f1b43182ddc84e0dfd32bb44f10dcef9e428d053790752d5929afd1f24022fb7624537"
