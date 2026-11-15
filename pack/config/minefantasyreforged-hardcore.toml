@@ -1,0 +1,96 @@
+[hardcore_crafting]
+	#Legacy: [1: hardcore crafting] Allow Stone-Age
+	#Allows punching stone for sharp rocks, and using them on leaves for sticks/vines: These make primitive stone tools
+	allow_stone_age = true
+	#Legacy: [1: hardcore crafting] Hardcore Ingots
+	#Some Metals (Like iron, steel and direct ore smelts) Must be worked manually on an anvil rather than smelted. They may also cost more! Big furnace still works.
+	hardcore_ingots = false
+	#Legacy: [1: hardcore crafting] Hardcore Quench
+	#Hot items can be damaged if a trough is not used.
+	hardcore_quench = true
+	#Legacy: [1: hardcore crafting] Hot burns
+	#You cannot hold hot items (apron or not), tongs must be used.
+	hot_burns = true
+	#Legacy: [1: hardcore crafting] Remove Books Recipes
+	#Skill books recipes will be disabled, but you still can find them it the world.
+	remove_books_recipes = false
+	#Legacy: [1: hardcore crafting] Remove Bread Recipes
+	#Should Bread recipes be removed, since MF has its own recipe for such items.
+	remove_bread_recipes = true
+	#Legacy: [1: hardcore crafting] Remove Bucket Recipes
+	#Should Bucket recipes be removed, since MF has its own recipe for such items.
+	remove_bucket_recipes = true
+	#Legacy: [1: hardcore crafting] Remove Cake Recipes
+	#Should Cake recipes be removed, since MF has its own recipe for such items.
+	remove_cake_recipes = true
+	#Legacy: [1: hardcore crafting] Remove Flint and Steel Recipes
+	#Should Flint and Steel recipes be removed, since MF has its own recipe for such items.
+	remove_flint_steel_recipes = true
+	#Legacy: [1: hardcore crafting] Remove Pumpkin Pie Recipes
+	#Should Pumpkin Pie recipes be removed, since MF has its own recipe for such items.
+	remove_pumpkin_pie_recipes = true
+	#Legacy: [1: hardcore crafting] Remove Talismans Recipes
+	#Research talismans recipes will be disabled, but you still can find them it the world.
+	remove_talismans_recipes = false
+	#Legacy: [1: hardcore crafting] Weaken Basic items
+	#This will significantly reduce the durability of vanilla items, they can still be crafted but are practically useless.
+	weaken_basic_items = true
+	#New in the port (PORT_PLAN M96)
+	#true (default): under Hardcore Ingots, copper (and bronze) goes through the bloomery: vanilla copper smelts are off.
+	#false: vanilla copper smelting stays.
+	hardcore_copper = true
+	#New in the port (PORT_PLAN M102)
+	#true (default): Weaken Basic Items also weakens netherite gear and the turtle helmet.
+	weaken_modern_items = true
+	#New in the port (PORT_PLAN F2)
+	#true (default, 0.3.9): the vanilla stick recipes (planks, bamboo) are removed; sticks come from MFR timber.
+	#false: the vanilla stick recipes stay.
+	remove_stick_recipes = true
+
+[research]
+	#Legacy: [2: research] ###CHANGE RESEARCH ID###
+	#This changes the research ID, removing all entries
+	# Default: 0
+	# Range: > -2147483648
+	change_research_id = 0
+	#Legacy: [2: research] Baby-Mode Research
+	#This removes the process of examining artefacts, research is unlocked by clicking entries in the book.
+	baby_mode_research = false
+	#Legacy: [2: research] Unlock entries
+	#If you don't want to research, this will unlock all entries.
+	unlock_entries = false
+
+[cooking_and_hunting]
+	#Legacy: [3: cooking and hunting] Burn at high temperature
+	#Cooking food on a stove or oven will automatically burn at high temperatures
+	burn_high_temperature = true
+	#Legacy: [3: cooking and hunting] Dirty Progress Max
+	#The max amount of dirtiness on the Kitchen Bench, as accumulated by recipe dirty amount
+	# Default: 100
+	# Range: > -2147483648
+	dirty_progress_max = 100
+	#Legacy: [3: cooking and hunting] Dirty Progress Skill Mod
+	#How much to modify the player's current provisioning skill by to reduce the amount of dirtiness a kitchen bench recipe adds. Formula is as follows, where dirtyProgressAmount is from the recipe, maxLevel = Provisioning Skill Max Level: dirtyProgressAmount - (dirtyProgressAmount * ((currentLevel / maxLevel) / {this value}))
+	# Default: 2
+	# Range: > -2147483648
+	dirty_progress_skill_mod = 2
+	#Legacy: [3: cooking and hunting] Drop Leather or Rawhide
+	#This will force rawhide drops from animals, rather than leather from leather-based animals, like cows
+	drop_leather_rawhide = true
+	#Legacy: [3: cooking and hunting] Food Repeat Penalty Limit
+	#How much of certain foods you can eat in a row before vomiting
+	# Default: 3
+	# Range: > -2147483648
+	food_repeat_penalty_limit = 3
+	#Legacy: [3: cooking and hunting] Prevent furnace ceramic
+	#Stop ceramics from being cooked in a furnace
+	prevent_furnace_ceramic = false
+	#Legacy: [3: cooking and hunting] Prevent furnace food
+	#Stop food from being cooked in a furnace
+	prevent_furnace_food = false
+	#Legacy: [3: cooking and hunting] Reduce Meat Drops
+	#This will alter the stack size of animal meat drops, meaning they only drop 1 every time
+	reduce_meat_drops = false
+	#Legacy: [3: cooking and hunting] Restrict to hunting weapon
+	#This option means animals ONLY drop meat and hide when killed with a hunting weapon such as a knife, only the killing blow counts
+	restrict_hunting_weapon = false
