@@ -1,12 +1,12 @@
 name = "Airships: Conquer the Mines"
 author = "Harvy"
-version = "2026.11.15-22"
+version = "2026.11.15-23"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "9fea8892a15597fbd57cb4c3b136f93eef18f9134274dec2ce320099ddf4af63"
+hash = "a4621b3eb6f224e4e0ca27a943d87251184a9e2fa02961ba041960b86d513529"
 
 [versions]
 minecraft = "1.21.1"

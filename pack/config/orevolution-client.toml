@@ -1,0 +1,24 @@
+#Displays the text 'You can't harvest this block yet'
+warn_break = false
+#Displays the text 'This block requires a x tool'
+warn_incorrect_tool_type = false
+#Displays the text '+/- % Durability' in the tooltip of the item
+display_durability_modifier = true
+#Displays the text 'Tungsten-Reinforced'/'Tungsten-Coated' in the item's name
+display_coated_or_reinforced_in_name = true
+#Displays the particles that appear from effects applied by armor sets
+display_particle_effects_from_armor = true
+#Displays the effects applied by armor sets in your HUD/GUI
+display_effects_from_armor = true
+#Displays the chance type of every block in their tooltips
+display_chance_type_in_block = true
+#Displays the 'common' type for every non-tagged block in their tooltip
+display_common_chance_type = true
+#Display the 3x3 outline on all blocks while holding, for example, the steel hammer
+steel_outline = true
+# Default: -25
+# Range: -1000 ~ 1000
+forgotten_cave_min_fog = -25
+# Default: 50
+# Range: -1000 ~ 1000
+forgotten_cave_max_fog = 50

@@ -1,0 +1,83 @@
+[main]
+	#Defines if tools will have their special characteristic (aka power), like tin's drop duplication
+	tools_powers = true
+	#Defines if weapons will have their special characteristic (aka power), like tin's drop duplication
+	weapons_powers = true
+	#Defines if armors will have their special characteristic (aka power), like platinum's strength II effect
+	armors_powers = true
+	#Replaces the original ore progression of the game
+	modded_progression = false
+
+[worldgen]
+	prioritize_terrablender_over_biolith = true
+	enable_modded_biomes = true
+	#Defines if the Forgotten Cave biome will keep generating in the Overworld
+	generate_forgotten_cave_biome = true
+	#Defines if the Geode Gardens biome will keep generating in the Overworld
+	generate_geode_gardens_biome = true
+	#Defines if Pyrite will keep generating in the Nether
+	generate_pyrite_ore = true
+	#Defines if Celestine Geodes will keep generating in the Overworld
+	generate_celestite_geode = true
+	#Defines if Tin will keep generating in the Overworld
+	generate_tin_ore = true
+	#Defines if Platinum will keep generating in the Overworld
+	generate_platinum_ore = true
+	#Defines if Moonstone Pillars will keep generating in the Overworld
+	generate_moonstone_pillar = true
+	#Defines if Tungsten will keep generating in the Nether
+	generate_tungsten_ore = true
+	#Defines if experience ore will generate in the Overworld
+	generate_experience_ore = true
+	#Defines if Livingstone is obtainable through farming
+	generate_livingstone_ore = true
+	#Defines if Verdite is obtainable through composting
+	generate_verdite_ore = true
+	#Defines if Aethersteel will keep generating in the End
+	generate_aethersteel_ore = true
+	#Defines if aetherrock meteor will keep generating in the End (this will also disable aethersteel)
+	generate_aetherrock_meteor = true
+
+[other]
+	#Ores won't break if mined with the incorrect tool
+	safe_ore_breaking = true
+	#Defines if Bronze Alloy is craftable
+	bronze_recipes = true
+	#Defines if Steel Alloy is craftable
+	steel_recipes = true
+	#Whether or not mobs will spawn with modded equipment such as tin swords
+	mob_equipment = true
+	#Whether or not tungsten will be capable of repairing all items
+	tungsten_universal_repair = true
+	#Defines if items can have their durability modified by orevolution. Disabling this makes Reinforcing templates useless and Coating templates unbalanced
+	equipment_durability = true
+	#Defines if vanilla loot found in chests from structures such as End Cities will be modified
+	chest_loot = true
+	#Defines if vanilla loot from entities such as piglins will be modified
+	entity_loot = true
+	#Defines if steel tools will increase their durability cost for each mined block per efficiency level
+	steel_efficiency_nerf = false
+	#The amount of times per 20 ticks the geo scanner will search for ores
+	# Default: 2
+	# Range: > 1
+	geo_scanner_interval = 2
+	#The range (per axis) the geo scanner will search for ores
+	# Default: 5
+	# Range: > 1
+	geo_scanner_range = 5
+	#The amount of times per 20 ticks the motion detector will search for entities
+	# Default: 2
+	# Range: > 1
+	motion_detector_interval = 2
+	#The range (per axis) the motion detector will search for entities
+	# Default: 24
+	# Range: > 1
+	motion_detector_range = 24
+	#The time (in ticks) you have to wait every time you search for a player
+	# Default: 100
+	# Range: > 1
+	bronze_radar_player_search_time = 100
+	#The amount of times per 20 ticks the bronze radar will search for entities
+	# Default: 3
+	# Range: > 1
+	bronze_radar = 3

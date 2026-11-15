@@ -2597,6 +2597,14 @@ file = "config/oreganized-common.toml"
 hash = "e0056a098e58dd031bf11adb62d892494c608a6ce82eec63194eebc63e77e2b9"
 
 [[files]]
+file = "config/orevolution-client.toml"
+hash = "b5d2b578424d5ab1e3aa4f39d50d06548d13bac71fa01c340115bc574dacb08a"
+
+[[files]]
+file = "config/orevolution-common.toml"
+hash = "aa630769f89aa06a47625ec1cf8409773742cfd85fcd30fd1a6be2207f5495ce"
+
+[[files]]
 file = "config/origins.json"
 hash = "03409a2fb12088726b4ac37120bf45beace0fb49d7a4ae3936a15f573b6e1049"
 
