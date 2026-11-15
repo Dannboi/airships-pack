@@ -121,7 +121,7 @@
     "maxHealth": 250.0
   },
   "hippocampus": {
-    "spawnChance": 0.025,
+    "spawnChance": 0.008,
     "swimSpeedMod": 1.0
   },
   "ghost": {
