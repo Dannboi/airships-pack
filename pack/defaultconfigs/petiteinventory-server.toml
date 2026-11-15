@@ -1,0 +1,4 @@
+# Harvy 2026-11-15: grid inventory off for the re-opening (friends found it too hard). Item data is kept;
+# flip back with /gamerule gridInventory true (or set true here). Rummaging stays on (rummage-server.toml).
+[Master]
+	gridInventory = false

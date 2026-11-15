@@ -3346,6 +3346,10 @@ file = "defaultconfigs/biolith/general.json"
 hash = "7f1e58be2cf7db18181869804bb09823ee93a4ea863d560036e8a05954bcf806"
 
 [[files]]
+file = "defaultconfigs/petiteinventory-server.toml"
+hash = "0a8ce19151f388672c25571f8d314cf3051eff4e37e8d106d9c32eb7fbe5b328"
+
+[[files]]
 file = "global_packs/required_data/babel_v1.1.zip"
 hash = "a2028f7460965e76bc09d43346bd12b8b3679d5b14ef192fc5aa60e6472dbebb"
 
