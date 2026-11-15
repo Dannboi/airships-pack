@@ -2817,6 +2817,10 @@ file = "config/sereneseasons/seasons.toml"
 hash = "1da5dfa27545ae9b8a77aa01de62a989ff5f9538f0494058fdc609a1e36fe6da"
 
 [[files]]
+file = "config/serilum/healingcampfire.json"
+hash = "5a931fc6dd4fb45e158ef15e8e789eca11c481e947e71e2a90c5904adc0614c9"
+
+[[files]]
 file = "config/serverdebugger-server.toml"
 hash = "a3762202d3f0e3bff61b534bbb0b86b0a1509f074c9b6bc2aa6fe6d733bdc859"
 
@@ -4881,7 +4885,7 @@ metafile = true
 
 [[files]]
 file = "mods/minefantasyreforged-1.0.0.pw.toml"
-hash = "90817f8627e18c042e434d43d4ef010d47f6bbc653ac55f046063939051acc4c"
+hash = "1afeef304ab7099f62792816533a3bfafe5577fe515b2640e58089c6feb12fcd"
 metafile = true
 
 [[files]]

@@ -1,6 +1,6 @@
 {
- "version": "2026.11.15-19",
- "index_hash": "a1f8f9b694ca767d8f08fbb03d346d7faf13194f08ae4e6111cdf835940dacc8",
+ "version": "2026.11.15-20",
+ "index_hash": "ea85f56f4f853a954520d33b5a4cfb85d51b68372f15cf4fe3e189987898eaf2",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -103,10 +103,10 @@
   "b6dba232c7-uniqueartifacts-1.0.0.jar",
   "be34f246c6-ImmersivePetroleum-1.21.1-4.5.0-39.jar",
   "c3363b8e39-KineticGrip-1.21.1-1.0.5.jar",
-  "c5d92271e9-minefantasyreforged-1.0.0.jar",
   "c789def62a-species-1.0.0.jar",
   "c9678332f2-StorageDrawers-neoforge-1.21.1-13.11.4.jar",
   "cb1198c3a4-thick_aeronautics-1.5.0.jar",
+  "cfafb610a5-minefantasyreforged-1.0.0.jar",
   "d1f446f539-ancient_remnants-neoforge-1.21.1-1.1.0.jar",
   "d6669855df-createshaderfixes-1.0.0.jar",
   "d73b930824-create_submarine-2.2.2.jar",
