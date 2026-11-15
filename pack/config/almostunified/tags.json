@@ -1,5 +1,19 @@
 {
-  "custom_tags": {},
+  "custom_tags": {
+    "harvy:chu_jellies/blue": [
+      "zeldaswordskills:blue_chu_jelly",
+      "hyrule_terrors:chuchu_jelly",
+      "zeldamod:chu_jelly"
+    ],
+    "harvy:chu_jellies/red": [
+      "zeldaswordskills:jelly_chu",
+      "hyrule_terrors:chuchu_jelly_red"
+    ],
+    "harvy:chu_jellies/yellow": [
+      "zeldaswordskills:yellow_chu_jelly",
+      "hyrule_terrors:chuchu_jelly_yellow"
+    ]
+  },
   "tag_substitutions": {},
   "item_tag_inheritance_mode": "ALLOW",
   "item_tag_inheritance": {},

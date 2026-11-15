@@ -578,11 +578,15 @@ hash = "37f013c49586db025c17f9fa6657c6f239e0169ebc97ef682ff114a2ede43c5e"
 
 [[files]]
 file = "config/almostunified/tags.json"
-hash = "3f0d92c8abaf95a68ff79bb2ef9169fd598500070de7e5a616b755f9c5123e6f"
+hash = "313fb969a76fda6b445606f4506719ac49a5e36ebab899276f1e8bdace96c944"
 
 [[files]]
 file = "config/almostunified/unification/materials.json"
 hash = "fac5f17ce3d8e432353e1b7edec13cfa7c1201428835bb29667bffc781ce05c4"
+
+[[files]]
+file = "config/almostunified/unification/zelda_jellies.json"
+hash = "ad9b676b3152ec0b4a76a51885d4dae829ac05d5d2fdaaa998e342c430c19e43"
 
 [[files]]
 file = "config/amendments-client.toml"
