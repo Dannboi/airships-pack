@@ -76,3 +76,16 @@ key_quark.keybind.lock_rotation:key.keyboard.unknown
 key_quark.keybind.narrator_readout:key.keyboard.unknown
 key_quark.keybind.narrator_full_readout:key.keyboard.unknown
 key_quark.keybind.variant_selector:key.keyboard.unknown
+key_key.zss.activate.desc:key.keyboard.unknown
+key_key.zss.next.desc:key.keyboard.unknown
+key_key.zss.attack.desc:key.keyboard.unknown
+key_key.zss.left.desc:key.keyboard.unknown
+key_key.zss.right.desc:key.keyboard.unknown
+key_key.zss.down.desc:key.keyboard.unknown
+key_key.zss.block.desc:key.keyboard.unknown
+key_key.zss.bomb.desc:key.keyboard.unknown
+key_key.zss.toggleat.desc:key.keyboard.unknown
+key_key.zss.togglebuff.desc:key.keyboard.unknown
+key_key.zss.skills_gui.desc:key.keyboard.unknown
+key_key.zss.prev_mode.desc:key.keyboard.unknown
+key_key.zss.next_mode.desc:key.keyboard.unknown
