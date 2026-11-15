@@ -63,6 +63,12 @@ def collect(src: Path):
         p = src / f
         if p.is_file():
             yield f, p, True
+    # First-install-only files kept in this repo (not the Technic pack): written once when missing,
+    # never overwritten afterwards (packwiz preserve), e.g. the curated keybind options.txt.
+    for dest, rel_src in CFG.get("first_install_files", {}).items():
+        p = REPO / rel_src
+        if p.is_file():
+            yield dest, p, True
 
 
 def modrinth_lookup(sha1s):

@@ -5535,6 +5535,11 @@ hash = "b24c213b8727e80ca559670e97971c735c4dc4be1d1a4bd637c41450e7654c1e"
 metafile = true
 
 [[files]]
+file = "options.txt"
+hash = "3f5ebf5393b811dce2b2beeeaf32ad8db779b01a2f418ee39b24f446430f9b18"
+preserve = true
+
+[[files]]
 file = "resourcepacks/-1.21.2 Fresh Moves v3.1 (With Animated Eyes).zip"
 hash = "c433f3d831e86faa956836bf327ca00151bd813d1a8ab36aa064d518a58790f7"
 

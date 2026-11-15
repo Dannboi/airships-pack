@@ -27,5 +27,9 @@
     "kubejs/.cache/",
     "config/physicsmod/"
   ],
-  "exclude_files": []
+  "exclude_files": [],
+  "first_install_files": {
+    "options.txt": "tools/first_install/options.txt"
+  },
+  "_first_install_files_why": "Written on first install only (packwiz preserve); players' later changes are never overwritten."
 }
