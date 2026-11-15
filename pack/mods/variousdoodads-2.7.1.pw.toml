@@ -1,0 +1,8 @@
+name = "variousdoodads-2.7.1"
+filename = "variousdoodads-2.7.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/50476dccee-variousdoodads-2.7.1.jar"
+hash-format = "sha512"
+hash = "427bdd291aa7ed5adfc552907e0e5cab8df0b0467cf3e84cbed6a9ada8ed93358ba6f0500d4c1ebcc887d8fcb8c8e5cb7d7922e8340929c423653ed91b7fd73a"

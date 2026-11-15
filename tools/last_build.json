@@ -1,6 +1,6 @@
 {
- "version": "2026.11.15-28",
- "index_hash": "09c195b036627a21e7b5ed87402e95e99569a883588f08a1c7c8fe0208b8da95",
+ "version": "2026.11.15-29",
+ "index_hash": "346d96def55599fb6d0a58d7970a0f37c95abcee2b2b030ab2b33f20cdfd803c",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -42,6 +42,7 @@
   "3f8d80f131-ImmersiveEngineering-1.21.1-12.4.2-194.jar",
   "4507faefb9-goblintraders-neoforge-1.21.1-1.11.2.jar",
   "4f42091ef3-corpse-neoforge-1.21.1-1.1.13.jar",
+  "50476dccee-variousdoodads-2.7.1.jar",
   "5121083b5b-feedback-1.0.0-neoforge-1.21.1.jar",
   "51aef4dd3e-youkaisfeasts-1.1.0.jar",
   "52fd80a4f7-chestcavity_mythical-0.1.0.jar",
@@ -53,7 +54,6 @@
   "5b5592989c-aether-1.21.1-1.5.10-neoforge.jar",
   "5ba6bef1c3-alexpreserves-1.21.1-neoforge-1.1.0.jar",
   "5c3f90e003-Lift-n-Load-1.21.1-1.0b.jar",
-  "5d33449938-variousdoodads-2.7.0.jar",
   "5dcc800790-rhino-2101.2.7-build.81.jar",
   "634afadac9-grindstoner-1.0.0.jar",
   "64e955008e-classicpipes-neoforge-1.21.1-1.1.5.jar",

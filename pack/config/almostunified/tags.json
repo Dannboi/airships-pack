@@ -12,6 +12,11 @@
     "harvy:chu_jellies/yellow": [
       "zeldaswordskills:yellow_chu_jelly",
       "hyrule_terrors:chuchu_jelly_yellow"
+    ],
+    "harvy:deku_nuts": [
+      "variousdoodads:deku_nut",
+      "zeldamod:deku_nut",
+      "zeldaswordskills:deku_nut"
     ]
   },
   "tag_substitutions": {},

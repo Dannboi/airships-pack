@@ -578,7 +578,11 @@ hash = "37f013c49586db025c17f9fa6657c6f239e0169ebc97ef682ff114a2ede43c5e"
 
 [[files]]
 file = "config/almostunified/tags.json"
-hash = "313fb969a76fda6b445606f4506719ac49a5e36ebab899276f1e8bdace96c944"
+hash = "d0ec6a062fa981efcf1858f3b8b6e488f9228d6bd22ed9774d93ffa5bd6350ea"
+
+[[files]]
+file = "config/almostunified/unification/deku_nuts.json"
+hash = "c7a678570517e327c02d3f35d9c37b1ddb89cd52ab22a98955417f8ec8ce3585"
 
 [[files]]
 file = "config/almostunified/unification/materials.json"
@@ -5470,8 +5474,8 @@ hash = "c16ee91eeb20999c83deedbf93ce3787bb9bfefad56abd242d90a94dc0534ca0"
 metafile = true
 
 [[files]]
-file = "mods/variousdoodads-2.7.0.pw.toml"
-hash = "8469307c13faadedb93922a0c5c9c5e77f7ff517dfd31d5e699367ea1bc56a52"
+file = "mods/variousdoodads-2.7.1.pw.toml"
+hash = "a56086d8fdf408105377dd58f0811f7cf534e873574f95db60f3e9b5bf4b93d5"
 metafile = true
 
 [[files]]
