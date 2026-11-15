@@ -2662,7 +2662,7 @@ hash = "7420b0d05c6e93f341378bb8150092c74ca32cc72564ca2c745dc6c8e9e8d055"
 
 [[files]]
 file = "config/quark-common.toml"
-hash = "1dd21b437b6c648af1909584f5215149266b3081b9ca7dd586b1ec6cea93257a"
+hash = "1ef5590808749648d908882825575c2c249523de3ac1749ea0b77b8ff17e9f0d"
 
 [[files]]
 file = "config/quark_ponders-client.toml"
