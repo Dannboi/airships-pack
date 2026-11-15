@@ -1,0 +1,139 @@
+[aesthetics]
+	#Legacy: [aesthetics] Custom Apparel Model
+	#Determines if some work apparel (like aprons and clothing) use special models
+	custom_apparel_model = true
+	#Legacy: [aesthetics] MFR Custom Animations
+	#Should MFR Custom animations for things like counterattacks after parries and spear and halberd animations occur, true or false. Disable if you are using a mod that adds custom animations for such things, as it mess them up.
+	mfr_custom_animations = true
+
+[armour_rating_positioning]
+	#Legacy: [armour rating positioning] X Orient
+	#The orientation for the X axis (-1 = left, 0 = middle, 1 = right). Determines what point in the axis to snap to
+	# Default: -1
+	# Range: > -2147483648
+	x_orient = -1
+	#Legacy: [armour rating positioning] X Position
+	#The Offset value away from the orient (-)left, (+)right
+	# Default: 4
+	# Range: > -2147483648
+	x_position = 4
+	#Legacy: [armour rating positioning] Y Orient
+	#The orientation for the Y axis (-1 = top, 0 = middle, 1 = bottom). Determines what point in the axis to snap to
+	# Default: -1
+	# Range: > -2147483648
+	y_orient = -1
+	#Legacy: [armour rating positioning] Y Position
+	#The Offset value away from the orient (-)up, (+)down
+	# Default: 4
+	# Range: > -2147483648
+	y_position = 4
+
+[arrow_count_positioning]
+	#Legacy: [arrow count positioning] X Orient
+	#The orientation for the X axis (-1 = left, 0 = middle, 1 = right). Determines what point in the axis to snap to
+	# Default: -1
+	# Range: > -2147483648
+	x_orient = -1
+	#Legacy: [arrow count positioning] X Position
+	#The Offset value away from the orient (-)left, (+)right
+	# Default: 4
+	# Range: > -2147483648
+	x_position = 4
+	#Legacy: [arrow count positioning] Y Orient
+	#The orientation for the Y axis (-1 = top, 0 = middle, 1 = bottom). Determines what point in the axis to snap to
+	# Default: -1
+	# Range: > -2147483648
+	y_orient = -1
+	#Legacy: [arrow count positioning] Y Position
+	#The Offset value away from the orient (-)up, (+)down
+	# Default: 4
+	# Range: > -2147483648
+	y_position = 4
+
+[clockwork_armour_fuel_positioning]
+	#Legacy: [clockwork armour fuel positioning] X Orient
+	#The orientation for the X axis (-1 = left, 0 = middle, 1 = right). Determines what point in the axis to snap to
+	# Default: 1
+	# Range: > -2147483648
+	x_orient = 1
+	#Legacy: [clockwork armour fuel positioning] X Position
+	#The Offset value away from the orient (-)left, (+)right
+	# Default: -164
+	# Range: > -2147483648
+	x_position = -164
+	#Legacy: [clockwork armour fuel positioning] Y Orient
+	#The orientation for the Y axis (-1 = top, 0 = middle, 1 = bottom). Determines what point in the axis to snap to
+	# Default: -1
+	# Range: > -2147483648
+	y_orient = -1
+	#Legacy: [clockwork armour fuel positioning] Y Position
+	#The Offset value away from the orient (-)up, (+)down
+	# Default: -4
+	# Range: > -2147483648
+	y_position = -4
+
+[debug_info]
+	#Legacy: [debug info] Show Debug OreDict
+	#Displays a list of Ore Dictionary entries to tooltips
+	show_debug_ore_dict = false
+
+[sound_settings]
+	#Legacy: [sound settings] Armor Sounds
+	#Should armor make sounds when over 50kg in weight
+	#PORT_PLAN M127: off by default in the port; true for the heavy-armour clank (M122: footstep rhythm, ground only).
+	#Legacy default: true
+	armor_sounds = false
+	#Legacy: [sound settings] Make Breathe Sound
+	#[With Stamina System] Plays breath sounds when low on energy(sound may be annoying to some...)
+	make_breathe_sound = true
+	#Legacy: [sound settings] Make Hit Sound
+	#Plays sounds when hitting entities with different items
+	make_hit_sound = true
+
+[stamina_bar_positioning]
+	#Legacy: [stamina bar positioning] Metre Direction
+	#The direction the metre goes down: -1 = left to right, 0 = middle, 1 = right to left (May have subtle flaws in altered directions 1 and 0)
+	# Default: 1
+	# Range: > -2147483648
+	metre_direction = 1
+	#Legacy: [stamina bar positioning] X Orient
+	#The orientation for the X axis (-1 = left, 0 = middle, 1 = right). Determines what point in the axis to snap to
+	# Default: 1
+	# Range: > -2147483648
+	x_orient = 1
+	#Legacy: [stamina bar positioning] X Position
+	#The Offset value away from the orient (-)left, (+)right
+	# Default: -82
+	# Range: > -2147483648
+	x_position = -82
+	#Legacy: [stamina bar positioning] Y Orient
+	#The orientation for the Y axis (-1 = top, 0 = middle, 1 = bottom). Determines what point in the axis to snap to
+	# Default: 1
+	# Range: > -2147483648
+	y_orient = 1
+	#Legacy: [stamina bar positioning] Y Position
+	#The Offset value away from the orient (-)up, (+)down
+	# Default: -7
+	# Range: > -2147483648
+	y_position = -7
+
+[archery]
+	#New in the port (PORT_PLAN M66)
+	#true (default): while the Reload key is unbound, Shift + right-click opens the reload menu.
+	sneak_use_reloads = true
+
+[integration]
+	#New in the port (PORT_PLAN M64)
+	#With Better Combat: BLOCK_ONLY (default) keeps MFR's parry stance only; NONE draws no MFR pose;
+	#ALL draws every MFR pose (counter lift too). Replaces integration.better_combat_disables_poses.
+	better_combat_poses = "BLOCK_ONLY"
+
+	[compat.hud]
+		#New in the port (Phase 11 XC151)
+		#true (default): MFR's stamina bar, ammo count and armour rating move out of the way of other mods' HUD elements
+		#(Skogg HUD regions).
+		avoid_partner_hud = true
+		#New in the port (Phase 11 XC152)
+		#true (default): when another mod already replaces the vanilla armour row (e.g. a mana row), MFR's armour points stand down
+		#for that frame.
+		yield_armour_row = true

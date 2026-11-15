@@ -2393,6 +2393,10 @@ file = "config/minecolonies_tweaks-server.toml"
 hash = "2756f2acfc48739174ab42dd53fabb8deabb75a8e876215ad675829da2c85580"
 
 [[files]]
+file = "config/minefantasyreforged-client.toml"
+hash = "ba417979a1110272ae6ec0ef506eb39bcd4ebf174eb9ccc0fdcda6effa7626a3"
+
+[[files]]
 file = "config/minefantasyreforged-hardcore.toml"
 hash = "e265b77772e9ecf1210732d69fc819f4b79f4ee192d86a170a8a842a34e97a5c"
 
