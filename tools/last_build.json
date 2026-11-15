@@ -1,6 +1,6 @@
 {
- "version": "2026.11.15-29",
- "index_hash": "346d96def55599fb6d0a58d7970a0f37c95abcee2b2b030ab2b33f20cdfd803c",
+ "version": "2026.11.15-30",
+ "index_hash": "eef87ec65fcd74581e7b6f6e144fcc20867c358780af8483917abf79533219ba",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -13,6 +13,7 @@
   "0aad3242de-Create_Aeronautics_Gyroscope_Stabilizers.jar",
   "0ab4e0342b-blockui-1.0.211-1.21.1-snapshot.jar",
   "0c10c3a0aa-create_furnitures-1.1.2-neoforge-1.21.1.jar",
+  "0db42c5ef0-minefantasyreforged-1.0.0.jar",
   "0dbfbe086c-create-roboleg-1.21.1-0.2.114.jar",
   "0f5a6309ce-coroutil-neoforge-1.21.0-1.3.9.jar",
   "11e291c2c3-integrated_api-1.7.4+1.21.1-neoforge.jar",
@@ -67,7 +68,6 @@
   "6ce24a0d4e-Cinematic_Interaction-NeoForge-1.21.1-0.18.30.jar",
   "6d67f855c2-catalogue-neoforge-1.21.1-1.11.2.jar",
   "6e944b5a37-arsmagica2-1.0.0.jar",
-  "6f71fa2fdf-minefantasyreforged-1.0.0.jar",
   "714837a997-ScorchedGuns-1.5.jar",
   "748b210b36-copycats-3.0.4+mc.1.21.1-neoforge.jar",
   "757325bce0-legendgear-1.0.0.jar",
