@@ -4792,11 +4792,6 @@ hash = "8a5e76693f22343bb2306011ad8018337971256a6f3b25cb03680b1d7d7470c1"
 metafile = true
 
 [[files]]
-file = "mods/knightlib-neoforge-1.21.1-2.0.4.pw.toml"
-hash = "f21dceae1e16da5c7f9a9699cd93d0e97fcedcfe480b5f8d32a9bcb5b20328f0"
-metafile = true
-
-[[files]]
 file = "mods/knownpacksfix-3.1.0.pw.toml"
 hash = "4cb04174dc55ffece92406b48d0f358141896cf14ac949ca9fccf9b4671c4894"
 metafile = true
@@ -4964,11 +4959,6 @@ metafile = true
 [[files]]
 file = "mods/notenoughcrashes-neoforge-4.4.9+1.21.1.pw.toml"
 hash = "09ba6db54e6f13fafa1e12a9adcd83db9137617d631288579f520ab11b4bfe9a"
-metafile = true
-
-[[files]]
-file = "mods/olympus-neoforge-1.21.1-1.0.7.pw.toml"
-hash = "bead9189538a283cb4f0063f3848f0e6866b2734f7feed347f8a043c2a12df0a"
 metafile = true
 
 [[files]]

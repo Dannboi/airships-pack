@@ -1,6 +1,6 @@
 {
- "version": "2026.11.15-9",
- "index_hash": "0fba3e212042566f040af56dabcc489e42500dc38d4312649906bbdbbde015b1",
+ "version": "2026.11.15-10",
+ "index_hash": "7db63262f5ba94f5b2349c8597c7b460b59decd6c286d84b6dac03945af70a9b",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -133,7 +133,6 @@
   "f30e8dd3bb-precursory-1.1.0.jar",
   "f32ade3a28-incmachines-1.7.0.jar",
   "f5ab4f74c0-zeldaswordskills-1.0.0.jar",
-  "fa6bb580e0-sage_brush-1.21.1-2.2.1.jar",
-  "fd7e39da09-olympus-neoforge-1.21.1-1.0.7.jar"
+  "fa6bb580e0-sage_brush-1.21.1-2.2.1.jar"
  ]
 }
