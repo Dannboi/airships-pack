@@ -1,0 +1,18 @@
+{
+	"credit": "Made by Farcr. Harvy fix: down face removed - it sat exactly on top of the up face and z-fought (seashell flicker).",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "#texture",
+		"texture": "#texture"
+	},
+	"elements": [
+		{
+			"from": [0, 1, 0],
+			"to": [16, 1, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 1, 0]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#texture"}
+			}
+		}
+	]
+}
