@@ -1,6 +1,6 @@
 {
- "version": "2026.11.15-4",
- "index_hash": "c6d1ba78e537e74d2ce5dd13d0dcf2196334c5f553421507c688bb37e41b91fe",
+ "version": "2026.11.15-5",
+ "index_hash": "d73c15ad0373b6f1aa68b00b5fa163a54817f29620eccaef283e5b320b8caaaf",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -38,11 +38,11 @@
   "3673f232be-veinminer-1.1.0.jar",
   "3946e32e01-aeronauticsdiscovery-2.2.0.jar",
   "39f257a8a0-create-otbwg-compat-1.0.jar",
+  "3b13485bf5-conquerthemines-1.23.0.jar",
   "3f8d80f131-ImmersiveEngineering-1.21.1-12.4.2-194.jar",
   "4507faefb9-goblintraders-neoforge-1.21.1-1.11.2.jar",
   "4a82bcdb74-terrafirmarivers-0.1.0.jar",
   "4f42091ef3-corpse-neoforge-1.21.1-1.1.13.jar",
-  "4fb1e9fec0-conquerthemines-1.22.0.jar",
   "5121083b5b-feedback-1.0.0-neoforge-1.21.1.jar",
   "51aef4dd3e-youkaisfeasts-1.1.0.jar",
   "529e4d519f-of_legacy_remap-1.0.0.jar",

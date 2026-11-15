@@ -4178,8 +4178,8 @@ hash = "e97713bef3c5485273162c711f7805534d13dfab0e2d9b60d85f8b441863d74d"
 metafile = true
 
 [[files]]
-file = "mods/conquerthemines-1.22.0.pw.toml"
-hash = "0a327f08cc4caca66ae4c0e3bf2fc93b55c87cc87a3894424d9099d5bd299ba0"
+file = "mods/conquerthemines-1.23.0.pw.toml"
+hash = "610a9e66c727d11daf77792d4de1b549d7949df97c01854f02365c2e4ba26790"
 metafile = true
 
 [[files]]

@@ -1,0 +1,8 @@
+name = "conquerthemines-1.23.0"
+filename = "conquerthemines-1.23.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Dannboi/airships-pack/releases/download/files/3b13485bf5-conquerthemines-1.23.0.jar"
+hash-format = "sha512"
+hash = "2f5252707b43eed201cff98994f167c86668e3ed14a46cee880a723d362f700416b33911de631e71bd2ffc46c9a6ab365659876ab495c4d1499f44c499415ed2"
