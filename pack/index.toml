@@ -3259,7 +3259,7 @@ hash = "ff4ea51c02c50f27020df44b6ee6ab8b77173c73f25e3efb2e6bf327b21cb41b"
 
 [[files]]
 file = "config/waterworks-server.toml"
-hash = "cc8afecfacd965e6915454c5a49c0725e88dbd217ad514a064a5eddb6fc5601f"
+hash = "36c36570f51e80b2730800562e9b924c2da88969fab19dbc4906eeedc3c8348b"
 
 [[files]]
 file = "config/watut-client.toml"
@@ -5342,8 +5342,8 @@ hash = "dd46fad79cf33a00123be0a74c73581da72cd98503ef23822a624a08f4b10ff2"
 metafile = true
 
 [[files]]
-file = "mods/terrafirmarivers-0.1.0.pw.toml"
-hash = "0a2866cb5798f129807862b3a6a17454a39dc4718ae4afe7e3093e80f454838f"
+file = "mods/terrafirmarivers-0.1.1.pw.toml"
+hash = "91fb285af90253734fc173bcbb30c57cd33fd117d1cc5405c3cb2ef544cb758e"
 metafile = true
 
 [[files]]

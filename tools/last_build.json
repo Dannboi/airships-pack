@@ -1,6 +1,6 @@
 {
- "version": "2026.11.15-11",
- "index_hash": "d4d03ccc9190ff540b5944824125035150ffb5ca7821b6c8d149de1a12fc36aa",
+ "version": "2026.11.15-12",
+ "index_hash": "85af595be7a66c7d63f51875e2e1850c60e0684cfa7bb61875f58405a30af1a0",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -41,7 +41,6 @@
   "3b13485bf5-conquerthemines-1.23.0.jar",
   "3f8d80f131-ImmersiveEngineering-1.21.1-12.4.2-194.jar",
   "4507faefb9-goblintraders-neoforge-1.21.1-1.11.2.jar",
-  "4a82bcdb74-terrafirmarivers-0.1.0.jar",
   "4f42091ef3-corpse-neoforge-1.21.1-1.1.13.jar",
   "5121083b5b-feedback-1.0.0-neoforge-1.21.1.jar",
   "51aef4dd3e-youkaisfeasts-1.1.0.jar",
@@ -134,6 +133,7 @@
   "f30e8dd3bb-precursory-1.1.0.jar",
   "f32ade3a28-incmachines-1.7.0.jar",
   "f5ab4f74c0-zeldaswordskills-1.0.0.jar",
-  "fa6bb580e0-sage_brush-1.21.1-2.2.1.jar"
+  "fa6bb580e0-sage_brush-1.21.1-2.2.1.jar",
+  "ff98d40d63-terrafirmarivers-0.1.1.jar"
  ]
 }

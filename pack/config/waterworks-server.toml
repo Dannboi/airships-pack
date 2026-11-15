@@ -1,69 +1,409 @@
-[physicsApi]
-	#Master switch for Waterworks physics API.
+	#Server/world settings. These affect gameplay for everyone in this world.
+	[physicsApi.windAndCurrents]
+		#Enable wind sampling and wind motion.
+		windEnabled = true
+		#Enable current sampling and current motion.
+		currentsEnabled = true
+		#Base current speed in blocks/sec.
+		# Default: 0.18
+		# Range: 0.0 ~ 8.0
+		currentsBaseSpeed = 0.9
+		#Base wind speed in blocks/sec. Sail thrust scales with wind squared and deployed sail area: apparent wind in SIMULATION, true wind in ARCADE.
+		# Default: 6.0
+		# Range: 0.0 ~ 64.0
+		windBaseSpeed = 1.5
+		#Allow currents to push players in water.
+		currentsAffectPlayers = true
+		#Allow currents to push item entities in water.
+		currentsAffectItems = true
+		#Allow currents to push non-player, non-item entities in water.
+		currentsAffectEntities = true
+		#Allow currents to push guardians. Disabled by default so ocean mobs keep normal movement.
+		currentsAffectGuardians = false
+		#Arcade sail thrust multiplier. Sail area adds force; vessel mass and hull drag determine acceleration and speed.
+		# Default: 1.0
+		# Range: 0.05 ~ 16.0
+		arcadeSailAcceleration = 1.0
+		#Sailing force model. SIMULATION uses apparent wind and boom trim. ARCADE uses true wind with a separate sail speed ceiling and water drag tuning.
+		#Allowed Values: SIMULATION, ARCADE
+		sailingMode = "ARCADE"
+		#Outboard governed forward target speed in metres/sec while holding W.
+		# Default: 6.0
+		# Range: 0.1 ~ 64.0
+		outboardSpeed = 6.0
+		#ARCADE only: forward speed in blocks/sec at which sails stop adding thrust. Default 8 m/s, configurable up to 256. Wind strength, sail area, mass and drag still determine achieved speed; this does not clamp velocity from other propulsion.
+		# Default: 8.0
+		# Range: 1.0 ~ 256.0
+		arcadeSailSpeed = 8.0
+		#ARCADE only: multiplier for horizontal water drag, bow resistance and lateral hull resistance. Default 1 preserves hull-size and load penalties. 0.1 gives 10% of normal resistance; 1 restores normal drag; 0 disables these forces. Rudder steering, buoyancy and vertical damping are retained. Applies to all ships in arcade mode.
+		# Default: 1.0
+		# Range: 0.0 ~ 4.0
+		arcadeWaterDrag = 1.0
+		#ARCADE only: apply bow and lateral hull resistance at the centre of mass to prevent drag-induced pitching/rolling at high speed. Waves, ballast, rudders and damage can still tilt the ship.
+		arcadeStableDrag = true
+
+	#Server/world settings. These affect gameplay for everyone in this world.
+	[physicsApi.legacyBuoyancy]
+		#Legacy buoyancy assist and entity behaviour. Not the main Sable ship flotation control while waterDisplacementEnabled is true; use displacementForcePerBlock. Values below 0.052 are currently clamped by the accessor.
+		# Default: 0.052
+		# Range: 0.0 ~ 0.18
+		compartmentBuoyancyLift = 0.0035
+		#Legacy ship-motion multiplier, bypassed when displacement buoyancy is enabled. For current Sable ships use displacementForcePerBlock and sealed, drained compartments. Values below 28 are currently clamped.
+		# Default: 28.0
+		# Range: 0.0 ~ 96.0
+		airPocketBuoyancyScale = 28.0
+
+	#Server/world settings. These affect gameplay for everyone in this world.
+	[physicsApi.compartmentsAndFlooding]
+		#Minimum sealed compartment volume before pressure failures are considered.
+		# Default: 24
+		# Range: 1 ~ 4096
+		compartmentFailureMinVolume = 24
+		#Pressure threshold where sealed compartments start failing.
+		# Default: 1.95
+		# Range: 1.0 ~ 16.0
+		compartmentFailurePressure = 1.95
+		#Enable dry-interior occlusion API checks.
+		waterOcclusionEnabled = true
+		#Enable water pressure sampling.
+		pressureEnabled = true
+		#Allow over-pressured sealed compartments to fail catastrophically.
+		compartmentFailureEnabled = true
+		#Extra pressure per block below sea level.
+		# Default: 0.08
+		# Range: 0.0 ~ 2.0
+		pressureDepthScale = 0.08
+		#Base blast strength for compartment implosions.
+		# Default: 3.75
+		# Range: 0.0 ~ 16.0
+		compartmentFailureExplosionPower = 3.75
+		#Cooldown between pressure failures in the same compartment.
+		# Default: 120
+		# Range: 20 ~ 24000
+		compartmentFailureCooldownTicks = 120
+
+	#Server/world settings. These affect gameplay for everyone in this world.
+	[physicsApi.wavesAndTides]
+		#Base wave height shared by visuals and ship physics. Raising it changes sea conditions and ship motion, not just graphics quality.
+		# Default: 0.85
+		# Range: 0.0 ~ 8.0
+		waveHeight = 0.85
+		#Enable deterministic Waterworks wave sampling.
+		wavesEnabled = true
+		#Horizontal wave scale. Higher values make waves broader.
+		# Default: 1.0
+		# Range: 0.1 ~ 12.0
+		waveHorizontalScale = 1.0
+		#Deterministic wave seed. Clients with the same seed see the same waves.
+		# Default: 1337
+		# Range: > -2147483648
+		waveSeed = 1337
+		#Number of deterministic wave octaves to sample.
+		# Default: 13
+		# Range: 1 ~ 24
+		waveIterations = 13
+		#Wave time-speed multiplier. Affects the shared wave field, not frame rate. Leave unchanged when tuning client performance.
+		# Default: 1.0
+		# Range: 0.0 ~ 8.0
+		waveSpeed = 1.0
+		#Additional storm amplitude, shared by visuals and physics and bounded by oceanMaxHeight.
+		# Default: 1.8
+		# Range: 1.0 ~ 3.0
+		oceanStormGain = 1.8
+		#Maximum shared wave height in blocks. Default 6. Raising allows larger waves and changes ship motion; this is a sea-state control, not a quality slider.
+		# Default: 6.0
+		# Range: 0.1 ~ 16.0
+		oceanMaxHeight = 6.0
+		#Long-swell strength multiplier. Default 1. Increase for stronger rolling swells; affects visuals and buoyancy together.
+		# Default: 1.0
+		# Range: 0.0 ~ 2.0
+		oceanSwellGain = 1.0
+		#Short-wave strength multiplier. Default 1. Increase for choppier seas; affects visuals and physics, not mesh resolution.
+		# Default: 1.0
+		# Range: 0.0 ~ 2.0
+		oceanChopGain = 1.0
+		#Sea-state transition duration in ticks, 20 ticks per second. Default 2400 (two minutes). Raise for slower changes in conditions.
+		# Default: 2400.0
+		# Range: 200.0 ~ 24000.0
+		oceanTransitionTicks = 2400.0
+		#Enable bounded near-surface body surfing. Does not apply forces to ships.
+		surfingEnabled = true
+		#Spring-tide peak-to-trough range; one Minecraft day per cycle, half range at lunar quarters. Shared physics/render surface; no fluid block churn.
+		# Default: 0.8
+		# Range: 0.0 ~ 1.0
+		oceanTideRange = 0.8
+
+	#Server/world settings. These affect gameplay for everyone in this world.
+	[physicsApi.general]
+		#Master switch for Waterworks physics API.
+		enabled = true
+
+	#Server/world settings. These affect gameplay for everyone in this world.
+	[physicsApi.buoyancyAndBallast]
+		#Give sealed air compartments a slight buoyancy assist.
+		compartmentBuoyancyEnabled = true
+		#Enable displacement-based buoyancy for Sable ships. This samples submerged hull volume and applies buoyant force at the centre of buoyancy.
+		waterDisplacementEnabled = true
+		#Ballast controller strength, default 2. Affects upward and downward corrections; lowering it does not simply add buoyancy. Empty ballast tanks when testing surface flotation.
+		# Default: 2.0
+		# Range: 0.0 ~ 10.0
+		ballastSinkScale = 2.0
+		#Minimum shallow-hull draft in blocks. Default 0.25 lets very light surface ships settle into the water without adding mass. 0 disables it. Buoyancy blends back to normal over the next 0.25 blocks. Ballast-equipped ships and detected ground contact bypass this adjustment; fully submerged hulls retain normal buoyancy.
+		# Default: 0.25
+		# Range: 0.0 ~ 0.5
+		minimumSurfaceDraft = 0.25
+		#Main flotation control. Default 0.085; try 0.1 then 0.12 if a sealed, drained ship sits too low. Higher values lift the same submerged volume more strongly; lower if it rides too high. Changes all ships, not just the one you are testing.
+		# Default: 0.085
+		# Range: 0.0 ~ 500.0
+		displacementForcePerBlock = 0.085
+		#Safety cap on displacement force relative to ship weight. Default 1.0 keeps fully submerged ships from receiving more buoyancy force than their weight. Larger caps allow stronger ascent and sharper motion.
+		# Default: 1.0
+		# Range: 0.0 ~ 12.0
+		displacementMaxForcePerMass = 1.0
+		#Reduces vertical bobbing. Default 0.42; try 0.55 if the ship bounces excessively. Does not increase static flotation. Large values can make wave response sluggish.
+		# Default: 0.42
+		# Range: 0.0 ~ 4.0
+		displacementVerticalDamping = 0.42
+		#Maximum hull samples per ship per physics step. Default 4096. Increase only if large-ship sampling is visibly uneven; this costs server CPU. It improves sampling accuracy rather than multiplying lift. Client quality presets do not change this.
+		# Default: 4096
+		# Range: 128 ~ 32000
+		displacementSampleBudget = 4096
+
+	[physicsApi.floodWaterWeight]
+		#Optional EXTRA floodwater weight in Sable mass units per logically flooded block. Default 0 disables it and preserves existing handling. Try 250, then 500 or 1000 on a test ship. Adds downward force at the flooded water centre without changing intact buoyancy. This is additional gameplay weight, not a replacement for native fluid mass or lost air displacement. Requires an active tracked flood; cannot sink untracked wreckage.
+		# Default: 0.0
+		# Range: 0.0 ~ 10000.0
+		extraMassPerBlock = 0.0
+		#Maximum EXTRA downward force as a fraction of the ship's current weight, shared across all flooded rooms. Default 1 means at most one additional ship-weight. 0 disables the force. Start at 1; higher values can cause rapid sinking and strong listing. The cap does not guarantee sinking.
+		# Default: 1.0
+		# Range: 0.0 ~ 5.0
+		maxExtraWeightRatio = 1.0
+
+	#Server/world settings. These affect gameplay for everyone in this world.
+	[physicsApi.shipHandlingAndEffects]
+		#Enable ship bow waves, widening wakes, foam/spray particles, wave roll/pitch coupling, and lateral water displacement forces.
+		shipHydrodynamicsEnabled = true
+		#Horizontal drag applied to Sable vehicles touching water. Higher values slow ships faster.
+		# Default: 0.018
+		# Range: 0.0 ~ 0.2
+		waterDragCoefficient = 0.018
+		#Scales bow wave, wake, foam, and spray particle emission. Particles are still capped per ship tick.
+		# Default: 1.0
+		# Range: 0.0 ~ 4.0
+		shipWakeParticleScale = 1.0
+		#Forward hydrodynamic resistance from bow-wave formation. Scales with speed and displaced volume.
+		# Default: 0.055
+		# Range: 0.0 ~ 1.0
+		shipBowWaveForce = 0.055
+		#Side force used to push water outward around moving hulls and make broad ships disturb more water.
+		# Default: 0.03
+		# Range: 0.0 ~ 1.0
+		shipWaterPushForce = 0.03
+		#How strongly sampled waves roll and pitch Sable ships. Larger values make vessels move more with swell.
+		# Default: 0.06
+		# Range: 0.0 ~ 1.0
+		shipWaveRollForce = 0.06
+		#Mass exponent for hydrodynamic drag. Values below 1 make heavy ships accelerate/stop slower than light craft.
+		# Default: 0.72
+		# Range: 0.35 ~ 1.0
+		shipInertiaExponent = 0.72
+		#Minimum ticks between ship wake/foam/spray particle emissions per vessel.
+		# Default: 4
+		# Range: 1 ~ 40
+		shipEffectIntervalTicks = 4
+		#Maximum wake/foam/spray particles emitted per ship effect tick.
+		# Default: 18
+		# Range: 0 ~ 256
+		shipMaxParticlesPerTick = 18
+		#Optional entry-speed-based hull impact force. The physical slam addition is capped at 15% of ship weight per sample; default 0.15.
+		# Default: 0.15
+		# Range: 0.0 ~ 2.0
+		oceanSlamStrength = 0.15
+
+	#Server/world settings. These affect gameplay for everyone in this world.
+	[physicsApi.coastalBehaviour]
+		#Multiplier applied to currents and waves in beach/coastal biomes.
+		# Default: 0.2
+		# Range: 0.0 ~ 8.0
+		coastalBiomeSurfaceMultiplier = 0.2
+		#Multiplier applied to currents and waves in river biomes.
+		# Default: 0.18
+		# Range: 0.0 ~ 8.0
+		riverBiomeSurfaceMultiplier = 0.6
+		#Multiplier applied to currents, waves, and pressure in ocean biomes.
+		# Default: 1.25
+		# Range: 0.0 ~ 8.0
+		oceanBiomePhysicsMultiplier = 1.25
+		#Multiplier applied to currents, waves, and pressure in deep ocean biomes.
+		# Default: 1.75
+		# Range: 0.0 ~ 8.0
+		deepOceanBiomePhysicsMultiplier = 1.75
+
+	#Server/world settings. These affect gameplay for everyone in this world.
+	[physicsApi.performance]
+		#Scan scheduling interval in game ticks (20 ticks = one second). Increasing delays discovery/refresh; it is not a room-size limit. Pending scans continue within their work budget.
+		# Default: 5
+		# Range: 1 ~ 100
+		compartmentScanIntervalTicks = 5
+		#Snapshot capture work allowance. Larger budgets finish scans sooner but can cause longer game ticks. Reduce when ship edits cause stutters; no loss of room detail, but results arrive later.
+		# Default: 16000
+		# Range: 1024 ~ 96000
+		compartmentScanMaxBlocks = 16000
+		#Max number of blocks to check for a seal. Anything larger than this will be considered open.
+		# Default: 4096
+		# Range: 1024 ~ 65535
+		maxCompartmentBlocksChecked = 4096
+		#Maximum new/expired coastal lattice samples per level per tick. Stale samples are reused while deferred.
+		# Default: 128
+		# Range: 16 ~ 2048
+		oceanCoastalSamplingBudget = 128
+		#Send coarse Sable ship silhouettes to subscribed DH clients within 2048 blocks. At most 8 ships per player and 128 boxes per ship. Scans existing loaded ships only; never loads chunks. Disable to prevent distant ship visibility.
+		distantShipBroadcast = true
+
+[whirlpools]
 	enabled = true
-	#Enable current sampling and current motion.
-	currentsEnabled = true
-	#Enable wind sampling and wind motion.
-	windEnabled = true
-	#Enable water pressure sampling.
-	pressureEnabled = true
-	#Enable dry-interior occlusion API checks.
-	waterOcclusionEnabled = true
-	#Give sealed air compartments a slight buoyancy assist.
-	compartmentBuoyancyEnabled = true
-	#Allow over-pressured sealed compartments to fail catastrophically.
-	compartmentFailureEnabled = true
-	#Enable deterministic Waterworks wave sampling.
-	wavesEnabled = true
-	#Base current speed in blocks/sec.
-	# Default: 0.9
+	naturalSpawning = false
+	# Default: 18.0
+	# Range: 8.0 ~ 1200.0
+	minimumRadius = 18.0
+	# Default: 80.0
+	# Range: 8.0 ~ 1200.0
+	maximumRadius = 80.0
+	#Peak tangential water speed in blocks/second.
+	# Default: 8.0
+	# Range: 0.0 ~ 24.0
+	rotationStrength = 8.0
+	# Default: 3.0
+	# Range: 0.0 ~ 12.0
+	inwardSuction = 3.0
+	#Maximum downward water speed at a whirlpool core, in blocks per second. The conservative default keeps vessels from being pulled under too quickly.
+	# Default: 0.6
 	# Range: 0.0 ~ 8.0
-	currentsBaseSpeed = 0.9
-	#Base wind speed in blocks/sec.
+	verticalSuction = 0.6
+	# Default: 8.0
+	# Range: 0.0 ~ 24.0
+	waveDepression = 8.0
+	# Default: 1.0
+	# Range: 0.0 ~ 4.0
+	turbulence = 1.0
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	intensity = 1.0
+	#Distributed drag response per second; forces are additionally bounded by mass and timestep.
+	# Default: 0.7
+	# Range: 0.0 ~ 3.0
+	dragCoefficient = 0.7
 	# Default: 1.5
-	# Range: 0.0 ~ 16.0
-	windBaseSpeed = 1.5
-	#Extra pressure per block below sea level.
+	# Range: 0.05 ~ 5.0
+	maximumAcceleration = 1.5
+	#Optional drowning damage per second in the core; default zero.
+	# Default: 0.0
+	# Range: 0.0 ~ 4.0
+	entityDamage = 0.0
+	#Probability per minute per occupied dimension, conditional on naturalSpawning and environment.
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	spawnFrequency = 0.02
+	# Default: 25.0
+	# Range: 4.0 ~ 64.0
+	minimumDepth = 25.0
+	# Default: 32.0
+	# Range: 4.0 ~ 96.0
+	minimumDistanceFromCoast = 32.0
+	# Default: 30
+	# Range: 2 ~ 300
+	buildDurationSeconds = 30
+	# Default: 240
+	# Range: 1 ~ 1800
+	peakDurationSeconds = 240
+	# Default: 90
+	# Range: 2 ~ 600
+	decayDurationSeconds = 90
+	# Default: 4
+	# Range: 1 ~ 4
+	maximumActiveWhirlpools = 4
+	# Default: 128
+	# Range: 16 ~ 512
+	maximumHullSamples = 128
+
+[hullPressure]
+	#Rated differential water depth in blocks. Creaking begins at 75% of the rating.
+	# Default: 15.0
+	# Range: 1.0 ~ 1024.0
+	woodDepth = 15.0
+	# Default: 128.0
+	# Range: 1.0 ~ 2048.0
+	metalDepth = 128.0
+	# Default: 12.0
+	# Range: 1.0 ~ 1024.0
+	glassDepth = 12.0
+	# Default: 48.0
+	# Range: 1.0 ~ 1024.0
+	stoneDepth = 48.0
+	# Default: 256.0
+	# Range: 1.0 ~ 4096.0
+	reinforcedDepth = 256.0
+	#Seconds of accumulated over-limit strain before a local breach. Larger overloads fail faster.
+	# Default: 8.0
+	# Range: 1.0 ~ 120.0
+	failureSeconds = 8.0
+
+#Ground contact damage and assisted capsize dynamics. Existing buoyancy remains active.
+[damageControl]
+	#Damage actual hull blocks touching loaded terrain. Conservative bounded probes can miss very fast or narrow contacts.
+	groundingEnabled = true
+	#Contact-point speed in blocks/second for a grounding crack. Default 2; raise to make gentle docking safer.
+	# Default: 2.0
+	# Range: 0.1 ~ 100.0
+	groundingCrackSpeed = 2.0
+	#Contact-point speed for a broken hull block, before material resistance. Default 6. At most one damaged block per ship per second.
+	# Default: 6.0
+	# Range: 0.1 ~ 200.0
+	groundingBreachSpeed = 6.0
+	#Assist rolling only after sustained negative estimated GM on a partially flooded surface vessel. Uses forces, never teleports or forces an exact 180-degree rotation.
+	capsizeEnabled = true
+	#Maximum additional roll acceleration in radians/second squared. Default 0.08. Lower for gentler instability; 0 disables the assist. Estimate is approximate, not a naval stability solver.
 	# Default: 0.08
-	# Range: 0.0 ~ 2.0
-	pressureDepthScale = 0.08
-	#Maximum upward boost from sealed air compartments.
-	# Default: 0.0035
-	# Range: 0.0 ~ 0.02
-	compartmentBuoyancyLift = 0.0035
-	#Pressure threshold where sealed compartments start failing.
-	# Default: 1.95
-	# Range: 1.0 ~ 16.0
-	compartmentFailurePressure = 16
-	#Base blast strength for compartment implosions.
-	# Default: 3.75
-	# Range: 0.0 ~ 16.0
-	compartmentFailureExplosionPower = 3.75
-	#Base visual/sample wave height in blocks.
-	# Default: 0.85
-	# Range: 0.0 ~ 8.0
-	waveHeight = 0.85
-	#Horizontal wave scale. Higher values make waves broader.
+	# Range: 0.0 ~ 1.0
+	capsizeAcceleration = 0.08
+
+#Optional per-part rigging stress exemptions. Empty lists preserve normal limits. Reopen the world/restart the server after changes.
+[rigging]
+	#Master rigging stress switch. False disables line hauling effort limits, running/standing rope overload snapping, trawl cable overload snapping, and Waterworks deck kinetic adapter/trawl winch/outrigger actuator Create stress cost. Other Create machines are unaffected. Broken lines still need repair; valid connections and powered rotation are still required.
+	stressEnabled = true
+	#Block IDs whose controlled lines ignore hauling effort limits and overload snapping. Example: waterworks:deck_winch. Also supports standing-line owners such as waterworks:chainplate. Does not repair already broken lines or bypass missing fittings.
+	stressBypassBlocks = []
+	#Block IDs exempt from the deck kinetic adapter's Create stress cost. Match waterworks:deck_kinetic_adapter or its attached waterworks:deck_winch / waterworks:capstan. Rotation is still required; other machines can still overload the network.
+	createStressBypassBlocks = []
+
+[trawling]
+	#Enable powered trawl deployment and capture. Existing nets can still be recovered.
+	enabled = true
+	#Accumulate biome-dependent fish alongside active entity capture, in water at least five blocks deep below the net.
+	passiveEnabled = true
+	#Passive catch kg per metre travelled before biome and depth factors. One cargo item is 0.5 kg.
+	# Default: 0.08
+	# Range: 0.0 ~ 10.0
+	passiveRate = 0.08
+	#Combined cable breaking load in newtons; locked overload must persist for 40 game ticks. Rigging stressEnabled also disables cable failure and Create stress.
+	# Default: 24000.0
+	# Range: 1000.0 ~ 200000.0
+	breakingLoad = 24000.0
+	#Maximum cable payout in blocks. Unloaded terrain is never scanned or force-loaded.
+	# Default: 64
+	# Range: 8 ~ 96
+	maxCable = 64
+
+[canals]
+	#Lock gate and sluice flow multiplier. 1 = normal, 2 = twice as fast, 0.5 = half speed. Capacity and equalization limits still apply.
 	# Default: 1.0
-	# Range: 0.1 ~ 12.0
-	waveHorizontalScale = 1.0
-	#Wave animation speed multiplier.
+	# Range: 0.1 ~ 20.0
+	lockFlowRate = 1.0
+	#Drydock gate and flood-sluice flow multiplier, in either direction. Does not change Create pipe input rates.
 	# Default: 1.0
-	# Range: 0.0 ~ 8.0
-	waveSpeed = 1.0
-	#Number of deterministic wave octaves to sample.
-	# Default: 13
-	# Range: 1 ~ 24
-	waveIterations = 13
-	#Minimum sealed compartment volume before pressure failures are considered.
-	# Default: 24
-	# Range: 1 ~ 4096
-	compartmentFailureMinVolume = 4096
-	#Cooldown between pressure failures in the same compartment.
-	# Default: 120
-	# Range: 20 ~ 24000
-	compartmentFailureCooldownTicks = 24000
-	#Deterministic wave seed. Clients with the same seed see the same waves.
-	# Default: 1337
-	# Range: > -2147483648
-	waveSeed = 1337
+	# Range: 0.1 ~ 20.0
+	drydockFillRate = 1.0
+	#Drydock drainage pump multiplier, including its Create pipe extraction allowance. Power and available water/outlet capacity still apply.
+	# Default: 1.0
+	# Range: 0.1 ~ 20.0
+	drydockDrainRate = 1.0
