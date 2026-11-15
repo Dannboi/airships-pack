@@ -89,3 +89,8 @@ key_key.zss.togglebuff.desc:key.keyboard.unknown
 key_key.zss.skills_gui.desc:key.keyboard.unknown
 key_key.zss.prev_mode.desc:key.keyboard.unknown
 key_key.zss.next_mode.desc:key.keyboard.unknown
+key_accessories.key.open_accessories_screen:key.keyboard.unknown
+key_create_mobile_packages.keyinfo.open_player_networks_screen:key.keyboard.unknown
+key_key.legendarysurvivaloverhaul.body_health:key.keyboard.unknown
+key_key.sable_player_ragdoll.ragdoll:key.keyboard.unknown
+key_key.scguns.swap_ammo:key.keyboard.unknown
