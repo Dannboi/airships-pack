@@ -1,6 +1,6 @@
 {
- "version": "2026.11.15-6",
- "index_hash": "d08b45fb9eda34c8a8beed1260655eb7ae7575a2bb6296c0430f94503495ddad",
+ "version": "2026.11.15-7",
+ "index_hash": "97184713e6b37ad9ab90a0a19c458b95c90cc5ed4280d688b2bec45e05665162",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -45,7 +45,6 @@
   "4f42091ef3-corpse-neoforge-1.21.1-1.1.13.jar",
   "5121083b5b-feedback-1.0.0-neoforge-1.21.1.jar",
   "51aef4dd3e-youkaisfeasts-1.1.0.jar",
-  "529e4d519f-of_legacy_remap-1.0.0.jar",
   "52fd80a4f7-chestcavity_mythical-0.1.0.jar",
   "5362bcc883-let_it_walk-0.1.4.jar",
   "548879d4db-sablephysicscompat-1.3.0.jar",

@@ -1,8 +1,0 @@
-name = "of_legacy_remap-1.0.0"
-filename = "of_legacy_remap-1.0.0.jar"
-side = "both"
-
-[download]
-url = "https://github.com/Dannboi/airships-pack/releases/download/files/529e4d519f-of_legacy_remap-1.0.0.jar"
-hash-format = "sha512"
-hash = "a9bff1db5ad2fd3d4886744e2bdd65f3edaab412055e068b4fc8b206565360025f1465fbe6e10f41ef911a39c60f806828d2806e37e19f48c43ce13831e4d863"
