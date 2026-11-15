@@ -5555,7 +5555,7 @@ hash = "2e61371fff5a0db6b602fc9d74beebb9f42966f36527801195d477e1500c26dc"
 
 [[files]]
 file = "servers.dat"
-hash = "cb20ddae8aa54a810c029c43bb9f5c01ec06d976796770e0a02bdf820bab81b4"
+hash = "0625e760d0b15e1e53946377985a552ce0d41a1a89fc3f63093cf111cbfae26f"
 preserve = true
 
 [[files]]
