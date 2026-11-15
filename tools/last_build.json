@@ -1,6 +1,6 @@
 {
- "version": "2026.11.15-27",
- "index_hash": "055364fca7b8ee8cf00785d2e85d4b00c1ac86184c81150fe806332cd2abfce5",
+ "version": "2026.11.15-28",
+ "index_hash": "09c195b036627a21e7b5ed87402e95e99569a883588f08a1c7c8fe0208b8da95",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -67,6 +67,7 @@
   "6ce24a0d4e-Cinematic_Interaction-NeoForge-1.21.1-0.18.30.jar",
   "6d67f855c2-catalogue-neoforge-1.21.1-1.11.2.jar",
   "6e944b5a37-arsmagica2-1.0.0.jar",
+  "6f71fa2fdf-minefantasyreforged-1.0.0.jar",
   "714837a997-ScorchedGuns-1.5.jar",
   "748b210b36-copycats-3.0.4+mc.1.21.1-neoforge.jar",
   "757325bce0-legendgear-1.0.0.jar",
@@ -93,7 +94,6 @@
   "a31c3f3633-GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
   "a3285d328f-origins-0.3.2.jar",
   "a8b9f12333-kotlinforforge-5.11.0-all.jar",
-  "a922040e8b-minefantasyreforged-1.0.0.jar",
   "ac4a39fc38-fangs_n_claws-1.2.5.jar",
   "af88a4cf12-smithingreborn-0.7.0.jar",
   "afbcedbc8c-places-0.5.4-neoforge-1.21.1.jar",
