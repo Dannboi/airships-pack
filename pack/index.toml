@@ -5350,8 +5350,8 @@ hash = "dd46fad79cf33a00123be0a74c73581da72cd98503ef23822a624a08f4b10ff2"
 metafile = true
 
 [[files]]
-file = "mods/terrafirmarivers-0.1.1.pw.toml"
-hash = "91fb285af90253734fc173bcbb30c57cd33fd117d1cc5405c3cb2ef544cb758e"
+file = "mods/terrafirmarivers-0.1.2.pw.toml"
+hash = "457f8f92984a0c5da3a57f00070180cbeddbe20f0d89c198298492ed44a3ef5f"
 metafile = true
 
 [[files]]
