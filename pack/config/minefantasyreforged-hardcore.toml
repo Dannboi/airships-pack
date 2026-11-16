@@ -25,7 +25,7 @@
 	remove_cake_recipes = true
 	#Legacy: [1: hardcore crafting] Remove Flint and Steel Recipes
 	#Should Flint and Steel recipes be removed, since MF has its own recipe for such items.
-	remove_flint_steel_recipes = true
+	remove_flint_steel_recipes = false
 	#Legacy: [1: hardcore crafting] Remove Pumpkin Pie Recipes
 	#Should Pumpkin Pie recipes be removed, since MF has its own recipe for such items.
 	remove_pumpkin_pie_recipes = true
