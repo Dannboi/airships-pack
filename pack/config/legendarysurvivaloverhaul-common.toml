@@ -128,7 +128,7 @@
 		# It means that for a value of -10, the body temperature of the player is reduced by 10.
 		# Default: -10.0
 		# Range: -1000.0 ~ 1000.0
-		"Wetness Modifier" = -10.0
+		"Wetness Modifier" = -4.0
 		# How frequently the wetness is modified.
 		# By default, every 10 ticks, the wetness will either increase or decrease, based on the conditions.
 		# Default: 10
@@ -141,7 +141,7 @@
 		# How much the wetness increase when under rain.
 		# Default: 7
 		# Range: 0 ~ 1000
-		"Wetness Under Rain Increase" = 7
+		"Wetness Under Rain Increase" = 4
 		# How much the wetness increase when the player is in a fluid, scale by the amount of fluid in the block.
 		# The defined value is for a full block of fluid, and goes up to 2 times this value when fully immerge.
 		# Default: 10
@@ -196,7 +196,7 @@
 		# It means that for a value of -2, the body temperature of the player is reduced by 2.
 		# Default: -2.0
 		# Range: -1000.0 ~ 1000.0
-		"Rain Temperature Modifier" = -2.0
+		"Rain Temperature Modifier" = -1.0
 		# How much of an effect snow has on temperature.
 		# It means that for a value of -6, the body temperature of the player is reduced by 6.
 		# Default: -6.0
