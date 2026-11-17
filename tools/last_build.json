@@ -1,6 +1,6 @@
 {
- "version": "2026.11.16-1",
- "index_hash": "0ad1644d02833cb30a61d52da2f04119dd59419479263bc4b9d16667c1178b41",
+ "version": "2026.11.17-1",
+ "index_hash": "97f03eddf1fbb7bfafe42316db5374babaa6fd09b2e20d96d8ace659b9474191",
  "neoforge": "21.1.265",
  "release_assets": [
   "0271ce7945-mods_optimizer-neoforge-1.21.1-4.3.0.jar",
@@ -65,7 +65,6 @@
   "6a96755f39-ncreborn-1.1.0.jar",
   "6adebe84f7-connectivity-1.21.1-7.6.jar",
   "6c2a2658f6-spawn-4.0.7-1.21.1.jar",
-  "6ce24a0d4e-Cinematic_Interaction-NeoForge-1.21.1-0.18.30.jar",
   "6d67f855c2-catalogue-neoforge-1.21.1-1.11.2.jar",
   "6e944b5a37-arsmagica2-1.0.0.jar",
   "714837a997-ScorchedGuns-1.5.jar",

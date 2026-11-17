@@ -3478,11 +3478,6 @@ hash = "c8b720dda31f66111e495493a4ead4a2027c67724388a519b1e45b66d46df129"
 metafile = true
 
 [[files]]
-file = "mods/Cinematic Interaction-NeoForge-1.21.1-0.18.30.pw.toml"
-hash = "6b3eeb6d666927c3a8c38ce1872fb67f2d7b150e86eacf0e3abea18887488a01"
-metafile = true
-
-[[files]]
 file = "mods/CodeChickenLib-1.21.1-4.6.1.529.pw.toml"
 hash = "1e1678b169096708fcb92496f251260471221554f70ca0dab1b99f2a6b72ea7b"
 metafile = true
